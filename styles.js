@@ -8,7 +8,9 @@ export default createGlobalStyle`
   }
 
   body {
-    margin: 0;
-    font-family: system-ui;
+    font-family: 'Arial Rounded MT Bold', monospace;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 800px;
   }
 `;
