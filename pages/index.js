@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import PageHeading from "@/components/PageHeading";
-import Card from "@/Card";
+import Card from "@/components/Card";
 
 const dummyUserThings = [
   {
@@ -60,7 +60,11 @@ export default function HomePage() {
         {dummyUserThings.map((item) => {
           return (
             <ListItem key={item.slug}>
-              <Card name={item.name} category={item.category} />
+              <Card
+                name={item.name}
+                category={item.category}
+                slug={item.slug}
+              />
             </ListItem>
           );
         })}

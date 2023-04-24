@@ -13,6 +13,20 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "dummyimage.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "acnhapi.com",
+        port: "",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;
