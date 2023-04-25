@@ -14,7 +14,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>bota 🏝️ crossing</title>
+        <title>🏝️ bota-crossing</title>
       </Head>
       <TitleBar />
       <Main>{children}</Main>
