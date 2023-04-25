@@ -15,7 +15,7 @@ const Category = styled.div`
   padding: 0.5rem;
 `;
 
-const Anchor = styled.a`
+const Anchor = styled(Link)`
   &::after {
     content: "";
     display: block;
