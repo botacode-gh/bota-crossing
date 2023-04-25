@@ -1,17 +1,16 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 import PageHeading from "@/components/PageHeading";
-
+import ItemQuote from "@/components/ItemQuote";
 import AnimalDescription from "@/components/AnimalDescription";
 import MuseumGuidepost from "@/components/MuseumGuidepost";
 import RecipesDisplay from "@/components/RecipesDisplay";
-import Image from "next/image";
 import PriceDisplay from "@/components/PriceDisplay";
 import UnlockDate from "@/components/UnlockDate";
 import BackToMainButton from "@/components/BackToMainButton";
 
 import { DUMMY_FISH } from "@/lib/dummyData";
-import ItemQuote from "@/components/ItemQuote";
 
 export default function FishDetailsPage() {
   const router = useRouter();
