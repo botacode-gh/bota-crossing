@@ -1,7 +1,7 @@
-import styled from "styled-components";
 import { useRouter } from "next/router";
 
 import PageHeading from "@/components/PageHeading";
+
 import AnimalDescription from "@/components/AnimalDescription";
 import MuseumGuidepost from "@/components/MuseumGuidepost";
 import RecipesDisplay from "@/components/RecipesDisplay";
@@ -11,12 +11,7 @@ import UnlockDate from "@/components/UnlockDate";
 import BackToMainButton from "@/components/BackToMainButton";
 
 import { DUMMY_FISH } from "@/lib/dummyData";
-
-const StyledQuote = styled.p`
-  white-space: pre-wrap;
-  margin: 1em 0;
-  text-align: center;
-`;
+import ItemQuote from "@/components/ItemQuote";
 
 export default function FishDetailsPage() {
   const router = useRouter();
@@ -39,7 +34,7 @@ export default function FishDetailsPage() {
     <>
       <BackToMainButton />
       <PageHeading>{name}</PageHeading>
-      <StyledQuote>{randomizedQuote || quotes[0]}</StyledQuote>
+      <ItemQuote>{randomizedQuote || quotes[0]}</ItemQuote>
       <AnimalDescription species={fish} />
       <Image src={iconSource} alt={`${name} icon`} width={300} height={300} />
       <PriceDisplay price={price} />
