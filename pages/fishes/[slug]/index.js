@@ -46,7 +46,7 @@ export default function FishDetailsPage() {
 
   useEffect(() => {
     setRandomizedQuote(quotes[Math.floor(Math.random() * quotes.length)]);
-  }, []);
+  }, [quotes]);
 
   if (!fish) {
     return <h1>Loading fish (or trying to)...</h1>;
