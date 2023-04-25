@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 
 import PageHeading from "@/components/PageHeading";
 import FishDescription from "@/components/FishDescription";
@@ -32,16 +31,7 @@ export default function FishDetailsPage() {
     return <h1>Loading fish (or trying to)...</h1>;
   }
 
-  const {
-    name,
-    quotes,
-    imageSource,
-    iconSource,
-    availability,
-    museum,
-    price,
-    unlockDate,
-  } = fish;
+  const { name, quotes, iconSource, museum, price, unlockDate } = fish;
   const { displayLocation, mapSource } = museum;
   const randomizedQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
