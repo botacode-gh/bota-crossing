@@ -12,5 +12,3 @@ export default function AnimalDescription({ animal }) {
 
   return <p>{descriptionText}</p>;
 }
-
-//

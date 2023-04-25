@@ -9,5 +9,4 @@ export default function FishDescription({ fish }) {
   }, ${time ? time : "day & night"}.`;
 
   return <p>{descriptionText}</p>;
-  //   return <p>Common fish found at Sea all-year, 4am – 9pm.</p>;
 }
