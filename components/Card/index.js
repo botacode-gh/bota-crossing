@@ -13,7 +13,6 @@ const Category = styled.div`
   right: 0;
   bottom: 0;
   padding: 0.5rem;
-  text-
 `;
 
 const Anchor = styled.a`

@@ -10,6 +10,7 @@ import UnlockDate from "@/components/UnlockDate";
 import BackToMainButton from "@/components/BackToMainButton";
 
 import { DUMMY_BUGS } from "@/lib/dummyData";
+import ModelMade from "@/components/ModelMade";
 
 export default function BugDetailsPage() {
   const router = useRouter();
@@ -33,6 +34,7 @@ export default function BugDetailsPage() {
       <AnimalDescription species={bug} />
       <Image src={iconSource} alt={`${name} icon`} width={300} height={300} />
       <PriceDisplay price={price} />
+      <ModelMade />
       <MuseumGuidepost
         displayLocation={displayLocation}
         mapSource={mapSource}
