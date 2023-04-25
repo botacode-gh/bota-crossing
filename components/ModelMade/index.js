@@ -13,17 +13,23 @@ const StyledCheckbox = styled.input`
   transform: scale(3);
 `;
 
-export default function ModelMade() {
+export default function ModelMade({ bug, onChange }) {
+  const { slug, isModelled } = bug;
+
+  const inputId = `modelMade-${slug}`;
+
   return (
     <StyledModelContainer>
-      <label htmlFor="modelMade">
+      <label htmlFor={inputId}>
         <h3>Model made:</h3>
       </label>
       <StyledCheckbox
         type="checkbox"
-        id="modelMade"
-        name="modelMade"
+        id={inputId}
+        name={`modelMade-${slug}`}
         value="isModelled"
+        checked={isModelled}
+        onChange={onChange}
       />
     </StyledModelContainer>
   );

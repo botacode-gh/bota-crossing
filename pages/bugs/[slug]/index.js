@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 
 import PageHeading from "@/components/PageHeading";
 import ItemQuote from "@/components/ItemQuote";
@@ -16,7 +17,22 @@ export default function BugDetailsPage() {
   const router = useRouter();
   const { slug } = router.query;
 
-  const bug = DUMMY_BUGS.find((bug) => bug.slug === slug);
+  const [bugs, setBugs] = useState([]);
+
+  useEffect(() => {
+    const storedBugs = JSON.parse(localStorage.getItem("bugs"));
+    setBugs(storedBugs || DUMMY_BUGS);
+  }, []);
+
+  function handleModelMadeChange(slug) {
+    const updatedBugs = bugs.map((bug) =>
+      bug.slug === slug ? { ...bug, isModelled: !bug.isModelled } : bug
+    );
+    setBugs(updatedBugs);
+    localStorage.setItem("bugs", JSON.stringify(updatedBugs));
+  }
+
+  const bug = bugs.find((bug) => bug.slug === slug);
 
   if (!bug) {
     return <h1>Loading bug (or trying to)...</h1>;
@@ -34,7 +50,7 @@ export default function BugDetailsPage() {
       <AnimalDescription species={bug} />
       <Image src={iconSource} alt={`${name} icon`} width={300} height={300} />
       <PriceDisplay price={price} />
-      <ModelMade />
+      <ModelMade bug={bug} onChange={() => handleModelMadeChange(bug.slug)} />
       <MuseumGuidepost
         displayLocation={displayLocation}
         mapSource={mapSource}
