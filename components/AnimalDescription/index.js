@@ -1,11 +1,11 @@
-export default function AnimalDescription({ species }) {
-  const { availability } = species;
-  console.log("species:", species);
+export default function AnimalDescription({ animal }) {
+  const { availability } = animal;
+  console.log("animal:", animal);
 
   const { month, time, rarity, location } = availability;
 
   const descriptionText = `${rarity} ${
-    species.type === "fish" ? "fish" : "bug"
+    animal.type === "fish" ? "fish" : "bug"
   } found ${location} ${month ? month : "all-year"}, ${
     time ? time : "day & night"
   }.`;

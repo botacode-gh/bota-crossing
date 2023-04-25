@@ -34,7 +34,7 @@ export default function FishDetailsPage() {
       <BackToMainButton />
       <PageHeading>{name}</PageHeading>
       <ItemQuote>{randomizedQuote || quotes[0]}</ItemQuote>
-      <AnimalDescription species={fish} />
+      <AnimalDescription animal={fish} />
       <Image src={iconSource} alt={`${name} icon`} width={300} height={300} />
       <PriceDisplay price={price} />
       <MuseumGuidepost

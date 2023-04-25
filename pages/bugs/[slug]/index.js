@@ -47,7 +47,7 @@ export default function BugDetailsPage() {
       <BackToMainButton />
       <PageHeading>{name}</PageHeading>
       <ItemQuote>{randomizedQuote || quotes[0]}</ItemQuote>
-      <AnimalDescription species={bug} />
+      <AnimalDescription animal={bug} />
       <Image src={iconSource} alt={`${name} icon`} width={300} height={300} />
       <PriceDisplay price={price} />
       <ModelMade bug={bug} onChange={() => handleModelMadeChange(bug.slug)} />
