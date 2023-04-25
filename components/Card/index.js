@@ -24,15 +24,16 @@ const Anchor = styled.a`
   }
 `;
 
+const CATEGORY_URLS = {
+  fish: "fishes",
+  bug: "bugs",
+  furniture: "furnitures",
+  clothing: "clothing",
+  recipe: "recipes",
+  resident: "residents",
+};
+
 export default function Card({ name, category, slug }) {
-  const CATEGORY_URLS = {
-    fish: "fishes",
-    bug: "bugs",
-    furniture: "furnitures",
-    clothing: "clothing",
-    recipe: "recipes",
-    resident: "residents",
-  };
   const urlScheme = `${CATEGORY_URLS[category]}/${slug}`;
 
   return (
