@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import PageHeading from "@/components/PageHeading";
-import Card from "@/Card";
+import Card from "@/components/Card";
 
 const dummyUserThings = [
   {
