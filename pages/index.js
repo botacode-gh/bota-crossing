@@ -37,8 +37,6 @@ const dummyUserThings = [
 
 const List = styled.ul`
   list-style: none;
-  /* display: flex;
-  flex-direction: column; */
   gap: 2rem;
   align-items: center;
   padding-left: 0;
