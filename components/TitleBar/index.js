@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import Link from "next/link";
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
 
 const Headline = styled.h1`
   top: 0;
@@ -11,5 +16,9 @@ const Headline = styled.h1`
 `;
 
 export default function TitleBar() {
-  return <Headline>bota 🏝️ crossing</Headline>;
+  return (
+    <StyledLink href={"/"}>
+      <Headline>🏝️ bota-crossing</Headline>
+    </StyledLink>
+  );
 }
