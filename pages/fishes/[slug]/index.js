@@ -1,11 +1,11 @@
 import styled from "styled-components";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 import PageHeading from "@/components/PageHeading";
 import FishDescription from "@/components/FishDescription";
 import MuseumGuidepost from "@/components/MuseumGuidepost";
 import RecipesDisplay from "@/components/RecipesDisplay";
-import Image from "next/image";
 import PriceDisplay from "@/components/PriceDisplay";
 import UnlockDate from "@/components/UnlockDate";
 import BackToMainButton from "@/components/BackToMainButton";
