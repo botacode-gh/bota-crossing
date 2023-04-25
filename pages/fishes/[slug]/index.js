@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useRouter } from "next/router";
 
 import PageHeading from "@/components/PageHeading";
-import FishDescription from "@/components/FishDescription";
+import AnimalDescription from "@/components/AnimalDescription";
 import MuseumGuidepost from "@/components/MuseumGuidepost";
 import RecipesDisplay from "@/components/RecipesDisplay";
 import Image from "next/image";
@@ -40,7 +40,7 @@ export default function FishDetailsPage() {
       <BackToMainButton />
       <PageHeading>{name}</PageHeading>
       <StyledQuote>{randomizedQuote || quotes[0]}</StyledQuote>
-      <FishDescription fish={fish} />
+      <AnimalDescription species={fish} />
       <Image src={iconSource} alt={`${name} icon`} width={300} height={300} />
       <PriceDisplay price={price} />
       <MuseumGuidepost
