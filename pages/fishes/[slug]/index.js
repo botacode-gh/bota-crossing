@@ -24,16 +24,13 @@ const StyledQuote = styled.p`
 export default function FishDetailsPage() {
   const router = useRouter();
   const { slug } = router.query;
-  console.log("router.query in [slug]:", router.query);
+
+  const [randomizedQuote, setRandomizedQuote] = useState(null);
 
   const fish = DUMMY_FISH.find((fish) => fish.slug === slug);
 
   console.log("DUMMY_FISH:", DUMMY_FISH);
   console.log("fish:", fish);
-
-  if (!fish) {
-    return <h1>Loading fish (or trying to)...</h1>;
-  }
 
   const {
     name,
@@ -45,13 +42,15 @@ export default function FishDetailsPage() {
     price,
     unlockDate,
   } = fish;
-  const { month, time, rarity, location } = availability;
   const { displayLocation, mapSource } = museum;
-  const [randomizedQuote, setRandomizedQuote] = useState(null);
 
   useEffect(() => {
     setRandomizedQuote(quotes[Math.floor(Math.random() * quotes.length)]);
   }, []);
+
+  if (!fish) {
+    return <h1>Loading fish (or trying to)...</h1>;
+  }
 
   return (
     <>
