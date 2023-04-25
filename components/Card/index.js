@@ -25,20 +25,15 @@ const Anchor = styled.a`
 `;
 
 export default function Card({ name, category, slug }) {
-  const urlScheme =
-    category === "fish"
-      ? `fishes/${slug}`
-      : category === "bug"
-      ? `bugs/${slug}`
-      : category === "furniture"
-      ? `furnitures/${slug}`
-      : category === "clothing"
-      ? `clothing/${slug}`
-      : category === "recipe"
-      ? `recipes/${slug}`
-      : category === "resident"
-      ? `residents/${slug}`
-      : null;
+  const CATEGORY_URLS = {
+    fish: "fishes",
+    bug: "bugs",
+    furniture: "furnitures",
+    clothing: "clothing",
+    recipe: "recipes",
+    resident: "residents",
+  };
+  const urlScheme = `${CATEGORY_URLS[category]}/${slug}`;
 
   return (
     <StyledArticle>

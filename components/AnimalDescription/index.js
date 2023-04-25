@@ -1,6 +1,6 @@
 export default function AnimalDescription({ animal }) {
   const { availability } = animal;
-  console.log("animal:", animal);
+  "animal:", animal;
 
   const { month, time, rarity, location } = availability;
 
