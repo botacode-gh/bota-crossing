@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledQuote = styled.p`
+const StyledQuote = styled.article`
   white-space: pre-wrap;
   margin: 1em 0;
   text-align: center;
