@@ -1,5 +1,5 @@
-import Image from "next/image";
 import styled from "styled-components";
+import Image from "next/image";
 
 const StyledMuseumGuidepost = styled.div`
   border: 1px solid black;

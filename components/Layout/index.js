@@ -1,6 +1,6 @@
-import TitleBar from "@/components/TitleBar";
 import styled from "styled-components";
 import Head from "next/head";
+import TitleBar from "@/components/TitleBar";
 
 const Main = styled.main`
   display: grid;
