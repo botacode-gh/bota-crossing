@@ -24,8 +24,8 @@ export default function FishDetailsPage() {
 
   const fish = DUMMY_FISH.find((fish) => fish.slug === slug);
 
-  console.log("DUMMY_FISH:", DUMMY_FISH);
-  console.log("fish:", fish);
+  "DUMMY_FISH:", DUMMY_FISH;
+  "fish:", fish;
 
   if (!fish) {
     return <h1>Loading fish (or trying to)...</h1>;

@@ -2,7 +2,7 @@ export default function FishDescription({ fish }) {
   const { availability } = fish;
   const { month, time, rarity, location } = availability;
 
-  console.log("fish:", fish);
+  "fish:", fish;
 
   const descriptionText = `${rarity} fish found at ${location} ${
     month ? month : "all-year"
