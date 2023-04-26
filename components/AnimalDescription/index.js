@@ -1,6 +1,5 @@
 export default function AnimalDescription({ animal }) {
   const { availability } = animal;
-  "animal:", animal;
 
   const { month, time, rarity, location } = availability;
 
