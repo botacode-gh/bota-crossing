@@ -9,9 +9,9 @@ export default function TagsContainer({ furniture }) {
 
   const tags = [
     tag,
-    `DIY ${isDIY ? "✔" : "❌"}`,
-    `Interactive ${isInteractive ? "✔" : "❌"}`,
-    `Catalog ${isCatalog ? "✔" : "❌"}`,
+    `${isDIY ? "✔" : "❌"} DIY`,
+    `${isInteractive ? "✔" : "❌"} Interactive`,
+    `${isCatalog ? "✔" : "❌"} Catalog`,
   ];
 
   return (
