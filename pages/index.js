@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 
 import PageHeading from "@/components/PageHeading";
 import Card from "@/components/Card";
@@ -89,11 +89,18 @@ export default function HomePage() {
   const [welcomeMessage, setWelcomeMessage] = useState("");
 
   useEffect(() => {
-    const isFirstVisit = !localStorage.getItem("visited");
-
+    const isFirstVisit = !localStorage.getItem("visitedSite");
     setWelcomeMessage(isFirstVisit ? "Welcome!" : "Welcome back!");
+    localStorage.setItem("visitedSite", true);
+  }, []);
 
-    localStorage.setItem("visited", true);
+  // auto-focusing input field
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   }, []);
 
   return (
@@ -106,6 +113,7 @@ export default function HomePage() {
           </label>
           <StyledTextInput
             name="query"
+            ref={inputRef}
             type="text"
             placeholder="barred knifejaw"
           />
