@@ -21,8 +21,6 @@ export default function ResidentDetails() {
 
   const resident = DUMMY_RESIDENTS.find((resident) => resident.slug === slug);
 
-  console.log("resident:", resident);
-
   if (!resident) {
     return <h1>Loading resident (or trying to)...</h1>;
   }
