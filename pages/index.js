@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { useEffect, useState } from "react";
+
 import PageHeading from "@/components/PageHeading";
 import Card from "@/components/Card";
 
@@ -50,23 +52,86 @@ const ListItem = styled.li`
   max-width: 800px;
 `;
 
+const StyledFormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0 1rem 1rem;
+  width: max-content;
+`;
+
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+`;
+
+const StyledTextInput = styled.input`
+  text-align: center;
+`;
+
+const StyledItemsContainer = styled.div`
+  border-radius: 10px;
+  display: grid;
+  padding: 0.5rem;
+  position: relative;
+  max-width: 850px;
+`;
+
+const ContainerHeading = styled.h3`
+  text-align: center;
+`;
+
 export default function HomePage() {
+  const [welcomeMessage, setWelcomeMessage] = useState("");
+
+  useEffect(() => {
+    const isFirstVisit = !localStorage.getItem("visited");
+
+    setWelcomeMessage(isFirstVisit ? "Welcome!" : "Welcome back!");
+
+    localStorage.setItem("visited", true);
+  }, []);
+
   return (
     <div>
-      <PageHeading>Check out what you&apos;ve found so far!</PageHeading>
-      <List role="list">
-        {dummyUserThings.map((item) => {
-          return (
-            <ListItem key={item.slug}>
-              <Card
-                name={item.name}
-                category={item.category}
-                slug={item.slug}
-              />
-            </ListItem>
-          );
-        })}
-      </List>
+      <PageHeading>{welcomeMessage}</PageHeading>
+      <StyledFormContainer>
+        <StyledForm action="">
+          <label htmlFor="query">
+            <ContainerHeading>Got something new to add?</ContainerHeading>
+          </label>
+          <StyledTextInput
+            name="query"
+            type="text"
+            placeholder="barred knifejaw"
+          />
+          <div>
+            <button>add</button>
+          </div>
+        </StyledForm>
+      </StyledFormContainer>
+      <StyledItemsContainer>
+        <ContainerHeading>
+          Check out what you&apos;ve found so far!
+        </ContainerHeading>
+        <List role="list">
+          {dummyUserThings.map((item) => {
+            return (
+              <ListItem key={item.slug}>
+                <Card
+                  name={item.name}
+                  category={item.category}
+                  slug={item.slug}
+                />
+              </ListItem>
+            );
+          })}
+        </List>
+      </StyledItemsContainer>
     </div>
   );
 }
