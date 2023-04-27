@@ -7,6 +7,7 @@ import PageHeading from "@/components/PageHeading";
 
 import { DUMMY_RESIDENTS } from "@/lib/dummyData";
 import UnlockDate from "@/components/UnlockDate";
+import ResidentDescription from "@/components/ResidentDescription";
 
 export default function ResidentDetails() {
   const router = useRouter();
@@ -20,35 +21,14 @@ export default function ResidentDetails() {
     return <h1>Loading resident (or trying to)...</h1>;
   }
 
-  const {
-    name,
-    saying,
-    personality,
-    species,
-    hobby,
-    catchphrase,
-    birthday,
-    iconSource,
-    imageSource,
-    unlockDate,
-    type,
-  } = resident;
-
-  const article = /[aeiou]/i.test(personality[0]) ? "An" : "A";
-  const descriptionText = `
-    ${article} ${personality} ${species}, likes to ${hobby} and say "${catchphrase}" a lot.
-  `;
+  const { name, saying, imageSource, unlockDate, type } = resident;
 
   return (
     <>
       <BackToMainButton />
       <PageHeading>{name}</PageHeading>
       <ItemQuote>{saying}</ItemQuote>
-      <div>
-        <p>{descriptionText}</p>
-        <p>Birthday: {birthday}</p>
-        <Image src={iconSource} alt={`${name} icon`} width={100} height={100} />
-      </div>
+      <ResidentDescription resident={resident} />
       <Image src={imageSource} alt={`${name} image`} width={300} height={300} />
       <UnlockDate date={unlockDate} type={type} />
     </>
