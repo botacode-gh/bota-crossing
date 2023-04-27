@@ -6,6 +6,7 @@ const StyledArticle = styled.article`
   border-radius: 10px;
   padding: 1rem;
   position: relative;
+  cursor: pointer;
 `;
 
 const Category = styled.div`
@@ -13,15 +14,6 @@ const Category = styled.div`
   right: 0;
   bottom: 0;
   padding: 0.5rem;
-`;
-
-const Anchor = styled(Link)`
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    inset: 0;
-  }
 `;
 
 const CATEGORY_URLS = {
@@ -37,12 +29,12 @@ export default function Card({ name, category, slug }) {
   const urlScheme = `${CATEGORY_URLS[category]}/${slug}`;
 
   return (
-    <StyledArticle>
-      {name}
-      <Category>{category}</Category>
-      <Link href={urlScheme} passHref legacyBehavior>
-        <Anchor />
-      </Link>
-    </StyledArticle>
+    <Link href={urlScheme} passHref legacyBehavior>
+      <StyledArticle>
+        {name}
+        <Category>{category}</Category>
+        {/* <Anchor /> */}
+      </StyledArticle>
+    </Link>
   );
 }
