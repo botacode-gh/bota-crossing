@@ -9,7 +9,7 @@ export default function UnlockDate({ date, type }) {
     type === "fish" || type === "bug"
       ? "caught"
       : type === "resident"
-      ? "moved in"
+      ? "moved to island"
       : "acquired";
 
   return (

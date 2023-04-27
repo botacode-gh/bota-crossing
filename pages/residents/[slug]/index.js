@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -8,6 +9,11 @@ import PageHeading from "@/components/PageHeading";
 import { DUMMY_RESIDENTS } from "@/lib/dummyData";
 import UnlockDate from "@/components/UnlockDate";
 import ResidentDescription from "@/components/ResidentDescription";
+
+// it's dummy because I'll make a user story later to make this a global component
+const DummyCenteredImage = styled(Image)`
+  justify-self: center;
+`;
 
 export default function ResidentDetails() {
   const router = useRouter();
@@ -29,7 +35,12 @@ export default function ResidentDetails() {
       <PageHeading>{name}</PageHeading>
       <ItemQuote>{saying}</ItemQuote>
       <ResidentDescription resident={resident} />
-      <Image src={imageSource} alt={`${name} image`} width={300} height={300} />
+      <DummyCenteredImage
+        src={imageSource}
+        alt={`${name} image`}
+        width={300}
+        height={300}
+      />
       <UnlockDate date={unlockDate} type={type} />
     </>
   );

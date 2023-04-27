@@ -3,6 +3,7 @@ import Image from "next/image";
 
 const StyledSection = styled.section`
   border: 1px solid black;
+  border-radius: 30px;
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
