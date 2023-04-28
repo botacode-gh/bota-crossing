@@ -175,6 +175,7 @@ export default function HomePage() {
   const inputRef = useRef(null);
   const [welcomeMessage, setWelcomeMessage] = useState("");
   const [userItems, setUserItems] = useState(null);
+  const [itemNotFound, setItemNotFound] = useState(false);
 
   useEffect(() => {
     if (inputRef.current) {
@@ -217,6 +218,8 @@ export default function HomePage() {
         ];
         setUserItems(updatedItems);
         localStorage.setItem("userItems", JSON.stringify(updatedItems));
+      } else {
+        setItemNotFound(true);
       }
     }
 
@@ -230,7 +233,11 @@ export default function HomePage() {
         <StyledForm onSubmit={handleSubmit}>
           <label htmlFor="query">
             <ContainerHeading>
-              {!userItems ? "Add something!" : "Got more to add?"}
+              {itemNotFound
+                ? "Add something else!"
+                : !userItems
+                ? "Add something!"
+                : "Got more to add?"}
             </ContainerHeading>
           </label>
           <StyledTextInput
@@ -239,6 +246,7 @@ export default function HomePage() {
             type="text"
             placeholder="barred knifejaw"
           />
+          {itemNotFound && <p>Sorry, item not found :(</p>}
           <div>
             <button type="submit">add</button>
           </div>
