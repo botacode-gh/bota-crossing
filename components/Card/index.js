@@ -25,15 +25,14 @@ const CATEGORY_URLS = {
   resident: "residents",
 };
 
-export default function Card({ name, category, slug }) {
-  const urlScheme = `${CATEGORY_URLS[category]}/${slug}`;
+export default function Card({ name, type, slug }) {
+  const urlScheme = `${CATEGORY_URLS[type]}/${slug}`;
 
   return (
     <Link href={urlScheme} passHref legacyBehavior>
       <StyledArticle>
         {name}
-        <Category>{category}</Category>
-        {/* <Anchor /> */}
+        <Category>{type}</Category>
       </StyledArticle>
     </Link>
   );
