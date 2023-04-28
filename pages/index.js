@@ -174,7 +174,7 @@ const ContainerHeading = styled.h3`
 export default function HomePage() {
   const inputRef = useRef(null);
   const [welcomeMessage, setWelcomeMessage] = useState("");
-  const [userItems, setUserItems] = useState([]);
+  const [userItems, setUserItems] = useState(null);
 
   useEffect(() => {
     if (inputRef.current) {
@@ -203,13 +203,21 @@ export default function HomePage() {
       (item) => item.name.toLowerCase() === itemName.toLowerCase()
     );
 
-    if (submittedItem) {
-      const updatedItems = [
-        ...userItems,
-        { ...submittedItem, isAcquired: true },
-      ];
-      setUserItems(updatedItems);
-      localStorage.setItem("userItems", JSON.stringify(updatedItems));
+    if (userItems === null) {
+      setUserItems([{ ...submittedItem, isAcquired: true }]);
+      localStorage.setItem(
+        "userItems",
+        JSON.stringify([{ ...submittedItem, isAcquired: true }])
+      );
+    } else {
+      if (submittedItem) {
+        const updatedItems = [
+          ...userItems,
+          { ...submittedItem, isAcquired: true },
+        ];
+        setUserItems(updatedItems);
+        localStorage.setItem("userItems", JSON.stringify(updatedItems));
+      }
     }
 
     inputRef.current.value = "";
@@ -221,7 +229,9 @@ export default function HomePage() {
       <StyledFormContainer>
         <StyledForm onSubmit={handleSubmit}>
           <label htmlFor="query">
-            <ContainerHeading>Got something new to add?</ContainerHeading>
+            <ContainerHeading>
+              {!userItems ? "Add something!" : "Got more to add?"}
+            </ContainerHeading>
           </label>
           <StyledTextInput
             name="query"
@@ -234,20 +244,22 @@ export default function HomePage() {
           </div>
         </StyledForm>
       </StyledFormContainer>
-      <StyledItemsContainer>
-        <ContainerHeading>
-          Check out what you&apos;ve found so far!
-        </ContainerHeading>
-        <List role="list">
-          {userItems.map((item) => {
-            return (
-              <ListItem key={item.slug}>
-                <Card name={item.name} type={item.type} slug={item.slug} />
-              </ListItem>
-            );
-          })}
-        </List>{" "}
-      </StyledItemsContainer>
+      {userItems && (
+        <StyledItemsContainer>
+          <ContainerHeading>
+            Check out what you&apos;ve found so far!
+          </ContainerHeading>
+          <List role="list">
+            {userItems.map((item) => {
+              return (
+                <ListItem key={item.slug}>
+                  <Card name={item.name} type={item.type} slug={item.slug} />
+                </ListItem>
+              );
+            })}
+          </List>
+        </StyledItemsContainer>
+      )}{" "}
     </div>
   );
 }
