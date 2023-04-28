@@ -174,6 +174,7 @@ const ContainerHeading = styled.h3`
 export default function HomePage() {
   const inputRef = useRef(null);
   const [welcomeMessage, setWelcomeMessage] = useState("");
+  const [userItems, setUserItems] = useState([]);
 
   useEffect(() => {
     if (inputRef.current) {
@@ -187,13 +188,38 @@ export default function HomePage() {
     } else {
       setWelcomeMessage("Welcome back!");
     }
+
+    const storedItems = localStorage.getItem("userItems");
+    if (storedItems) {
+      setUserItems(JSON.parse(storedItems));
+    }
   }, []);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const itemName = inputRef.current.value.trim();
+
+    const submittedItem = DUMMY_ITEMS.find(
+      (item) => item.name.toLowerCase() === itemName.toLowerCase()
+    );
+
+    if (submittedItem) {
+      const updatedItems = [
+        ...userItems,
+        { ...submittedItem, isAcquired: true },
+      ];
+      setUserItems(updatedItems);
+      localStorage.setItem("userItems", JSON.stringify(updatedItems));
+    }
+
+    inputRef.current.value = "";
+  };
 
   return (
     <div>
       <PageHeading>{welcomeMessage}</PageHeading>
       <StyledFormContainer>
-        <StyledForm action="">
+        <StyledForm onSubmit={handleSubmit}>
           <label htmlFor="query">
             <ContainerHeading>Got something new to add?</ContainerHeading>
           </label>
@@ -204,7 +230,7 @@ export default function HomePage() {
             placeholder="barred knifejaw"
           />
           <div>
-            <button>add</button>
+            <button type="submit">add</button>
           </div>
         </StyledForm>
       </StyledFormContainer>
@@ -213,14 +239,14 @@ export default function HomePage() {
           Check out what you&apos;ve found so far!
         </ContainerHeading>
         <List role="list">
-          {DUMMY_ITEMS.map((item) => {
+          {userItems.map((item) => {
             return (
               <ListItem key={item.slug}>
                 <Card name={item.name} type={item.type} slug={item.slug} />
               </ListItem>
             );
           })}
-        </List>
+        </List>{" "}
       </StyledItemsContainer>
     </div>
   );
