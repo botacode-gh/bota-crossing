@@ -172,20 +172,20 @@ const ContainerHeading = styled.h3`
 `;
 
 export default function HomePage() {
-  const [welcomeMessage, setWelcomeMessage] = useState("");
-
-  useEffect(() => {
-    const isFirstVisit = !localStorage.getItem("visitedSite");
-    setWelcomeMessage(isFirstVisit ? "Welcome!" : "Welcome back!");
-    localStorage.setItem("visitedSite", true);
-  }, []);
-
-  // auto-focusing input field
   const inputRef = useRef(null);
+  const [welcomeMessage, setWelcomeMessage] = useState("");
 
   useEffect(() => {
     if (inputRef.current) {
       inputRef.current.focus();
+    }
+
+    const isFirstVisit = localStorage.getItem("visitedSite") !== "true";
+    if (isFirstVisit) {
+      localStorage.setItem("visitedSite", "true");
+      setWelcomeMessage("Welcome!");
+    } else {
+      setWelcomeMessage("Welcome back!");
     }
   }, []);
 
