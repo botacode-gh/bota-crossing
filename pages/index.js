@@ -217,14 +217,18 @@ export default function HomePage() {
               name="query"
               ref={inputRef}
               type="text"
-              placeholder="barred knifejaw"
+              //   const randomizedQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+              placeholder={DUMMY_ITEMS[
+                Math.floor(Math.random() * DUMMY_ITEMS.length)
+              ].name.toLowerCase()}
               onChange={handleInputChange}
               onKeyDown={handleKeyDown}
               autoComplete="off"
             />
             {isDropdownOpen && (
               <DropdownMenu>
-                {searchResults.map((result, index) => (
+                {searchResults.map((result) => (
                   <DropdownItem
                     key={result.slug}
                     className={selectedResult === result ? "highlighted" : ""}
