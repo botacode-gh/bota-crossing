@@ -3,11 +3,13 @@ import Head from "next/head";
 import TitleBar from "@/components/TitleBar";
 
 const Main = styled.main`
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 0.7rem;
   padding: 0.5rem;
-  position: relative;
-  max-width: 800px;
+  width: 90vw;
+  max-width: 700px;
 `;
 
 export default function Layout({ children }) {

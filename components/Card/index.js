@@ -7,16 +7,18 @@ const StyledArticle = styled.article`
   padding: 1rem;
   position: relative;
   cursor: pointer;
+  height: 6rem;
+  width: 8rem;
 `;
 
-const Category = styled.div`
+const Type = styled.div`
   position: absolute;
   right: 0;
   bottom: 0;
   padding: 0.5rem;
 `;
 
-const CATEGORY_URLS = {
+const TYPE_URLS = {
   fish: "fishes",
   bug: "bugs",
   furniture: "furnitures",
@@ -26,13 +28,13 @@ const CATEGORY_URLS = {
 };
 
 export default function Card({ name, type, slug }) {
-  const urlScheme = `${CATEGORY_URLS[type]}/${slug}`;
+  const urlScheme = `${TYPE_URLS[type]}/${slug}`;
 
   return (
     <Link href={urlScheme} passHref legacyBehavior>
       <StyledArticle>
         {name}
-        <Category>{type}</Category>
+        <Type>{type}</Type>
       </StyledArticle>
     </Link>
   );

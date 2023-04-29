@@ -16,8 +16,8 @@ export default function MuseumGuidepost({ displayLocation, mapSource }) {
       <Image
         src={mapSource}
         alt="Placeholder image for Museum Map"
-        width={600}
-        height={400}
+        width={300 * 0.5}
+        height={200 * 0.5}
       />
     </StyledMuseumGuidepost>
   );

@@ -125,27 +125,25 @@ const DUMMY_ITEMS = [
 
 const List = styled.ul`
   list-style: none;
-  gap: 2rem;
-  align-items: center;
-  padding-left: 0;
   display: grid;
+  gap: 1rem;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
   grid-template-columns: 50% 50%;
 `;
 
 const ListItem = styled.li`
   position: relative;
-  width: 100%;
-  max-width: 800px;
+  width: 90%;
 `;
 
 const StyledFormContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border: 2px solid black;
   border-radius: 10px;
   padding: 0 1rem 1rem;
-  width: max-content;
+  width: 90%;
+  max-width: 290px;
 `;
 
 const StyledForm = styled.form`
@@ -161,10 +159,8 @@ const StyledTextInput = styled.input`
 
 const StyledItemsContainer = styled.div`
   border-radius: 10px;
-  display: grid;
   padding: 0.5rem;
   position: relative;
-  max-width: 850px;
 `;
 
 const ContainerHeading = styled.h3`
@@ -227,14 +223,14 @@ export default function HomePage() {
   };
 
   return (
-    <div>
+    <>
       <PageHeading>{welcomeMessage}</PageHeading>
       <StyledFormContainer>
         <StyledForm onSubmit={handleSubmit}>
           <label htmlFor="query">
             <ContainerHeading>
               {itemNotFound
-                ? "Add something else!"
+                ? "Sorry, item not found :("
                 : !userItems
                 ? "Add something!"
                 : "Got more to add?"}
@@ -246,7 +242,7 @@ export default function HomePage() {
             type="text"
             placeholder="barred knifejaw"
           />
-          {itemNotFound && <p>Sorry, item not found :(</p>}
+          {itemNotFound && <p>Try adding something else!</p>}
           <div>
             <button type="submit">add</button>
           </div>
@@ -268,6 +264,6 @@ export default function HomePage() {
           </List>
         </StyledItemsContainer>
       )}{" "}
-    </div>
+    </>
   );
 }
