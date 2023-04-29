@@ -6,6 +6,7 @@ import PageHeading from "@/components/PageHeading";
 import Card from "@/components/Card";
 
 import { DUMMY_ITEMS } from "@/lib/dummyData";
+import getRandom from "@/lib/utils/getRandom";
 
 const List = styled.ul`
   list-style: none;
@@ -217,11 +218,7 @@ export default function HomePage() {
               name="query"
               ref={inputRef}
               type="text"
-              //   const randomizedQuote = quotes[Math.floor(Math.random() * quotes.length)];
-
-              placeholder={DUMMY_ITEMS[
-                Math.floor(Math.random() * DUMMY_ITEMS.length)
-              ].name.toLowerCase()}
+              placeholder={getRandom(DUMMY_ITEMS, "name")}
               onChange={handleInputChange}
               onKeyDown={handleKeyDown}
               autoComplete="off"

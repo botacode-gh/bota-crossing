@@ -9,9 +9,10 @@ import MuseumGuidepost from "@/components/MuseumGuidepost";
 import PriceDisplay from "@/components/PriceDisplay";
 import UnlockDate from "@/components/UnlockDate";
 import BackToMainButton from "@/components/BackToMainButton";
-
-import { DUMMY_BUGS } from "@/lib/dummyData";
 import ModelMade from "@/components/ModelMade";
+
+import getRandom from "@/lib/utils/getRandom";
+import { DUMMY_BUGS } from "@/lib/dummyData";
 
 export default function BugDetailsPage() {
   const router = useRouter();
@@ -46,7 +47,7 @@ export default function BugDetailsPage() {
     <>
       <BackToMainButton />
       <PageHeading>{name}</PageHeading>
-      <ItemQuote>{randomizedQuote || quotes[0]}</ItemQuote>
+      <ItemQuote>{getRandom(quotes)}</ItemQuote>
       <AnimalDescription animal={bug} />
       <Image src={iconSource} alt={`${name} icon`} width={300} height={300} />
       <PriceDisplay price={price} />
