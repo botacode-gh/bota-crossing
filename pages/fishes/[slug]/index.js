@@ -24,13 +24,12 @@ export default function FishDetailsPage() {
 
   const { name, quotes, iconSource, museum, price, unlockDate } = fish;
   const { displayLocation, mapSource } = museum;
-  const randomizedQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
   return (
     <>
       <BackToMainButton />
       <PageHeading>{name}</PageHeading>
-      <ItemQuote>{randomizedQuote || quotes[0]}</ItemQuote>
+      <ItemQuote>{getRandom(quotes)}</ItemQuote>
       <AnimalDescription animal={fish} />
       <Image src={iconSource} alt={`${name} icon`} width={150} height={150} />
       <PriceDisplay price={price} />
