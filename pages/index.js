@@ -1,3 +1,4 @@
+import Fuse from "fuse.js";
 import styled from "styled-components";
 import { useRef, useEffect, useState } from "react";
 
@@ -154,7 +155,11 @@ const StyledForm = styled.form`
 `;
 
 const StyledTextInput = styled.input`
-  text-align: center;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 10px;
+  border: 2px solid black;
+  border-radius: 5%;
 `;
 
 const StyledItemsContainer = styled.div`
@@ -167,11 +172,41 @@ const ContainerHeading = styled.h3`
   text-align: center;
 `;
 
+const DropdownMenu = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  /* border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%; */
+`;
+
+const DropdownItem = styled.li`
+  cursor: pointer;
+  padding: 0.5rem;
+  color: darkgray;
+
+  &:hover,
+  &.highlighted {
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: lightblue;
+    color: black;
+  }
+`;
+
 export default function HomePage() {
-  const inputRef = useRef(null);
   const [welcomeMessage, setWelcomeMessage] = useState("");
-  const [userItems, setUserItems] = useState(null);
+
+  const inputRef = useRef(null);
+  const [searchResults, setSearchResults] = useState([]);
+  const [selectedResult, setSelectedResult] = useState(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [itemNotFound, setItemNotFound] = useState(false);
+  const [userItems, setUserItems] = useState(null);
 
   useEffect(() => {
     if (inputRef.current) {
@@ -192,22 +227,85 @@ export default function HomePage() {
     }
   }, []);
 
+  //fuzzy search
+  const fuseOptions = {
+    keys: ["name"],
+    threshold: 0.4,
+  };
+  const fuse = new Fuse(DUMMY_ITEMS, fuseOptions);
+
+  const handleInputChange = (event) => {
+    const query = event.target.value.trim();
+
+    if (query === "") {
+      setSearchResults([]);
+      setSearchResults(null);
+      setIsDropdownOpen(false);
+    } else {
+      const searchResults = fuse.search(query).map((result) => result.item);
+      setSearchResults(searchResults);
+      setSelectedResult(searchResults.length > 0 ? searchResults[0] : null);
+      setIsDropdownOpen(true);
+    }
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "ArrowUp") {
+      event.preventDefault();
+      const currentIndex = searchResults.findIndex(
+        (result) => result === selectedResult
+      );
+      const newIndex =
+        currentIndex > 0 ? currentIndex - 1 : searchResults.length - 1;
+      setSelectedResult(searchResults[newIndex]);
+    } else if (event.key === "ArrowDown") {
+      event.preventDefault();
+      const currentIndex = searchResults.findIndex(
+        (result) => result === selectedResult
+      );
+      const newIndex =
+        currentIndex < searchResults.length - 1 ? currentIndex + 1 : 0;
+      setSelectedResult(searchResults[newIndex]);
+    } else if (event.key === "Tab") {
+      if (selectedResult) {
+        event.preventDefault();
+        inputRef.current.value = selectedResult.name;
+        setIsDropdownOpen(false);
+        setSelectedResult(null);
+      }
+    } else if (event.key === "Escape") {
+      if (inputRef.current.value !== "") {
+        event.preventDefault();
+        inputRef.current.value = "";
+        return;
+      }
+      event.preventDefault();
+      inputRef.current.blur();
+      setIsDropdownOpen(false);
+    } else if (event.key === "Enter") {
+      if (selectedResult) {
+        event.preventDefault();
+        inputRef.current.value = selectedResult.name;
+        handleSubmit(event);
+      }
+    }
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const itemName = inputRef.current.value.trim();
 
-    const submittedItem = DUMMY_ITEMS.find(
-      (item) => item.name.toLowerCase() === itemName.toLowerCase()
-    );
+    const searchResults = fuse.search(itemName);
 
     if (userItems === null) {
-      setUserItems([{ ...submittedItem, isAcquired: true }]);
+      setUserItems([{ ...searchResults, isAcquired: true }]);
       localStorage.setItem(
         "userItems",
-        JSON.stringify([{ ...submittedItem, isAcquired: true }])
+        JSON.stringify([{ ...searchResults, isAcquired: true }])
       );
     } else {
-      if (submittedItem) {
+      if (searchResults.length > 0) {
+        const submittedItem = searchResults[0].item;
         const updatedItems = [
           ...userItems,
           { ...submittedItem, isAcquired: true },
@@ -218,7 +316,7 @@ export default function HomePage() {
         setItemNotFound(true);
       }
     }
-
+    setSearchResults([]);
     inputRef.current.value = "";
   };
 
@@ -236,12 +334,29 @@ export default function HomePage() {
                 : "Got more to add?"}
             </ContainerHeading>
           </label>
-          <StyledTextInput
-            name="query"
-            ref={inputRef}
-            type="text"
-            placeholder="barred knifejaw"
-          />
+          <div>
+            <StyledTextInput
+              name="query"
+              ref={inputRef}
+              type="text"
+              placeholder="barred knifejaw"
+              onChange={handleInputChange}
+              onKeyDown={handleKeyDown}
+              autoComplete="off"
+            />
+            {isDropdownOpen && (
+              <DropdownMenu>
+                {searchResults.map((result, index) => (
+                  <DropdownItem
+                    key={result.slug}
+                    className={selectedResult === result ? "highlighted" : ""}
+                  >
+                    {result.name}
+                  </DropdownItem>
+                ))}
+              </DropdownMenu>
+            )}
+          </div>
           {itemNotFound && <p>Try adding something else!</p>}
           <div>
             <button type="submit">add</button>
