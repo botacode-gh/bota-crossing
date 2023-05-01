@@ -10,13 +10,19 @@ import PriceDisplay from "@/components/PriceDisplay";
 import UnlockDate from "@/components/UnlockDate";
 import BackToMainButton from "@/components/BackToMainButton";
 
-import { DUMMY_FISH } from "@/lib/dummyData";
+import { getRandom } from "@/lib/utils";
+import { DUMMY_ITEMS } from "@/lib/dummyData";
+
+const FISHES = DUMMY_ITEMS.filter((item) => item.type === "fish");
 
 export default function FishDetailsPage() {
   const router = useRouter();
   const { slug } = router.query;
 
-  const fish = DUMMY_FISH.find((fish) => fish.slug === slug);
+  const fish = FISHES.find((fish) => fish.slug === slug);
+  const userItems =
+    typeof window !== "undefined" && localStorage.getItem("userItems");
+  console.log("userItems:", userItems);
 
   if (!fish) {
     return <h1>Loading fish (or trying to)...</h1>;
