@@ -6,7 +6,7 @@ import PageHeading from "@/components/PageHeading";
 import Card from "@/components/Card";
 
 import { DUMMY_ITEMS } from "@/lib/dummyData";
-import getRandom from "@/lib/utils/getRandom";
+import { getRandom, getCurrentDate } from "@/lib/utils";
 
 const List = styled.ul`
   list-style: none;
@@ -86,6 +86,7 @@ export default function HomePage() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [itemNotFound, setItemNotFound] = useState(false);
   const [userItems, setUserItems] = useState(null);
+  const [itemAlreadyAcquired, setitemAlreadyAcquired] = useState(false);
 
   useEffect(() => {
     if (inputRef.current) {
@@ -177,20 +178,45 @@ export default function HomePage() {
     const searchResults = fuse.search(itemName);
 
     if (userItems === null) {
-      setUserItems([{ ...searchResults, isAcquired: true }]);
+      setUserItems([
+        {
+          ...searchResults[0].item,
+          isAcquired: true,
+          acquireDate: getCurrentDate(),
+        },
+      ]);
       localStorage.setItem(
         "userItems",
-        JSON.stringify([{ ...searchResults, isAcquired: true }])
+        JSON.stringify([
+          {
+            ...searchResults[0].item,
+            isAcquired: true,
+            acquireDate: getCurrentDate(),
+          },
+        ])
       );
     } else {
       if (searchResults.length > 0) {
         const submittedItem = searchResults[0].item;
-        const updatedItems = [
-          ...userItems,
-          { ...submittedItem, isAcquired: true },
-        ];
-        setUserItems(updatedItems);
-        localStorage.setItem("userItems", JSON.stringify(updatedItems));
+        const isAlreadyAcquired = userItems.some(
+          (item) => item.slug === submittedItem.slug
+        );
+
+        if (isAlreadyAcquired) {
+          setItemNotFound(false);
+          setitemAlreadyAcquired(submittedItem);
+        } else {
+          const updatedItems = [
+            ...userItems,
+            {
+              ...submittedItem,
+              isAcquired: true,
+              acquireDate: getCurrentDate(),
+            },
+          ];
+          setUserItems(updatedItems);
+          localStorage.setItem("userItems", JSON.stringify(updatedItems));
+        }
       } else {
         setItemNotFound(true);
       }
@@ -206,13 +232,24 @@ export default function HomePage() {
         <StyledForm onSubmit={handleSubmit}>
           <label htmlFor="query">
             <ContainerHeading>
-              {itemNotFound
-                ? "Sorry, item not found :("
-                : !userItems
-                ? "Add something!"
-                : "Got more to add?"}
+              {itemNotFound ? (
+                "Sorry, item not found :("
+              ) : itemAlreadyAcquired ? (
+                <>
+                  {itemAlreadyAcquired.type === "bug" ||
+                  itemAlreadyAcquired.type === "fish"
+                    ? `${itemAlreadyAcquired.name} already caught!`
+                    : itemAlreadyAcquired.type === "resident"
+                    ? `${itemAlreadyAcquired.name} is already here!`
+                    : `${itemAlreadyAcquired.name} already acquired!`}
+                </>
+              ) : !userItems ? (
+                "Add something!"
+              ) : (
+                "Got more to add?"
+              )}
             </ContainerHeading>
-          </label>
+          </label>{" "}
           <div>
             <StyledTextInput
               name="query"
