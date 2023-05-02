@@ -36,8 +36,16 @@ export default function Card({ name, type, slug, iconSource }) {
       <StyledArticle>
         {name}
         <IconContainer>
-          {" "}
-          <Image src={iconSource} alt={`${name} icon`} width={50} height={50} />
+          {iconSource ? (
+            <Image
+              src={iconSource}
+              alt={`${name} icon`}
+              width={50}
+              height={50}
+            />
+          ) : (
+            type
+          )}
         </IconContainer>
       </StyledArticle>
     </Link>
