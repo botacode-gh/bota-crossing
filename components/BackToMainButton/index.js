@@ -1,19 +1,18 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
 export default function BackToMainButton() {
   return (
-    <Link
+    <StyledLink
       href={"/"}
       passHref
-      legacyBehavior
       aria-label="Navigate back to Island Overview page"
     >
-      <StyledLink>&larr; to island overview</StyledLink>
-    </Link>
+      &larr; to island overview
+    </StyledLink>
   );
 }
