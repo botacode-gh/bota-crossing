@@ -23,8 +23,8 @@ export default function MuseumGuidepost({ displayLocation, mapSource }) {
         <Image
           src={mapSource}
           alt="Placeholder image for Museum Map"
-          width={300 * 0.5}
-          height={200 * 0.5}
+          width={150}
+          height={100}
         />
       </div>
     </StyledMuseumGuidepost>
