@@ -1,7 +1,6 @@
 import Fuse from "fuse.js";
 import styled from "styled-components";
 import { useRef, useEffect, useState } from "react";
-import Image from "next/image";
 
 import PageHeading from "@/components/PageHeading";
 import Card from "@/components/Card";
@@ -70,7 +69,13 @@ const DropdownItem = styled.li`
   padding: 0.5rem;
   color: darkgray;
 
-  &:hover,
+  &:hover {
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: lightblue;
+    color: black;
+  }
+
   &.highlighted {
     border: 1px solid lightblue;
     border-radius: 10px;
@@ -85,6 +90,7 @@ export default function HomePage() {
   const [searchResults, setSearchResults] = useState([]);
   const [selectedResult, setSelectedResult] = useState(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMouseOverDropdown, setIsMouseOverDropdown] = useState(false);
   const [itemNotFound, setItemNotFound] = useState(false);
   const [userItems, setUserItems] = useState(null);
   const [itemAlreadyAcquired, setitemAlreadyAcquired] = useState(false);
@@ -130,6 +136,20 @@ export default function HomePage() {
       setSelectedResult(searchResults.length > 0 ? searchResults[0] : null);
       setIsDropdownOpen(true);
     }
+  };
+
+  const handleMouseEnter = () => {
+    setIsMouseOverDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsMouseOverDropdown(false);
+  };
+
+  const handleClick = (result) => {
+    inputRef.current.value = result.name;
+    setSelectedResult(result);
+    setIsDropdownOpen(false);
   };
 
   const handleKeyDown = (event) => {
@@ -264,11 +284,19 @@ export default function HomePage() {
               autoComplete="off"
             />
             {isDropdownOpen && (
-              <DropdownMenu>
+              <DropdownMenu
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 {searchResults.map((result) => (
                   <DropdownItem
                     key={result.slug}
-                    className={selectedResult === result ? "highlighted" : ""}
+                    className={
+                      !isMouseOverDropdown && selectedResult === result
+                        ? "highlighted"
+                        : ""
+                    }
+                    onClick={() => handleClick(result)}
                   >
                     {result.name}
                   </DropdownItem>
