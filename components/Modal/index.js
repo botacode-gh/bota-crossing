@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styled from "styled-components";
 
 const Shroud = styled.div`
@@ -5,6 +6,7 @@ const Shroud = styled.div`
   background-color: black;
   opacity: 50%;
   position: fixed;
+  z-index: 1;
 `;
 
 const StyledModal = styled.div`
@@ -15,16 +17,43 @@ const StyledModal = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   border-radius: 20px;
   padding: 1rem;
-  text-align: center;
+  max-width: 700px;
+  z-index: 2;
+`;
+
+const CloseButton = styled.div`
+  position: fixed;
+  top: 12vh;
+  right: 15vw;
+  scale: 1.5;
+  cursor: pointer;
+  z-index: 2;
 `;
 
 export default function Modal({ handleModalIsVisible, children }) {
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        handleModalIsVisible();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [handleModalIsVisible]);
+
   return (
     <>
       <Shroud onClick={handleModalIsVisible} />
-      <StyledModal>{children}</StyledModal>
+      <StyledModal>
+        {children}
+        <CloseButton onClick={handleModalIsVisible}>✖️</CloseButton>
+      </StyledModal>
     </>
   );
 }
