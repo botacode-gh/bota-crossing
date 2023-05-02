@@ -134,7 +134,6 @@ export default function HomePage() {
 
   const handleKeyDown = (event) => {
     if (event.key === "ArrowUp") {
-      event.preventDefault();
       const currentIndex = searchResults.findIndex(
         (result) => result === selectedResult
       );
@@ -142,7 +141,6 @@ export default function HomePage() {
         currentIndex > 0 ? currentIndex - 1 : searchResults.length - 1;
       setSelectedResult(searchResults[newIndex]);
     } else if (event.key === "ArrowDown") {
-      event.preventDefault();
       const currentIndex = searchResults.findIndex(
         (result) => result === selectedResult
       );
@@ -151,23 +149,19 @@ export default function HomePage() {
       setSelectedResult(searchResults[newIndex]);
     } else if (event.key === "Tab") {
       if (selectedResult) {
-        event.preventDefault();
         inputRef.current.value = selectedResult.name;
         setIsDropdownOpen(false);
         setSelectedResult(null);
       }
     } else if (event.key === "Escape") {
       if (inputRef.current.value !== "") {
-        event.preventDefault();
         inputRef.current.value = "";
         return;
       }
-      event.preventDefault();
       inputRef.current.blur();
       setIsDropdownOpen(false);
     } else if (event.key === "Enter") {
       if (selectedResult) {
-        event.preventDefault();
         inputRef.current.value = selectedResult.name;
         handleSubmit(event);
       }
