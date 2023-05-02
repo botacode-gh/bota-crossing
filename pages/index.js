@@ -1,26 +1,28 @@
 import Fuse from "fuse.js";
 import styled from "styled-components";
 import { useRef, useEffect, useState } from "react";
+import Image from "next/image";
 
 import PageHeading from "@/components/PageHeading";
 import Card from "@/components/Card";
 
 import { DUMMY_ITEMS } from "@/lib/dummyData";
 import { getRandom, getCurrentDate } from "@/lib/utils";
+import Modal from "@/components/Modal";
 
 const List = styled.ul`
   list-style: none;
   display: grid;
   gap: 1rem;
-  justify-self: center;
-  align-items: center;
-  justify-content: center;
   grid-template-columns: 50% 50%;
+  padding-left: 0;
 `;
 
 const ListItem = styled.li`
   position: relative;
   width: 90%;
+  justify-self: center;
+  align-self: center;
 `;
 
 const StyledFormContainer = styled.div`
@@ -78,15 +80,16 @@ const DropdownItem = styled.li`
 `;
 
 export default function HomePage() {
-  const [welcomeMessage, setWelcomeMessage] = useState("");
-
   const inputRef = useRef(null);
+  const [welcomeMessage, setWelcomeMessage] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [selectedResult, setSelectedResult] = useState(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [itemNotFound, setItemNotFound] = useState(false);
   const [userItems, setUserItems] = useState(null);
   const [itemAlreadyAcquired, setitemAlreadyAcquired] = useState(false);
+  const [addedItem, setAddedItem] = useState(null);
+  const [modalIsVisible, setModalIsVisible] = useState(false);
 
   useEffect(() => {
     if (inputRef.current) {
@@ -216,6 +219,8 @@ export default function HomePage() {
           ];
           setUserItems(updatedItems);
           localStorage.setItem("userItems", JSON.stringify(updatedItems));
+          setAddedItem(submittedItem);
+          handleModalIsVisible();
         }
       } else {
         setItemNotFound(true);
@@ -224,6 +229,10 @@ export default function HomePage() {
     setSearchResults([]);
     inputRef.current.value = "";
   };
+
+  function handleModalIsVisible() {
+    setModalIsVisible(!modalIsVisible);
+  }
 
   return (
     <>
@@ -249,7 +258,7 @@ export default function HomePage() {
                 "Got more to add?"
               )}
             </ContainerHeading>
-          </label>{" "}
+          </label>
           <div>
             <StyledTextInput
               name="query"
@@ -279,16 +288,24 @@ export default function HomePage() {
           </div>
         </StyledForm>
       </StyledFormContainer>
+      {modalIsVisible && (
+        <Modal handleModalIsVisible={handleModalIsVisible}>
+          <h2>{`Added ${addedItem.name} to your items!`}</h2>
+        </Modal>
+      )}
       {userItems && (
         <StyledItemsContainer>
-          <ContainerHeading>
-            Check out what you&apos;ve found so far!
-          </ContainerHeading>
+          <ContainerHeading>Check out what you&apos;ve found!</ContainerHeading>
           <List role="list">
             {userItems.map((item) => {
               return (
                 <ListItem key={item.slug}>
-                  <Card name={item.name} type={item.type} slug={item.slug} />
+                  <Card
+                    name={item.name}
+                    type={item.type}
+                    slug={item.slug}
+                    iconSource={item.iconSource}
+                  />
                 </ListItem>
               );
             })}

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 import Link from "next/link";
 
 const StyledArticle = styled.article`
@@ -11,10 +12,10 @@ const StyledArticle = styled.article`
   width: 8rem;
 `;
 
-const Type = styled.div`
+const IconContainer = styled.div`
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -1;
   padding: 0.5rem;
 `;
 
@@ -27,14 +28,17 @@ const TYPE_URLS = {
   resident: "residents",
 };
 
-export default function Card({ name, type, slug }) {
+export default function Card({ name, type, slug, iconSource }) {
   const urlScheme = `${TYPE_URLS[type]}/${slug}`;
 
   return (
     <Link href={urlScheme} passHref legacyBehavior>
       <StyledArticle>
         {name}
-        <Type>{type}</Type>
+        <IconContainer>
+          {" "}
+          <Image src={iconSource} alt={`${name} icon`} width={50} height={50} />
+        </IconContainer>
       </StyledArticle>
     </Link>
   );

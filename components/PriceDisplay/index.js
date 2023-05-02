@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 const StyledPriceDisplay = styled.article`
   text-align: right;
+  width: 100%;
 `;
 
 const PriceList = styled.ul`
   list-style: none;
+  margin: 0;
 `;
 
 export default function PriceDisplay({ price }) {

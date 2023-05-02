@@ -1,4 +1,9 @@
+import styled from "styled-components";
 import Link from "next/link";
+
+const StyledLink = styled.a`
+  text-decoration: none;
+`;
 
 export default function BackToMainButton() {
   return (
@@ -8,7 +13,7 @@ export default function BackToMainButton() {
       legacyBehavior
       aria-label="Navigate back to Island Overview page"
     >
-      &larr; to island overview
+      <StyledLink>&larr; to island overview</StyledLink>
     </Link>
   );
 }
