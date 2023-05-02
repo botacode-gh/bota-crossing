@@ -22,7 +22,6 @@ export default function FishDetailsPage() {
   const fish = FISHES.find((fish) => fish.slug === slug);
   const userItems =
     typeof window !== "undefined" && localStorage.getItem("userItems");
-  console.log("userItems:", userItems);
 
   if (!fish) {
     return <h1>Loading fish (or trying to)...</h1>;
