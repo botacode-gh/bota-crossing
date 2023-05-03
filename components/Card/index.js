@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,6 +10,12 @@ const StyledArticle = styled.article`
   cursor: pointer;
   height: 6rem;
   width: 8rem;
+
+  ${({ variant }) =>
+    variant === "fishTank" &&
+    css`
+      width: 100%;
+    `}
 `;
 
 const IconContainer = styled.div`
@@ -28,12 +34,12 @@ const TYPE_URLS = {
   resident: "residents",
 };
 
-export default function Card({ name, type, slug, iconSource }) {
+export default function Card({ name, type, slug, iconSource, variant }) {
   const urlScheme = `${TYPE_URLS[type]}/${slug}`;
 
   return (
     <Link href={urlScheme} passHref legacyBehavior>
-      <StyledArticle>
+      <StyledArticle variant={variant && variant}>
         {name}
         <IconContainer>
           {iconSource ? (
