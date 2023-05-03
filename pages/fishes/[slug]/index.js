@@ -10,13 +10,18 @@ import PriceDisplay from "@/components/PriceDisplay";
 import UnlockDate from "@/components/UnlockDate";
 import BackToMainButton from "@/components/BackToMainButton";
 
-import { DUMMY_FISH } from "@/lib/dummyData";
+import { getRandom } from "@/lib/utils";
+import { DUMMY_ITEMS } from "@/lib/dummyData";
+
+const FISHES = DUMMY_ITEMS.filter((item) => item.type === "fish");
 
 export default function FishDetailsPage() {
   const router = useRouter();
   const { slug } = router.query;
 
-  const fish = DUMMY_FISH.find((fish) => fish.slug === slug);
+  const fish = FISHES.find((fish) => fish.slug === slug);
+  const userItems =
+    typeof window !== "undefined" && localStorage.getItem("userItems");
 
   if (!fish) {
     return <h1>Loading fish (or trying to)...</h1>;
@@ -24,15 +29,14 @@ export default function FishDetailsPage() {
 
   const { name, quotes, iconSource, museum, price, unlockDate } = fish;
   const { displayLocation, mapSource } = museum;
-  const randomizedQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
   return (
     <>
       <BackToMainButton />
       <PageHeading>{name}</PageHeading>
-      <ItemQuote>{randomizedQuote || quotes[0]}</ItemQuote>
+      <ItemQuote>{getRandom(quotes)}</ItemQuote>
       <AnimalDescription animal={fish} />
-      <Image src={iconSource} alt={`${name} icon`} width={300} height={300} />
+      <Image src={iconSource} alt={`${name} icon`} width={150} height={150} />
       <PriceDisplay price={price} />
       <MuseumGuidepost
         displayLocation={displayLocation}

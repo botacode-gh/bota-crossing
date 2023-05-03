@@ -9,9 +9,12 @@ import MuseumGuidepost from "@/components/MuseumGuidepost";
 import PriceDisplay from "@/components/PriceDisplay";
 import UnlockDate from "@/components/UnlockDate";
 import BackToMainButton from "@/components/BackToMainButton";
-
-import { DUMMY_BUGS } from "@/lib/dummyData";
 import ModelMade from "@/components/ModelMade";
+
+import { getRandom } from "@/lib/utils";
+import { DUMMY_ITEMS } from "@/lib/dummyData";
+
+const BUGS = DUMMY_ITEMS.filter((item) => item.type === "bug");
 
 export default function BugDetailsPage() {
   const router = useRouter();
@@ -21,7 +24,7 @@ export default function BugDetailsPage() {
 
   useEffect(() => {
     const storedBugs = JSON.parse(localStorage.getItem("bugs"));
-    setBugs(storedBugs || DUMMY_BUGS);
+    setBugs(storedBugs || BUGS);
   }, []);
 
   function handleModelMadeChange(slug) {
@@ -40,13 +43,12 @@ export default function BugDetailsPage() {
 
   const { name, quotes, iconSource, museum, price, unlockDate } = bug;
   const { displayLocation, mapSource } = museum;
-  const randomizedQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
   return (
     <>
       <BackToMainButton />
       <PageHeading>{name}</PageHeading>
-      <ItemQuote>{randomizedQuote || quotes[0]}</ItemQuote>
+      <ItemQuote>{getRandom(quotes)}</ItemQuote>
       <AnimalDescription animal={bug} />
       <Image src={iconSource} alt={`${name} icon`} width={300} height={300} />
       <PriceDisplay price={price} />

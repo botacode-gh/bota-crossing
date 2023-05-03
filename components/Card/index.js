@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 import Link from "next/link";
 
 const StyledArticle = styled.article`
@@ -6,25 +7,19 @@ const StyledArticle = styled.article`
   border-radius: 10px;
   padding: 1rem;
   position: relative;
+  cursor: pointer;
+  height: 6rem;
+  width: 8rem;
 `;
 
-const Category = styled.div`
+const IconContainer = styled.div`
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -1;
   padding: 0.5rem;
 `;
 
-const Anchor = styled(Link)`
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    inset: 0;
-  }
-`;
-
-const CATEGORY_URLS = {
+const TYPE_URLS = {
   fish: "fishes",
   bug: "bugs",
   furniture: "furnitures",
@@ -33,16 +28,26 @@ const CATEGORY_URLS = {
   resident: "residents",
 };
 
-export default function Card({ name, category, slug }) {
-  const urlScheme = `${CATEGORY_URLS[category]}/${slug}`;
+export default function Card({ name, type, slug, iconSource }) {
+  const urlScheme = `${TYPE_URLS[type]}/${slug}`;
 
   return (
-    <StyledArticle>
-      {name}
-      <Category>{category}</Category>
-      <Link href={urlScheme} passHref legacyBehavior>
-        <Anchor />
-      </Link>
-    </StyledArticle>
+    <Link href={urlScheme} passHref legacyBehavior>
+      <StyledArticle>
+        {name}
+        <IconContainer>
+          {iconSource ? (
+            <Image
+              src={iconSource}
+              alt={`${name} icon`}
+              width={50}
+              height={50}
+            />
+          ) : (
+            type
+          )}
+        </IconContainer>
+      </StyledArticle>
+    </Link>
   );
 }

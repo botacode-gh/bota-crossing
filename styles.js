@@ -10,7 +10,8 @@ export default createGlobalStyle`
   body {
     font-family: 'Arial Rounded MT Bold', monospace;
     margin: 0 auto;
-    justify-content: center;
-    max-width: 800px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
   }
 `;

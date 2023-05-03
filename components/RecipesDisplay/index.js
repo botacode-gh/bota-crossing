@@ -2,8 +2,11 @@ import styled from "styled-components";
 import RecipeDisplay from "../RecipeDisplay";
 import { DUMMY_RECIPES } from "@/lib/dummyData";
 
+import StyledList from "../StyledList";
+import StyledListItem from "../StyledListItem";
+
 const StyledRecipes = styled.div`
-  border: 1px solid black;
+  width: 100%;
 `;
 
 export default function RecipesDisplay({ ingredientFilter = "" }) {
@@ -18,20 +21,20 @@ export default function RecipesDisplay({ ingredientFilter = "" }) {
   return (
     <StyledRecipes>
       <h3>Recipes</h3>
-      <ul>
+      <StyledList>
         {filteredRecipes.map((recipe) => {
           return (
-            <li key={recipe.slug}>
+            <StyledListItem key={recipe.slug}>
               <RecipeDisplay
                 name={recipe.name}
                 ingredient1={recipe.ingredients[0][1]}
                 ingredient1Amount={recipe.ingredients[0][0]}
                 sellingPrice={recipe.sellingPrice}
               />
-            </li>
+            </StyledListItem>
           );
         })}
-      </ul>
+      </StyledList>
     </StyledRecipes>
   );
 }

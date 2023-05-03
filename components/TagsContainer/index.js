@@ -1,3 +1,5 @@
+import StyledList from "../StyledList";
+import StyledListItem from "../StyledListItem";
 import Tag from "../Tag";
 
 export default function TagsContainer({ furniture }) {
@@ -16,15 +18,15 @@ export default function TagsContainer({ furniture }) {
 
   return (
     <>
-      <ul>
+      <StyledList variant="tags">
         {tags.map((tag) => {
           return (
-            <li key={tag}>
+            <StyledListItem key={tag}>
               <Tag text={tag} />
-            </li>
+            </StyledListItem>
           );
         })}
-      </ul>
+      </StyledList>
     </>
   );
 }
