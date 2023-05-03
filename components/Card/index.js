@@ -39,7 +39,7 @@ export default function Card({ name, type, slug, iconSource, variant }) {
 
   return (
     <Link href={urlScheme} passHref legacyBehavior>
-      <StyledArticle variant={variant && variant}>
+      <StyledArticle variant={variant}>
         {name}
         <IconContainer>
           {iconSource ? (
