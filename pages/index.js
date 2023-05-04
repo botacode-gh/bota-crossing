@@ -4,10 +4,11 @@ import { useRef, useEffect, useState } from "react";
 
 import PageHeading from "@/components/PageHeading";
 import Card from "@/components/Card";
+import Modal from "@/components/Modal";
 
 import { DUMMY_ITEMS } from "@/lib/dummyData";
+import useStore from "@/zustand/store";
 import { getRandom, getCurrentDate } from "@/lib/utils";
-import Modal from "@/components/Modal";
 
 const List = styled.ul`
   list-style: none;
@@ -247,6 +248,10 @@ export default function HomePage() {
   function handleModalIsVisible() {
     setModalIsVisible(!modalIsVisible);
   }
+
+  const villagers = useStore((state) => state.villagers);
+
+  console.log("villagers:", villagers);
 
   return (
     <>
