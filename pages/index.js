@@ -2,12 +2,14 @@ import Fuse from "fuse.js";
 import styled from "styled-components";
 import { useRef, useEffect, useState } from "react";
 
+import useStore from "@/zustand/store";
+
 import PageHeading from "@/components/PageHeading";
+import ContainerHeading from "@/components/ContainerHeading";
 import Card from "@/components/Card";
 import Modal from "@/components/Modal";
 
 import { DUMMY_ITEMS } from "@/lib/dummyData";
-import useStore from "@/zustand/store";
 import { getRandom, getCurrentDate } from "@/lib/utils";
 
 const List = styled.ul`
@@ -23,6 +25,12 @@ const ListItem = styled.li`
   width: 90%;
   justify-self: center;
   align-self: center;
+`;
+
+const StyledItemsContainer = styled.div`
+  border-radius: 10px;
+  padding: 0.5rem;
+  position: relative;
 `;
 
 const StyledFormContainer = styled.div`
@@ -48,24 +56,14 @@ const StyledTextInput = styled.input`
   border-radius: 5%;
 `;
 
-const StyledItemsContainer = styled.div`
-  border-radius: 10px;
-  padding: 0.5rem;
-  position: relative;
-`;
-
-const ContainerHeading = styled.h3`
-  text-align: center;
-`;
-
-const DropdownMenu = styled.ul`
+const StyledDropdown = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
   display: block;
 `;
 
-const DropdownItem = styled.li`
+const StyledDropdownItem = styled.li`
   cursor: pointer;
   padding: 0.5rem;
   color: darkgray;
@@ -116,6 +114,15 @@ export default function HomePage() {
       setUserItems(JSON.parse(storedItems));
     }
   }, []);
+
+  function handleModalIsVisible() {
+    setModalIsVisible(!modalIsVisible);
+  }
+
+  const villagers = useStore((state) => state.villagers);
+  // console.log("villagers in index.js:", villagers);
+  const fish = useStore((state) => state.fish);
+  // console.log("fish in index.js:", fish);
 
   //fuzzy search
   const fuseOptions = {
@@ -245,14 +252,6 @@ export default function HomePage() {
     inputRef.current.value = "";
   };
 
-  function handleModalIsVisible() {
-    setModalIsVisible(!modalIsVisible);
-  }
-
-  const villagers = useStore((state) => state.villagers);
-
-  console.log("villagers:", villagers);
-
   return (
     <>
       <PageHeading>{welcomeMessage}</PageHeading>
@@ -289,12 +288,12 @@ export default function HomePage() {
               autoComplete="off"
             />
             {isDropdownOpen && (
-              <DropdownMenu
+              <StyledDropdown
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
                 {searchResults.map((result) => (
-                  <DropdownItem
+                  <StyledDropdownItem
                     key={result.slug}
                     className={
                       !isMouseOverDropdown && selectedResult === result
@@ -304,9 +303,9 @@ export default function HomePage() {
                     onClick={() => handleClick(result)}
                   >
                     {result.name}
-                  </DropdownItem>
+                  </StyledDropdownItem>
                 ))}
-              </DropdownMenu>
+              </StyledDropdown>
             )}
           </div>
           {itemNotFound && <p>Try adding something else!</p>}
