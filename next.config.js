@@ -4,6 +4,9 @@ const nextConfig = {
     styledComponents: true,
   },
   reactStrictMode: true,
+  env: {
+    API_KEY: process.env.API_KEY,
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
