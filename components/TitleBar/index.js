@@ -11,14 +11,17 @@ const Headline = styled.h1`
   width: 100%;
   margin: 0;
   padding: 20px;
-  color: #000;
+  color: #27a590;
   text-align: center;
+  text-shadow: 2px 2px 0px #f6c564;
 `;
 
 export default function TitleBar() {
   return (
-    <StyledLink href={"/"}>
-      <Headline>🏝️ bota-crossing</Headline>
-    </StyledLink>
+    <header>
+      <StyledLink href={"/"}>
+        <Headline>bota-crossing</Headline>
+      </StyledLink>
+    </header>
   );
 }

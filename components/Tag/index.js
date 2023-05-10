@@ -5,6 +5,7 @@ const StyledTag = styled.div`
   border-radius: 5px;
   height: 2rem;
   padding: 0.5rem 0.5rem 2rem 0.5rem;
+  opacity: 70%;
 
   ${({ variant }) =>
     variant === "isFalse" &&

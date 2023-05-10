@@ -36,7 +36,7 @@ const CloseButton = styled.div`
 export default function Modal({ handleModalIsVisible, children }) {
   useEffect(() => {
     const handleKeyDown = (event) => {
-      if (event.key === "Escape") {
+      if (event.key === "Escape" || event.key === "Enter") {
         handleModalIsVisible();
       }
     };

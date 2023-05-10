@@ -3,39 +3,39 @@ import Image from "next/image";
 import Link from "next/link";
 
 const StyledArticle = styled.article`
-  border: 2px solid black;
   border-radius: 10px;
   padding: 1rem;
   position: relative;
   cursor: pointer;
   height: 6rem;
-  width: 8rem;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
 
   ${({ variant }) =>
     variant === "fishTank" &&
     css`
       width: 100%;
-    `}
+    `};
 `;
 
 const IconContainer = styled.div`
   position: absolute;
   right: 0;
-  bottom: -1;
-  padding: 0.5rem;
+  bottom: 0;
+  padding-right: 5px;
 `;
 
 const TYPE_URLS = {
-  fish: "fishes",
+  fish: "fish",
   bug: "bugs",
-  furniture: "furnitures",
+  furniture: "furniture",
   clothing: "clothing",
   recipe: "recipes",
-  resident: "residents",
+  villager: "villagers",
 };
 
-export default function Card({ name, type, slug, iconSource, variant }) {
-  const urlScheme = `${TYPE_URLS[type]}/${slug}`;
+export default function Card({ name, type, iconSource, variant }) {
+  const urlScheme = `${TYPE_URLS[type]}/${name}`;
 
   return (
     <Link href={urlScheme} passHref legacyBehavior>

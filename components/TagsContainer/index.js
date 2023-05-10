@@ -7,13 +7,12 @@ export default function TagsContainer({ furniture }) {
     return <h1>Loading tags (or trying to)...</h1>;
   }
 
-  const { tag, isDIY, isInteractive, isCatalog } = furniture;
+  const { category, tag, customizable } = furniture;
 
   const tags = [
-    tag,
-    `${isDIY ? "✔" : "❌"} DIY`,
-    `${isInteractive ? "✔" : "❌"} Interactive`,
-    `${isCatalog ? "✔" : "❌"} Catalog`,
+    category.toLowerCase(),
+    tag.toLowerCase(),
+    `${customizable ? "✔" : "❌"} customizable`,
   ];
 
   return (
