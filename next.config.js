@@ -28,6 +28,11 @@ const nextConfig = {
         hostname: "acnhapi.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "dodo.ac",
+        port: "",
+      },
     ],
   },
 };
