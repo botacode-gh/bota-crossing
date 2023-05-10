@@ -11,7 +11,6 @@ import ItemHeader from "@/components/ItemHeader";
 import AcquiredDate from "@/components/AcquiredDate";
 
 import fishData from "@/lib/apiData/fish.json";
-import ThemeWrapper from "@/components/ThemeWrapper";
 
 export default function FishDetails() {
   const router = useRouter();
