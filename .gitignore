@@ -37,3 +37,6 @@ next-env.d.ts
 
 # readme duplicate (created for vscode preview purposes)
 /__README
+
+# code used to store data from API as local json (used only on initialisation/update)
+/lib/utils/.*
