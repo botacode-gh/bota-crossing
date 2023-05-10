@@ -94,8 +94,6 @@ export default function HomePage() {
     inputRef.current.value = "";
   };
 
-  console.log("addedItem:", addedItem);
-
   return (
     <>
       <PageHeading>{welcomeMessage}</PageHeading>

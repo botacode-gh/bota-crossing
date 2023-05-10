@@ -1,18 +1,15 @@
 import useStore from "@/zustand/store";
 import { useRouter } from "next/router";
-import Image from "next/image";
 import { useEffect } from "react";
 
-import VariantsDisplay from "@/components/VariantsDisplay";
 import PageHeading from "@/components/PageHeading";
 import BackLink from "@/components/BackLink";
 import TagsContainer from "@/components/TagsContainer";
-import UnlockDate from "@/components/UnlockDate";
-
-import furnitureData from "@/lib/apiData/furniture.json";
 import ItemHeader from "@/components/ItemHeader";
 import ItemImage from "@/components/ItemImage";
 import ItemPricesDisplay from "@/components/ItemPricesDisplay";
+
+import furnitureData from "@/lib/apiData/furniture.json";
 
 export default function FurnitureDetails() {
   const router = useRouter();
@@ -44,7 +41,6 @@ export default function FurnitureDetails() {
       <TagsContainer furniture={furniture} />
       <ItemImage item={furniture} />
       <ItemPricesDisplay item={furniture} />
-      {/* <VariantsDisplay furniture={furniture} /> */}
     </>
   );
 }
