@@ -94,10 +94,6 @@ export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
     setIsMouseOverDropdown(true);
   };
 
-  const handleMouseLeave = () => {
-    setIsMouseOverDropdown(false);
-  };
-
   const handleClick = (result, event) => {
     inputRef.current.value = result.name;
     setSelectedResult(result);
@@ -164,7 +160,7 @@ export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
           {isDropdownOpen && (
             <StyledDropdown
               onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
+              onMouseLeave={() => setIsMouseOverDropdown(false)}
             >
               {searchResults.slice(0, 6).map((result) => (
                 <StyledDropdownItem
