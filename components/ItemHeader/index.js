@@ -11,8 +11,9 @@ const Container = styled.div`
   margin-bottom: 0.5rem;
 `;
 
-const Title = styled.div`
+const Title = styled.h2`
   font-size: 2.5rem;
+  margin: 0;
 `;
 
 export default function ItemHeader({ title, quotes }) {
