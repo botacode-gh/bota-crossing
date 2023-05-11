@@ -3,8 +3,8 @@ import useStore from "@/zustand/store";
 import { useRef, useEffect, useState } from "react";
 
 import PageHeading from "@/components/PageHeading";
-import Modal from "@/components/Modal";
 import NewItemForm from "@/components/NewItemForm";
+import Modal from "@/components/Modal";
 import Card from "@/components/Card";
 
 const List = styled.ul`
