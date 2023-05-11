@@ -38,17 +38,28 @@ const StyledImage = styled.img`
   }
 `;
 
+function getSrc(item) {
+  if (item.variations) {
+    return item.variations[0].image_url;
+  }
+
+  if (item.render_url) {
+    return item.render_url;
+  }
+
+  return item.image_url;
+}
+
+function getAlt(item) {
+  if (item.variations && item.variations[0].variation.length > 0) {
+    return item.variations[0].variation;
+  }
+
+  return item.name;
+}
+
 export default function ItemImage({ item }) {
-  const src = item.variations
-    ? item.variations[0].image_url
-    : item.render_url
-    ? item.render_url
-    : item.image_url;
-
-  const alt =
-    item.variations && item.variations[0].variation.length > 0
-      ? item.variations[0].variation
-      : item.name;
-
-  return <StyledImage variant={item.type} src={src} alt={alt} />;
+  return (
+    <StyledImage variant={item.type} src={getSrc(item)} alt={getAlt(item)} />
+  );
 }
