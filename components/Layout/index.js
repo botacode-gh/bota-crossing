@@ -60,7 +60,7 @@ export default function Layout({ children }) {
   const router = useRouter();
   const isFishPage = router.pathname.startsWith("/fish/");
   const isVillagerPage = router.pathname.startsWith("/villagers/");
-  const isBugPage = router.pathname.startsWith("/bug/");
+  const isBugPage = router.pathname.startsWith("/bugs/");
 
   return (
     <>
