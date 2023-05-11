@@ -12,6 +12,12 @@ const StyledUnlockDate = styled.div`
     css`
       right: 1rem;
     `}
+
+  ${({ variant }) =>
+    variant === "furniture" &&
+    css`
+      left: 1rem;
+    `}
 `;
 
 export default function AcquiredDate({ date, type }) {
