@@ -1,5 +1,3 @@
-import useStore from "@/zustand/store";
-import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 import BackLink from "@/components/BackLink";
@@ -12,14 +10,9 @@ import AcquiredDate from "@/components/AcquiredDate";
 
 import villagersData from "@/lib/apiData/villagers.json";
 
-export default function ResidentDetails() {
+export default function ResidentDetails({ acquiredItems }) {
   const router = useRouter();
   const { name } = router.query;
-  const acquiredItems = useStore((state) => state.acquiredItems);
-
-  useEffect(() => {
-    useStore.getState().loadAcquiredItems();
-  }, []);
 
   if (!name) {
     return <PageHeading>waking up villagers...</PageHeading>;

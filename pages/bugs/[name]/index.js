@@ -1,6 +1,4 @@
-import useStore from "@/zustand/store";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 import BackLink from "@/components/BackLink";
 import ItemHeader from "@/components/ItemHeader";
@@ -12,14 +10,9 @@ import AnimalPrices from "@/components/AnimalPrices";
 import ItemImage from "@/components/ItemImage";
 import AcquiredDate from "@/components/AcquiredDate";
 
-export default function BugDetails() {
+export default function BugDetails({ acquiredItems }) {
   const router = useRouter();
   const { name } = router.query;
-  const acquiredItems = useStore((state) => state.acquiredItems);
-
-  useEffect(() => {
-    useStore.getState().loadAcquiredItems();
-  }, []);
 
   if (!name) {
     return <PageHeading>bugging bugs...</PageHeading>;

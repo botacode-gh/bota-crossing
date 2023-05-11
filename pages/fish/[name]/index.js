@@ -1,6 +1,4 @@
-import useStore from "@/zustand/store";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 import PageHeading from "@/components/PageHeading";
 import BackLink from "@/components/BackLink";
@@ -12,14 +10,9 @@ import AcquiredDate from "@/components/AcquiredDate";
 
 import fishData from "@/lib/apiData/fish.json";
 
-export default function FishDetails() {
+export default function FishDetails({ acquiredItems }) {
   const router = useRouter();
   const { name } = router.query;
-  const acquiredItems = useStore((state) => state.acquiredItems);
-
-  useEffect(() => {
-    useStore.getState().loadAcquiredItems();
-  }, []);
 
   if (!name) {
     return <PageHeading>finding nemo...</PageHeading>;

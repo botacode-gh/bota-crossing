@@ -38,13 +38,12 @@ function getItemIconSource(item) {
   return item.image_url;
 }
 
-export default function HomePage() {
+export default function HomePage({ acquiredItems }) {
   const inputRef = useRef(null);
 
   const itemName = useStore((state) => state.itemName);
   const allItems = useStore((state) => state.allItems);
   const searchItems = useStore.getState().searchItems;
-  const acquiredItems = useStore((state) => state.acquiredItems);
   const addAcquiredItem = useStore((state) => state.addAcquiredItem);
   const setInputPrompt = useStore((state) => state.setInputPrompt);
 
@@ -64,7 +63,6 @@ export default function HomePage() {
     }
 
     useStore.getState().loadAllItems();
-    useStore.getState().loadAcquiredItems();
   }, []);
 
   const handleSubmit = (event) => {
