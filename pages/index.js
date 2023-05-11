@@ -4,8 +4,8 @@ import { useRef, useEffect, useState } from "react";
 
 import PageHeading from "@/components/PageHeading";
 import NewItemForm from "@/components/NewItemForm";
-import Modal from "@/components/Modal";
 import Card from "@/components/Card";
+import Modal from "@/components/Modal";
 
 const List = styled.ul`
   list-style: none;
