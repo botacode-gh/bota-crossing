@@ -1,7 +1,5 @@
-import Image from "next/image";
 import styled from "styled-components";
-
-import { formatPrice } from "@/lib/utils";
+import Image from "next/image";
 import StyledPrice from "../StyledPrice";
 
 const StyledPriceDisplay = styled.article`
@@ -22,9 +20,6 @@ const PriceList = styled.ul`
 `;
 
 export default function AnimalPrices({ nook, cj, flick }) {
-  console.log("nook:", nook);
-  console.log("cj:", cj);
-  console.log("flick:", flick);
   return (
     <StyledPriceDisplay>
       <Image
