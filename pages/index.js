@@ -71,6 +71,10 @@ export default function HomePage({ acquiredItems }) {
     const results = searchItems(itemName);
     const firstResult = results[0];
 
+    if (!inputRef.current.value) {
+      return;
+    }
+
     if (localStorage.getItem("acquiredItems")) {
       const acquiredItems = JSON.parse(localStorage.getItem("acquiredItems"));
 
@@ -85,10 +89,10 @@ export default function HomePage({ acquiredItems }) {
       addAcquiredItem(firstResult);
       setAddedItem(firstResult);
       setInputPrompt("Got anything else?");
-      setModalMessage(`Added ${firstResult.name} to your items!`);
+      setModalMessage(`Added ${firstResult.name} to your island!`);
       setModalIsVisible(!modalIsVisible);
+      inputRef.current.value = "";
     }
-
     inputRef.current.value = "";
   };
 
