@@ -1,13 +1,14 @@
 import { useRouter } from "next/router";
 
-import PageHeading from "@/components/PageHeading";
 import BackLink from "@/components/BackLink";
+import PageHeading from "@/components/PageHeading";
 import TagsContainer from "@/components/TagsContainer";
 import ItemHeader from "@/components/ItemHeader";
 import ItemImage from "@/components/ItemImage";
 import ItemPricesDisplay from "@/components/ItemPricesDisplay";
 
 import furnitureData from "@/lib/apiData/furniture.json";
+import AcquiredDate from "@/components/AcquiredDate";
 
 export default function FurnitureDetails({ acquiredItems }) {
   const router = useRouter();
@@ -20,20 +21,21 @@ export default function FurnitureDetails({ acquiredItems }) {
   const furniture = furnitureData.find(
     (furniture) => furniture.name.toLowerCase() === name.toLowerCase()
   );
-
-  if (!furniture) {
-    return <h1>Loading furniture (or trying to)...</h1>;
-  }
-
-  const { name: furnitureName, imageSource, price, unlockDate } = furniture;
+  const acquiredFurniture = acquiredItems.find(
+    (item) => item.name === furniture.name
+  );
 
   return (
     <>
       <BackLink />
-      <ItemHeader title={furnitureName} />
+      <ItemHeader title={furniture.name} />
       <TagsContainer furniture={furniture} />
       <ItemImage item={furniture} />
       <ItemPricesDisplay item={furniture} />
+      <AcquiredDate
+        date={acquiredFurniture ? acquiredFurniture.acquireDate : null}
+        type="furniture"
+      />
     </>
   );
 }

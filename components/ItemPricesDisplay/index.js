@@ -6,12 +6,12 @@ import CurrencyIcon from "../CurrencyIcon";
 const StyledPriceDisplay = styled.article`
   text-align: right;
   width: 100%;
+  z-index: 1;
 `;
 
 const PriceList = styled.ul`
   list-style: none;
   margin: 0;
-  line-height: 0.9;
 `;
 
 const PriceListItem = styled.li`
