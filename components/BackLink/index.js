@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
+import Button from "../StyledButton";
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -10,7 +11,7 @@ const StyledLink = styled(Link)`
 export default function BackLink() {
   return (
     <StyledLink href={"/"} aria-label="Navigate back to Island Overview page">
-      &larr; back
+      <Button>&larr; back</Button>
     </StyledLink>
   );
 }
