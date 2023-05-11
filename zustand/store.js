@@ -1,12 +1,12 @@
 import Fuse from "fuse.js";
 import { create } from "zustand";
 
-import bugsData from "../lib/apiData/bugs.json";
-import clothingData from "../lib/apiData/clothing.json";
-import fishData from "../lib/apiData/fish.json";
-import furnitureData from "../lib/apiData/furniture.json";
-import recipesData from "../lib/apiData/recipes.json";
-import villagersData from "../lib/apiData/villagers.json";
+import bugs from "../lib/apiData/bugs.json";
+import clothing from "../lib/apiData/clothing.json";
+import fish from "../lib/apiData/fish.json";
+import furniture from "../lib/apiData/furniture.json";
+import recipes from "../lib/apiData/recipes.json";
+import villagers from "../lib/apiData/villagers.json";
 
 const useStore = create((set, get) => ({
   acquiredItems: [],
@@ -42,13 +42,7 @@ const useStore = create((set, get) => ({
   },
 
   // prepare items for search
-  loadAllItems: async () => {
-    const bugs = bugsData;
-    const fish = fishData;
-    const furniture = furnitureData;
-    const villagers = villagersData;
-    const recipes = recipesData;
-    const clothing = clothingData;
+  loadAllItems: () => {
     const allItems = [
       ...bugs,
       ...fish,
