@@ -5,10 +5,14 @@ const Container = styled.div`
   display: flex;
 
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: baseline;
   position: relative;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
 `;
 
 const Title = styled.h2`

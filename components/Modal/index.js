@@ -11,7 +11,6 @@ const Shroud = styled.div`
 
 const StyledModal = styled.div`
   position: fixed;
-  inset: 10vh 10vw;
   max-height: 200px;
   background-color: white;
   display: flex;
@@ -20,8 +19,12 @@ const StyledModal = styled.div`
   text-align: center;
   border-radius: 20px;
   padding: 1rem;
-  max-width: 700px;
   z-index: 2;
+  width: 80vw;
+
+  @media (max-width: 768px) {
+    inset: 10vh 10vw;
+  }
 `;
 
 const CloseButton = styled.div`
