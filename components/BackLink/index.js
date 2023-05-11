@@ -9,11 +9,7 @@ const StyledLink = styled(Link)`
 
 export default function BackLink() {
   return (
-    <StyledLink
-      href={"/"}
-      passHref
-      aria-label="Navigate back to Island Overview page"
-    >
+    <StyledLink href={"/"} aria-label="Navigate back to Island Overview page">
       &larr; back
     </StyledLink>
   );
