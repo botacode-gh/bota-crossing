@@ -17,12 +17,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "dummyimage.com",
+        hostname: "acnhapi.com",
         port: "",
       },
       {
         protocol: "https",
-        hostname: "acnhapi.com",
+        hostname: "dodo.ac",
         port: "",
       },
     ],
