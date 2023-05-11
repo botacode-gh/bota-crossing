@@ -18,7 +18,7 @@ const StyledImage = styled.img`
       variant === "bug" &&
       css`
         left: -100px;
-        bottom: 60px;
+        bottom: 40px;
       `};
 
     ${({ variant }) =>
