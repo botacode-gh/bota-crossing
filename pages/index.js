@@ -29,7 +29,6 @@ const List = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row-reverse wrap;
-  /* flex-flow: row wrap; */
   justify-content: center;
   gap: 1rem;
   padding: 0;

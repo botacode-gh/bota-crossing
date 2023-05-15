@@ -26,8 +26,6 @@ export default function ResidentDetails({ acquiredItems, isRemoveModalOpen }) {
   );
 
   const { text_color, title_color } = villager;
-  console.log("text_color:", text_color);
-  console.log("title_color:", title_color);
 
   return (
     <>
