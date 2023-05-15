@@ -1,11 +1,19 @@
 import { useEffect } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const ModalPopupAnimation = keyframes`
+  from {
+    bottom: -200px;
+  }
+  
+  to {
+    bottom: 200px;
+  }`;
 
 const Shroud = styled.div`
-  inset: 0;
-  background-color: black;
-  opacity: 50%;
   position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 `;
 
@@ -13,6 +21,8 @@ const StyledModal = styled.div`
   position: fixed;
   max-height: 200px;
   background-color: white;
+  box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.19);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,10 +31,11 @@ const StyledModal = styled.div`
   padding: 1rem;
   z-index: 2;
   width: 80vw;
+  inset: 10vh 10vw;
 
-  @media (max-width: 768px) {
-    inset: 10vh 10vw;
-  }
+  animation-name: ${ModalPopupAnimation};
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 `;
 
 const CloseButton = styled.div`
@@ -52,11 +63,12 @@ export default function Modal({ handleModalIsVisible, children }) {
 
   return (
     <>
-      <Shroud onClick={handleModalIsVisible} />
-      <StyledModal>
-        {children}
-        <CloseButton onClick={handleModalIsVisible}>✖️</CloseButton>
-      </StyledModal>
+      <Shroud onClick={handleModalIsVisible}>
+        <StyledModal>
+          {children}
+          <CloseButton onClick={handleModalIsVisible}>✖️</CloseButton>
+        </StyledModal>
+      </Shroud>
     </>
   );
 }

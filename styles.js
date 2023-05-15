@@ -10,11 +10,12 @@ export default createGlobalStyle`
   body {
     font-family: 'Arial Rounded MT Bold', monospace;
     color: #2B0B00;
-    background-color: #F9F6E6;
+    background: rgb(246,197,100);
+    background: linear-gradient(0deg, rgba(246,197,100,1) 0%, rgba(249,246,230,1) 69%);
     margin: 0 auto;
     display: flex;
     flex-direction:column;
     align-items: center;
-    min-height: 120vh;
+    min-height: 977px;
   }
 `;

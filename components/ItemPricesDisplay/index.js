@@ -11,7 +11,7 @@ const StyledPriceDisplay = styled.article`
 
 const PriceList = styled.ul`
   list-style: none;
-  margin: 0;
+  margin: -8px 0 0;
 `;
 
 const PriceListItem = styled.li`
@@ -21,12 +21,16 @@ const PriceListItem = styled.li`
   gap: 3px;
 `;
 
+const H4 = styled.h4`
+  margin: 1rem 0;
+`;
+
 export default function ItemPricesDisplay({ item }) {
   return (
     <StyledPriceDisplay>
       {item.buy && (
         <div>
-          <h4>Buy</h4>
+          <H4>Buy</H4>
           <div>
             {item.buy.map((store) => {
               return (
@@ -43,7 +47,7 @@ export default function ItemPricesDisplay({ item }) {
         </div>
       )}
       <div>
-        <h4>Sell</h4>
+        <H4>Sell</H4>
         <div>
           <PriceListItem>
             <StyledPrice>{item.sell}</StyledPrice>{" "}

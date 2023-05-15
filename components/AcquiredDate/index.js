@@ -6,6 +6,7 @@ const StyledUnlockDate = styled.div`
   position: absolute;
   bottom: 1rem;
   right: 2rem;
+  position: fixed;
 
   ${({ variant }) =>
     variant === "villager" &&
@@ -16,7 +17,7 @@ const StyledUnlockDate = styled.div`
   ${({ variant }) =>
     variant === "furniture" &&
     css`
-      left: 1rem;
+      right: 1rem;
     `}
 `;
 
