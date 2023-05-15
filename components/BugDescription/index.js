@@ -5,7 +5,6 @@ import {
   getTimeText,
 } from "@/lib/utils";
 import DescriptionBox from "../DescriptionBox";
-import AcquiredDate from "../AcquiredDate";
 
 export default function BugDescription({ bug }) {
   const { rarity, location } = bug;
@@ -23,7 +22,6 @@ export default function BugDescription({ bug }) {
         {article} {rarityText} bug, found {locationText.toLowerCase()}{" "}
         {monthsText}, {timeText}.
       </p>
-      <AcquiredDate item={bug} />
     </DescriptionBox>
   );
 }

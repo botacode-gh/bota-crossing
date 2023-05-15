@@ -24,6 +24,7 @@ export default function RemoveAllModal({ acquiredItems }) {
   function handleRemoveAll() {
     localStorage.removeItem("acquiredItems");
     Router.reload();
+    Router.push("/#site-heading");
   }
 
   return (

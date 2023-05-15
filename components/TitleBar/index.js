@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Link from "next/link";
 
 const StyledLink = styled(Link)`
@@ -24,7 +24,7 @@ export default function TitleBar() {
     <header>
       <StyledLink href={"/"}>
         <Headline>
-          <Heading>bota-crossing</Heading>
+          <Heading id="site-heading">bota-crossing</Heading>
         </Headline>
       </StyledLink>
     </header>
