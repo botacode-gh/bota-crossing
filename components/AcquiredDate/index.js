@@ -1,27 +1,19 @@
 import { formatDate } from "@/lib/utils";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const StyledUnlockDate = styled.div`
   font-size: 0.75rem;
   position: absolute;
-  bottom: 1rem;
-  right: 2rem;
-  position: fixed;
-
-  ${({ variant }) =>
-    variant === "villager" &&
-    css`
-      right: 1rem;
-    `}
-
-  ${({ variant }) =>
-    variant === "furniture" &&
-    css`
-      right: 1rem;
-    `}
+  bottom: -1rem;
+  right: 0;
+  opacity: 60%;
+  font-size: 0.7rem;
 `;
 
-export default function AcquiredDate({ date, type }) {
+export default function AcquiredDate({ item }) {
+  const isAcquired = item.isAcquired === true;
+
+  const { acquireDate: date, type } = item;
   const verb =
     type === "fish" || type === "bug"
       ? "caught"
@@ -29,9 +21,14 @@ export default function AcquiredDate({ date, type }) {
       ? "moved to island"
       : "acquired";
 
-  return (
-    <StyledUnlockDate variant={type}>
-      {date ? `${verb} on ${formatDate(date)}` : "not acquired yet"}
-    </StyledUnlockDate>
-  );
+  function getAcquiredText(item) {
+    if (!item.isAcquired) {
+      return "not acquired yet";
+    }
+    return `${verb} on ${formatDate(date)}`;
+  }
+
+  console.log("item in AcquiredDate:", item);
+
+  return <StyledUnlockDate>{getAcquiredText(item)}</StyledUnlockDate>;
 }

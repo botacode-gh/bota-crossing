@@ -1,14 +1,5 @@
 import { useEffect } from "react";
-import styled, { keyframes } from "styled-components";
-
-const ModalPopupAnimation = keyframes`
-  from {
-    bottom: -200px;
-  }
-  
-  to {
-    bottom: 200px;
-  }`;
+import styled from "styled-components";
 
 const Shroud = styled.div`
   position: fixed;
@@ -30,21 +21,10 @@ const StyledModal = styled.div`
   border-radius: 20px;
   padding: 1rem;
   z-index: 2;
-  width: 80vw;
+  max-width: 500px;
   inset: 10vh 10vw;
-
-  animation-name: ${ModalPopupAnimation};
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-`;
-
-const CloseButton = styled.div`
-  position: fixed;
-  top: 12vh;
-  right: 15vw;
-  scale: 1.5;
-  cursor: pointer;
-  z-index: 2;
+  margin: auto;
+  gap: 1rem;
 `;
 
 export default function Modal({ handleModalIsVisible, children }) {
@@ -64,10 +44,7 @@ export default function Modal({ handleModalIsVisible, children }) {
   return (
     <>
       <Shroud onClick={handleModalIsVisible}>
-        <StyledModal>
-          {children}
-          <CloseButton onClick={handleModalIsVisible}>✖️</CloseButton>
-        </StyledModal>
+        <StyledModal>{children}</StyledModal>
       </Shroud>
     </>
   );

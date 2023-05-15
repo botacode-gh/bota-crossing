@@ -6,19 +6,19 @@ import AddItemButton from "../AddItemButton";
 const StyledContainer = styled.div`
   width: 100%;
   display: flex;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   justify-content: space-between;
   @media (min-width: 768px) {
     padding: 0 1rem;
   }
 `;
 
-export default function ActionsBar({ acquiredItem }) {
+export default function ActionsBar({ item, acquiredItem }) {
   return (
     <StyledContainer>
       <BackLink />
-      {acquiredItem && <RemoveItemButton />}
-      {!acquiredItem && <AddItemButton />}
+      {acquiredItem && <RemoveItemButton item={item} />}
+      {!acquiredItem && <AddItemButton item={item} />}
     </StyledContainer>
   );
 }

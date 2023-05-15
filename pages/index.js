@@ -11,12 +11,15 @@ import Card from "@/components/Card";
 import Modal from "@/components/Modal";
 import Button from "@/components/StyledButton";
 import ModalButtonContainer from "@/components/ModalButtonContainer";
-import RemoveModal from "@/components/RemoveModal";
 import RemoveAllModal from "@/components/RemoveAllModal";
+
+const H3 = styled.h3`
+  text-align: center;
+`;
 
 const StyledIslandPic = styled(Image)`
   position: absolute;
-  bottom: -180px;
+  bottom: -100px;
   left: -160px;
   transform: scaleX(-1);
   z-index: 1;
@@ -47,6 +50,7 @@ const StyledItemsContainer = styled.div`
   align-items: center;
   border-radius: 10px;
   padding: 0.5rem;
+  gap: 1.5rem;
 `;
 
 function getItemIconSource(item) {
@@ -162,7 +166,7 @@ export default function HomePage({ acquiredItems }) {
       )}
       {acquiredItems.length > 0 && (
         <StyledItemsContainer>
-          <h3>Check out what you&apos;ve found!</h3>
+          <H3>Check out what you&apos;ve found!</H3>
           <List role="list">
             {acquiredItems.map((item) => {
               return (

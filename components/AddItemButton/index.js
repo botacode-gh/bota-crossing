@@ -4,6 +4,8 @@ import Button from "../StyledButton";
 export default function AddItemButton({ item }) {
   const addAcquiredItem = useStore((state) => state.addAcquiredItem);
 
+  console.log("item in AddItemButton:", item);
+
   return (
     <>
       <Button

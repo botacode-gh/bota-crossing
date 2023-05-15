@@ -12,9 +12,8 @@ const H3 = styled.h3`
 
 const StyledFormContainer = styled.div`
   border-radius: 10px;
-  padding: 0 1rem 1rem;
-  width: 90%;
-  max-width: 290px;
+  padding: 1.5rem 3rem;
+  width: 100%;
   height: fit-content;
   background-color: #fff;
   box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.29);

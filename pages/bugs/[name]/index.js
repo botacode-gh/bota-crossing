@@ -5,9 +5,6 @@ import PageHeading from "@/components/PageHeading";
 
 import bugsData from "@/lib/apiData/bugs.json";
 import BugDescription from "@/components/BugDescription";
-import AnimalPrices from "@/components/AnimalPrices";
-import ItemImage from "@/components/ItemImage";
-import AcquiredDate from "@/components/AcquiredDate";
 import ActionsBar from "@/components/ActionsBar";
 import RemoveModal from "@/components/RemoveModal";
 
@@ -29,15 +26,9 @@ export default function BugDetails({ acquiredItems, isRemoveModalOpen }) {
       {isRemoveModalOpen && (
         <RemoveModal item={acquiredBug} acquiredItems={acquiredItems} />
       )}
-      <ActionsBar acquiredItem={acquiredBug} />
+      <ActionsBar item={bug} acquiredItem={acquiredBug} />
       <ItemHeader title={bug.name} quotes={bug.catchphrases} />
-      <BugDescription bug={bug} />
-      <AnimalPrices nook={bug.sell_nook} flick={bug.sell_flick} />
-      <ItemImage item={bug} />
-      <AcquiredDate
-        date={acquiredBug ? acquiredBug.acquireDate : null}
-        type="bug"
-      />
+      <BugDescription bug={acquiredBug ? acquiredBug : bug} />
     </>
   );
 }

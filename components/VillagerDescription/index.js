@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import DescriptionBox from "../DescriptionBox";
 
 const StyledSection = styled.section`
   border-radius: 30px;
@@ -20,13 +21,13 @@ export default function VillagerDescription({ villager }) {
   `;
 
   return (
-    <StyledSection>
+    <DescriptionBox item={villager}>
       <div>
         <p>{descriptionText}</p>
         <p>
           Born {birthday} ({sign})
         </p>
       </div>
-    </StyledSection>
+    </DescriptionBox>
   );
 }

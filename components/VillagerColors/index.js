@@ -1,15 +1,19 @@
 import styled, { css } from "styled-components";
 
 const GrandContainer = styled.div`
+  position: absolute;
+  right: 32px;
+  bottom: 90px;
   position: fixed;
-  right: 1rem;
-  bottom: 0.4rem;
 `;
 
 const StyledText = styled.div`
-  position: fixed;
-  right: 1rem;
-  bottom: 160px;
+  position: absolute;
+  right: 0;
+  bottom: 155px;
+  text-align: right;
+  width: max-content;
+  font-size: 0.8rem;
 `;
 
 const Container1 = styled.div`
@@ -21,12 +25,11 @@ const Container1 = styled.div`
 
 const Container2 = styled.div`
   position: absolute;
-  right: 60px;
+  right: 0;
   bottom: 90px;
 `;
 
 const ColorCircle = styled.div`
-  border: none;
   border-radius: 80%;
   height: 60px;
   width: 60px;
@@ -41,8 +44,8 @@ const ColorCircle = styled.div`
 export default function VillagerColors({ title_color, text_color }) {
   return (
     <>
-      <StyledText>likes these colors</StyledText>
       <GrandContainer>
+        <StyledText>likes these colors</StyledText>
         <Container1>
           <ColorCircle
             color={title_color}

@@ -5,12 +5,17 @@ import StyledPrice from "../StyledPrice";
 const StyledPriceDisplay = styled.article`
   text-align: right;
   width: fit-content;
-  padding: 1rem;
   align-self: flex-end;
   font-size: 0.8em;
   margin-top: -1rem;
   position: absolute;
-  right: 1rem;
+  right: 0;
+  bottom: -100px;
+`;
+
+const BellsIcon = styled(Image)`
+  /* position: absolute; */
+  right: -10px;
   bottom: 30px;
 `;
 
@@ -22,18 +27,13 @@ const PriceList = styled.ul`
 export default function AnimalPrices({ nook, cj, flick }) {
   return (
     <StyledPriceDisplay>
-      <Image
+      <BellsIcon
         src="https://dodo.ac/np/images/1/1e/99k_Bells_NH_Inv_Icon.png"
         alt="Icon of Bells"
         width={50}
         height={50}
       />
       <PriceList>
-        {nook && (
-          <li>
-            Nook&apos;s: <StyledPrice>{nook}</StyledPrice>
-          </li>
-        )}
         {cj && (
           <li>
             CJ: <StyledPrice>{cj}</StyledPrice>
@@ -42,6 +42,11 @@ export default function AnimalPrices({ nook, cj, flick }) {
         {flick && (
           <li>
             Flick: <StyledPrice>{flick}</StyledPrice>
+          </li>
+        )}
+        {nook && (
+          <li>
+            Nook&apos;s: <StyledPrice>{nook}</StyledPrice>
           </li>
         )}
       </PriceList>

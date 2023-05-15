@@ -11,7 +11,6 @@ const ButtonContainer = styled.div`
 
 export default function RemoveModal({ item, acquiredItems }) {
   const setRemoveModalOpen = useStore((state) => state.setRemoveModalOpen);
-  console.log("acquiredItems:", acquiredItems);
 
   const handleRemoveItem = (item) => {
     setRemoveModalOpen(false);

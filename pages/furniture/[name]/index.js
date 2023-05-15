@@ -30,7 +30,7 @@ export default function FurnitureDetails({ acquiredItems, isRemoveModalOpen }) {
       {isRemoveModalOpen && (
         <RemoveModal item={acquiredFurniture} acquiredItems={acquiredItems} />
       )}
-      <ActionsBar acquiredItem={acquiredFurniture} />
+      <ActionsBar item={furniture} acquiredItem={acquiredFurniture} />
       <ItemHeader title={furniture.name} />
       <TagsContainer furniture={furniture} />
       <ItemImage item={furniture} />

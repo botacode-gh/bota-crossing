@@ -8,6 +8,7 @@ const StyledButton = styled.button`
   padding: 0.5rem 1.2rem;
   box-shadow: 0px 1px 1.5px 1px rgba(92, 22, 0, 0.29);
   max-width: 95px;
+  min-height: 30px;
 
   &:hover {
     cursor: pointer;

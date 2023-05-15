@@ -1,4 +1,3 @@
-import { formatPrice } from "@/lib/utils";
 import styled from "styled-components";
 import StyledPrice from "../StyledPrice";
 import CurrencyIcon from "../CurrencyIcon";

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Modal from "../Modal";
 import Button from "../StyledButton";
 import useStore from "@/zustand/store";
-import Link from "next/link";
+import Router from "next/router";
 
 const ButtonContainer = styled.div`
   display: flex;
@@ -23,6 +23,7 @@ export default function RemoveAllModal({ acquiredItems }) {
 
   function handleRemoveAll() {
     localStorage.removeItem("acquiredItems");
+    Router.reload();
   }
 
   return (
@@ -32,7 +33,7 @@ export default function RemoveAllModal({ acquiredItems }) {
         <Button
           type="button"
           variant="remove"
-          onClick={() => localStorage.removeItem("acquiredItems")}
+          onClick={() => handleRemoveAll()}
         >
           remove them all!
         </Button>
@@ -42,7 +43,7 @@ export default function RemoveAllModal({ acquiredItems }) {
           variant="suggested"
           onClick={() => setRemoveModalOpen(false)}
         >
-          nah...
+          noo don&apos;t remove!
         </Button>
       </ButtonContainer>
     </Modal>

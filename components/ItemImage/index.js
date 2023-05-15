@@ -1,47 +1,57 @@
 import styled, { css } from "styled-components";
 
+const Container = styled.div`
+  width: 100%;
+  height: 228px;
+  position: absolute;
+  left: -80px;
+  bottom: -220px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+
+  ${({ variant }) =>
+    (variant === "villager" || "bug") &&
+    css`
+      left: -130px;
+    `};
+
+  ${({ variant }) =>
+    variant === "bug" &&
+    css`
+      bottom: -220px;
+      scale: 1.2;
+    `};
+
+  ${({ variant }) =>
+    variant === "villager" &&
+    css`
+      scale: 0.8;
+      bottom: -200px;
+    `};
+
+  ${({ variant }) =>
+    variant === "fish" &&
+    css`
+      left: -100px;
+    `};
+`;
+
 const StyledImage = styled.img`
   width: 100%;
 
   ${({ variant }) =>
-    (variant === "fish" || "villager") &&
+    (variant === "fish" || "furniture") &&
     css`
       transform: scaleX(-1);
     `};
 
-  @media (max-width: 375px) {
-    position: absolute;
-    bottom: -30px;
-
-    ${({ variant }) =>
-      variant === "villager" &&
-      css`
-        left: -100px;
-        bottom: -125px;
-      `};
-
-    ${({ variant }) =>
-      variant === "bug" &&
-      css`
-        left: -100px;
-        bottom: 30px;
-      `};
-
-    ${({ variant }) =>
-      variant === "fish" &&
-      css`
-        left: -80px;
-        bottom: 30px;
-      `};
-
-    ${({ variant }) =>
-      variant === "furniture" &&
-      css`
-        bottom: -50px;
-        left: -120px;
-        scale: 0.8;
-      `}
-  }
+  ${({ variant }) =>
+    (variant === "fish" || "villager") &&
+    css`
+      rotate: 15deg;
+    `};
 `;
 
 function getSrc(item) {
@@ -65,13 +75,10 @@ function getAlt(item) {
 }
 
 export default function ItemImage({ item }) {
-  console.log("item:", item);
-
+  const variant = item.type;
   return (
-    <StyledImage
-      variant={item.type ? item.type : item}
-      src={getSrc(item)}
-      alt={getAlt(item)}
-    />
+    <Container variant={variant}>
+      <StyledImage variant={variant} src={getSrc(item)} alt={getAlt(item)} />
+    </Container>
   );
 }

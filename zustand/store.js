@@ -46,14 +46,7 @@ const useStore = create((set, get) => ({
 
   // prepare items for search
   loadAllItems: () => {
-    const allItems = [
-      ...bugs,
-      ...fish,
-      ...furniture,
-      ...villagers,
-      ...recipes,
-      ...clothing,
-    ];
+    const allItems = [...bugs, ...fish, ...furniture, ...villagers];
 
     // create fuse object for searching items
     const options = {
