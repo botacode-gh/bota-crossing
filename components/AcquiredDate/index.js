@@ -28,7 +28,5 @@ export default function AcquiredDate({ item }) {
     return `${verb} on ${formatDate(date)}`;
   }
 
-  console.log("item in AcquiredDate:", item);
-
   return <StyledUnlockDate>{getAcquiredText(item)}</StyledUnlockDate>;
 }
