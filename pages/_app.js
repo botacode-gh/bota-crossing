@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
   const acquiredItems = useStore((state) => state.acquiredItems);
+  const isRemoveModalOpen = useStore((state) => state.isRemoveModalOpen);
 
   useEffect(() => {
     useStore.getState().loadAcquiredItems();
@@ -13,7 +14,11 @@ export default function App({ Component, pageProps }) {
   return (
     <Layout>
       <GlobalStyle />
-      <Component {...pageProps} acquiredItems={acquiredItems} />
+      <Component
+        {...pageProps}
+        acquiredItems={acquiredItems}
+        isRemoveModalOpen={isRemoveModalOpen}
+      />
     </Layout>
   );
 }

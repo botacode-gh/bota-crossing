@@ -1,16 +1,16 @@
 import { useRouter } from "next/router";
 
-import BackLink from "@/components/BackLink";
+import furnitureData from "@/lib/apiData/furniture.json";
 import PageHeading from "@/components/PageHeading";
 import TagsContainer from "@/components/TagsContainer";
 import ItemHeader from "@/components/ItemHeader";
 import ItemImage from "@/components/ItemImage";
 import ItemPricesDisplay from "@/components/ItemPricesDisplay";
-
-import furnitureData from "@/lib/apiData/furniture.json";
 import AcquiredDate from "@/components/AcquiredDate";
+import RemoveModal from "@/components/RemoveModal";
+import ActionsBar from "@/components/ActionsBar";
 
-export default function FurnitureDetails({ acquiredItems }) {
+export default function FurnitureDetails({ acquiredItems, isRemoveModalOpen }) {
   const router = useRouter();
   const { name } = router.query;
 
@@ -27,7 +27,10 @@ export default function FurnitureDetails({ acquiredItems }) {
 
   return (
     <>
-      <BackLink />
+      {isRemoveModalOpen && (
+        <RemoveModal item={acquiredFurniture} acquiredItems={acquiredItems} />
+      )}
+      <ActionsBar acquiredItem={acquiredFurniture} />
       <ItemHeader title={furniture.name} />
       <TagsContainer furniture={furniture} />
       <ItemImage item={furniture} />
