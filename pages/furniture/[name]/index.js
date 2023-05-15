@@ -35,10 +35,6 @@ export default function FurnitureDetails({ acquiredItems, isRemoveModalOpen }) {
       <TagsContainer furniture={furniture} />
       <ItemImage item={furniture} />
       <ItemPricesDisplay item={furniture} />
-      <AcquiredDate
-        date={acquiredFurniture ? acquiredFurniture.acquireDate : null}
-        type="furniture"
-      />
     </>
   );
 }

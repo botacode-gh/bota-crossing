@@ -36,13 +36,19 @@ const Container = styled.div`
     css`
       left: -100px;
     `};
+
+  ${({ variant }) =>
+    variant === "furniture" &&
+    css`
+      bottom: 100px;
+    `};
 `;
 
 const StyledImage = styled.img`
   width: 100%;
 
   ${({ variant }) =>
-    (variant === "fish" || "furniture") &&
+    variant === "fish" &&
     css`
       transform: scaleX(-1);
     `};
