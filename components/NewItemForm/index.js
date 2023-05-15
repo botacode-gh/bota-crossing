@@ -1,9 +1,14 @@
 import styled from "styled-components";
-import { useState } from "react";
 import useStore from "@/zustand/store";
+import { useEffect, useState } from "react";
+
 import { getRandom } from "@/lib/utils";
 import PageHeading from "../PageHeading";
 import Button from "../StyledButton";
+
+const H3 = styled.h3`
+  text-align: center;
+`;
 
 const StyledFormContainer = styled.div`
   border-radius: 10px;
@@ -13,6 +18,10 @@ const StyledFormContainer = styled.div`
   height: fit-content;
   background-color: #fff;
   box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
+
+  &:focus-within {
+    z-index: 100;
+  }
 `;
 const StyledForm = styled.form`
   display: flex;
@@ -40,23 +49,17 @@ const StyledDropdown = styled.ul`
   display: block;
   max-height: 100px;
   overflow-y: auto;
+  z-index: 100;
 `;
 const StyledDropdownItem = styled.li`
   cursor: pointer;
   padding: 0.5rem;
   color: darkgray;
 
-  &:hover {
-    border: 1px solid lightblue;
-    border-radius: 10px;
-    background-color: lightblue;
-    color: black;
-  }
-
-  &.highlighted {
-    border: 1px solid lightblue;
-    border-radius: 10px;
-    background-color: lightblue;
+  &:hover,
+  .highlighted {
+    border-radius: 100px;
+    background-color: #27a59070;
     color: black;
   }
 `;
@@ -71,6 +74,10 @@ export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
   const [selectedResult, setSelectedResult] = useState(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMouseOverDropdown, setIsMouseOverDropdown] = useState(false);
+
+  useEffect(() => {
+    inputRef.current.value = "";
+  });
 
   if (!allItems) {
     return <PageHeading>Loading items...</PageHeading>;
@@ -95,7 +102,6 @@ export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
   };
 
   const handleClick = (result, event) => {
-    inputRef.current.value = result.name;
     setSelectedResult(result);
     setIsDropdownOpen(false);
     handleSubmit(event);
@@ -118,23 +124,24 @@ export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
       setSelectedResult(searchResults[newIndex]);
     } else if (event.key === "Tab") {
       if (selectedResult) {
-        inputRef.current.value = selectedResult.name;
         setIsDropdownOpen(false);
         setSelectedResult(null);
+        inputRef.current.value = "";
       }
     } else if (event.key === "Escape") {
       if (inputRef.current.value !== "") {
         inputRef.current.value = "";
+        event.current.value = "";
         return;
       }
+      inputRef.current.value = "";
       inputRef.current.blur();
       setIsDropdownOpen(false);
     } else if (event.key === "Enter") {
       if (selectedResult) {
-        inputRef.current.value = selectedResult.name;
-
         handleSubmit(event);
       }
+      inputRef.current.value = "";
     }
   };
 
@@ -142,7 +149,7 @@ export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
     <StyledFormContainer>
       <StyledForm onSubmit={handleSubmit}>
         <label>
-          <h3>{inputPrompt}</h3>
+          <H3>{inputPrompt}</H3>
         </label>
         <StyledInputConatiner>
           <StyledTextInput
@@ -164,7 +171,7 @@ export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
             >
               {searchResults.slice(0, 6).map((result) => (
                 <StyledDropdownItem
-                  key={result.slug}
+                  key={result.name}
                   className={
                     !isMouseOverDropdown && selectedResult === result
                       ? "highlighted"
