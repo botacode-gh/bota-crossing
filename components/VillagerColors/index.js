@@ -25,7 +25,7 @@ const Container2 = styled.div`
   bottom: 90px;
 `;
 
-const ColorButton = styled.div`
+const ColorCircle = styled.div`
   border: none;
   border-radius: 80%;
   height: 60px;
@@ -44,10 +44,16 @@ export default function VillagerColors({ title_color, text_color }) {
       <StyledText>likes these colors</StyledText>
       <GrandContainer>
         <Container1>
-          <ColorButton color={"EB9698"}></ColorButton>
+          <ColorCircle
+            color={title_color}
+            title={`#${title_color}`}
+          ></ColorCircle>
         </Container1>
         <Container2>
-          <ColorButton color={"F6C564"}></ColorButton>
+          <ColorCircle
+            color={text_color}
+            title={`#${text_color}`}
+          ></ColorCircle>
         </Container2>
       </GrandContainer>
     </>
