@@ -64,11 +64,17 @@ const StyledDropdownItem = styled.li`
 `;
 
 export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
-  const { itemName, setItemName, searchItems, inputPrompt } = useStore();
+  const {
+    itemName,
+    setItemName,
+    searchItems,
+    inputPrompt,
+    isDropdownOpen,
+    setIsDropdownOpen,
+  } = useStore();
 
   const [searchResults, setSearchResults] = useState([]);
   const [selectedResult, setSelectedResult] = useState(null);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMouseOverDropdown, setIsMouseOverDropdown] = useState(false);
 
   useEffect(() => {

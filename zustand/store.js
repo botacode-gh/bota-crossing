@@ -13,6 +13,7 @@ const useStore = create((set, get) => ({
   allItems: [],
   fuse: null,
   isRemoveModalOpen: false,
+  isDropdownOpen: false,
 
   itemName: "",
   inputPrompt: "Add something!",
@@ -22,6 +23,7 @@ const useStore = create((set, get) => ({
   setInputPrompt: (prompt) => set({ inputPrompt: prompt }),
 
   setRemoveModalOpen: (isOpen) => set({ isRemoveModalOpen: isOpen }),
+  setIsDropdownOpen: (isOpen) => set({ isDropdownOpen: isOpen }),
 
   // add items to acquiredItems array in localStorage
   addAcquiredItem: (item) => {

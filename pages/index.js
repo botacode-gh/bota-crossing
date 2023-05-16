@@ -74,6 +74,7 @@ export default function HomePage({ acquiredItems }) {
     setInputPrompt,
     isRemoveModalOpen,
     setRemoveModalOpen,
+    setIsDropdownOpen,
   } = useStore();
 
   const [welcomeMessage, setWelcomeMessage] = useState("");
@@ -121,6 +122,7 @@ export default function HomePage({ acquiredItems }) {
       setInputPrompt(`Added ${firstResult.name} to your island!`);
       setModalMessage(`Added ${firstResult.name} to your island!`);
       setIsModalOpen(!isModalOpen);
+      setIsDropdownOpen(false);
     }
     event.target.value = "";
   };
