@@ -30,4 +30,8 @@ export default createGlobalStyle`
     max-width: 450px;
     width: 90vw;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;

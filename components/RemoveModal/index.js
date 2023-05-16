@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Modal from "../Modal";
-import Button from "../StyledButton";
 import useStore from "@/zustand/store";
+import Modal from "../Modal";
+import Button from "../Button";
 
 const ButtonContainer = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ export default function RemoveModal({ item, acquiredItems }) {
   };
 
   return (
-    <Modal handleModalIsVisible={() => setRemoveModalOpen(false)}>
+    <Modal handleIsModalOpen={() => setRemoveModalOpen(false)}>
       <p>Are you sure you want to remove this item from your island?</p>
       <ButtonContainer>
         <Button type="button" variant="remove" onClick={handleRemoveItem(item)}>

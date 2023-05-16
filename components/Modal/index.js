@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const Shroud = styled.div`
   position: fixed;
@@ -27,11 +27,11 @@ const StyledModal = styled.div`
   gap: 1rem;
 `;
 
-export default function Modal({ handleModalIsVisible, children }) {
+export default function Modal({ handleIsModalOpen, children }) {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape" || event.key === "Enter") {
-        handleModalIsVisible();
+        handleIsModalOpen();
       }
     };
 
@@ -39,11 +39,11 @@ export default function Modal({ handleModalIsVisible, children }) {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [handleModalIsVisible]);
+  }, [handleIsModalOpen]);
 
   return (
     <>
-      <Shroud onClick={handleModalIsVisible}>
+      <Shroud onClick={handleIsModalOpen}>
         <StyledModal>{children}</StyledModal>
       </Shroud>
     </>

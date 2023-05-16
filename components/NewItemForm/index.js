@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import useStore from "@/zustand/store";
 import { useEffect, useState } from "react";
 
+import useStore from "@/zustand/store";
 import { getRandom } from "@/lib/utils";
 import PageHeading from "../PageHeading";
-import Button from "../StyledButton";
+import Button from "../Button";
 
 const Title = styled.h3`
   text-align: center;
@@ -64,10 +64,7 @@ const StyledDropdownItem = styled.li`
 `;
 
 export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
-  const itemName = useStore((state) => state.itemName);
-  const setItemName = useStore((state) => state.setItemName);
-  const searchItems = useStore((state) => state.searchItems);
-  const inputPrompt = useStore((state) => state.inputPrompt);
+  const { itemName, setItemName, searchItems, inputPrompt } = useStore();
 
   const [searchResults, setSearchResults] = useState([]);
   const [selectedResult, setSelectedResult] = useState(null);

@@ -9,7 +9,7 @@ import PageHeading from "@/components/PageHeading";
 import NewItemForm from "@/components/NewItemForm";
 import Card from "@/components/Card";
 import Modal from "@/components/Modal";
-import Button from "@/components/StyledButton";
+import Button from "@/components/Button";
 import ModalButtonContainer from "@/components/ModalButtonContainer";
 import RemoveAllModal from "@/components/RemoveAllModal";
 
@@ -66,18 +66,20 @@ function getItemIconSource(item) {
 export default function HomePage({ acquiredItems }) {
   const inputRef = useRef(null);
 
-  const itemName = useStore((state) => state.itemName);
-  const allItems = useStore((state) => state.allItems);
-  const searchItems = useStore.getState().searchItems;
-  const addAcquiredItem = useStore((state) => state.addAcquiredItem);
-  const setInputPrompt = useStore((state) => state.setInputPrompt);
-  const isRemoveModalOpen = useStore((state) => state.isRemoveModalOpen);
-  const setRemoveModalOpen = useStore((state) => state.setRemoveModalOpen);
+  const {
+    itemName,
+    allItems,
+    searchItems,
+    addAcquiredItem,
+    setInputPrompt,
+    isRemoveModalOpen,
+    setRemoveModalOpen,
+  } = useStore();
 
   const [welcomeMessage, setWelcomeMessage] = useState("");
-  const [itemAlreadyAcquired, setItemAlreadyAcquired] = useState(false);
+  const [isItemAlreadyAcquired, setIsItemAlreadyAcquired] = useState(false);
   const [addedItem, setAddedItem] = useState(null);
-  const [modalIsVisible, setModalIsVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
 
   useEffect(() => {
@@ -109,7 +111,7 @@ export default function HomePage({ acquiredItems }) {
       const acquiredItemNames = acquiredItems.map((item) => item.name);
 
       if (acquiredItemNames.includes(firstResult.name)) {
-        setItemAlreadyAcquired(true);
+        setIsItemAlreadyAcquired(true);
         return;
       }
     }
@@ -118,7 +120,7 @@ export default function HomePage({ acquiredItems }) {
       setAddedItem(firstResult);
       setInputPrompt(`Added ${firstResult.name} to your island!`);
       setModalMessage(`Added ${firstResult.name} to your island!`);
-      setModalIsVisible(!modalIsVisible);
+      setIsModalOpen(!isModalOpen);
     }
     event.target.value = "";
   };
@@ -140,22 +142,22 @@ export default function HomePage({ acquiredItems }) {
         handleSubmit={handleSubmit}
         inputRef={inputRef}
         allItems={allItems}
-        modalIsVisible={modalIsVisible}
+        isModalOpen={isModalOpen}
       />
-      {modalIsVisible && (
-        <Modal handleModalIsVisible={() => setModalIsVisible(!modalIsVisible)}>
+      {isModalOpen && (
+        <Modal handleIsModalOpen={() => setIsModalOpen(!isModalOpen)}>
           <h2>{modalMessage}</h2>
           <ModalButtonContainer>
             <Link href={`${ITEM_PATHS[addedItem.type]}/${addedItem.name}`}>
               <Button variant="suggested">check it out</Button>
             </Link>
-            <Button variant="remove" onClick={() => setModalIsVisible(false)}>
+            <Button variant="remove" onClick={() => setIsModalOpen(false)}>
               close
             </Button>
           </ModalButtonContainer>
         </Modal>
       )}
-      {acquiredItems.length === 0 && (
+      {!acquiredItems.length && (
         <StyledIslandPic
           src={islandPic}
           alt="floating island"

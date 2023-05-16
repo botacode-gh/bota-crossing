@@ -1,4 +1,5 @@
 import {
+  getArticle,
   getLocationText,
   getMonthsText,
   getRarityText,
@@ -11,16 +12,16 @@ export default function BugDescription({ bug }) {
   const { months, time } = bug.north.availability_array[0];
 
   const rarityText = getRarityText(rarity);
-  const locationText = getLocationText(location);
+  const locationText = getLocationText(location).toLowerCase();
   const monthsText = getMonthsText(months);
   const timeText = getTimeText(time);
-  const article = /[aeiou]/i.test(rarityText[0]) ? "An" : "A";
+  const article = getArticle(rarityText);
 
   return (
     <DescriptionBox item={bug}>
       <p>
-        {article} {rarityText} bug, found {locationText.toLowerCase()}{" "}
-        {monthsText}, {timeText}.
+        {article} {rarityText} bug, found {locationText} {monthsText},{" "}
+        {timeText}.
       </p>
     </DescriptionBox>
   );

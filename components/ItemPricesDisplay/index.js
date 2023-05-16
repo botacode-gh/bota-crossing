@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import StyledPrice from "../StyledPrice";
+import Price from "../Price";
 import CurrencyIcon from "../CurrencyIcon";
 
 const StyledPriceDisplay = styled.article`
@@ -27,7 +27,7 @@ const Subtitle = styled.h4`
 export default function ItemPricesDisplay({ item }) {
   return (
     <StyledPriceDisplay>
-      {item.buy && (
+      {item.buy.length > 0 && (
         <>
           <Subtitle>Buy</Subtitle>
           <PriceList>
@@ -35,7 +35,7 @@ export default function ItemPricesDisplay({ item }) {
               return (
                 <PriceListItem key={store.price}>
                   {store.currency === "Poki" ? "Wardell" : "Nook's"}:
-                  <StyledPrice>{store.price}</StyledPrice>
+                  <Price>{store.price}</Price>
                   <CurrencyIcon currency={store.currency} />
                 </PriceListItem>
               );
@@ -47,7 +47,7 @@ export default function ItemPricesDisplay({ item }) {
         <Subtitle>Sell</Subtitle>
         <PriceList>
           <PriceListItem>
-            <StyledPrice>{item.sell}</StyledPrice>
+            <Price>{item.sell}</Price>
             <CurrencyIcon currency="Bells" />
           </PriceListItem>
         </PriceList>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import ItemImage from "../ItemImage";
 import AnimalPrices from "../AnimalPrices";
 import AcquiredDate from "../AcquiredDate";
+import { isAnimal, isVillager } from "@/lib/utils";
 
 const StyledSection = styled.section`
   border-radius: 30px;
@@ -20,18 +21,15 @@ const StyledSection = styled.section`
 `;
 
 export default function DescriptionBox({ children, item }) {
-  const isVillager = item.type === "villager" ? true : false;
-  const isAnimal = item.type === "fish" || item.type === "bug";
-
   return (
     <StyledSection>
       {children}
-      {!isVillager && (
+      {!isVillager(item) && (
         <Image src={item.image_url} alt={"icon"} width={100} height={100} />
       )}
-      {isAnimal && (
+      {isAnimal(item) && (
         <AnimalPrices
-          nook={item?.sell_nook}
+          nook={item.sell_nook}
           cj={item.sell_cj}
           flick={item.sell_flick}
         />

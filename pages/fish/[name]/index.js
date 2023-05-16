@@ -1,18 +1,18 @@
 import { useRouter } from "next/router";
 
 import fishData from "@/lib/apiData/fish.json";
-import PageHeading from "@/components/PageHeading";
 import FishDescription from "@/components/FishDescription";
 import ItemHeader from "@/components/ItemHeader";
 import RemoveModal from "@/components/RemoveModal";
 import ActionsBar from "@/components/ActionsBar";
+import LoadingText from "@/components/LoadingText";
 
 export default function FishDetails({ acquiredItems, isRemoveModalOpen }) {
   const router = useRouter();
   const { name } = router.query;
 
   if (!name) {
-    return <PageHeading>finding nemo...</PageHeading>;
+    return <LoadingText type="fish" />;
   }
 
   const fish = fishData.find(

@@ -1,11 +1,10 @@
-import useStore from "@/zustand/store";
-import GlobalStyle from "../styles";
-import Layout from "@/components/Layout";
 import { useEffect } from "react";
+import useStore from "@/zustand/store";
+import Layout from "@/components/Layout";
+import GlobalStyle from "../styles";
 
 export default function App({ Component, pageProps }) {
-  const acquiredItems = useStore((state) => state.acquiredItems);
-  const isRemoveModalOpen = useStore((state) => state.isRemoveModalOpen);
+  const { acquiredItems, isRemoveModalOpen } = useStore();
 
   useEffect(() => {
     useStore.getState().loadAcquiredItems();

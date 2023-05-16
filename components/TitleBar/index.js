@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
-
 const SiteTitle = styled.h1`
   color: #27a590;
   text-shadow: 2px 2px 0px #f6c564;
@@ -15,9 +11,9 @@ const SiteTitle = styled.h1`
 export default function TitleBar() {
   return (
     <header>
-      <StyledLink href={"/"}>
+      <Link href={"/"}>
         <SiteTitle id="site-title">bota-crossing</SiteTitle>
-      </StyledLink>
+      </Link>
     </header>
   );
 }

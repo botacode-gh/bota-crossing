@@ -57,6 +57,11 @@ const useStore = create((set, get) => ({
     set({ allItems, fuse });
   },
 
+  // remove all items from localStorage
+  removeAllItems: () => {
+    localStorage.removeItem("acquiredItems");
+  },
+
   // function to search for items using fuse.js
   searchItems: (searchTerm) => {
     const fuse = get().fuse;

@@ -1,21 +1,21 @@
 import { useRouter } from "next/router";
 
 import furnitureData from "@/lib/apiData/furniture.json";
-import PageHeading from "@/components/PageHeading";
-import TagsContainer from "@/components/TagsContainer";
+import Tags from "@/components/Tags";
 import ItemHeader from "@/components/ItemHeader";
 import ItemImage from "@/components/ItemImage";
 import ItemPricesDisplay from "@/components/ItemPricesDisplay";
-import AcquiredDate from "@/components/AcquiredDate";
 import RemoveModal from "@/components/RemoveModal";
 import ActionsBar from "@/components/ActionsBar";
+import LoadingText from "@/components/LoadingText";
+import AcquiredDate from "@/components/AcquiredDate";
 
 export default function FurnitureDetails({ acquiredItems, isRemoveModalOpen }) {
   const router = useRouter();
   const { name } = router.query;
 
   if (!name) {
-    return <PageHeading>visiting ikea...</PageHeading>;
+    return <LoadingText type="furniture" />;
   }
 
   const furniture = furnitureData.find(
@@ -32,9 +32,10 @@ export default function FurnitureDetails({ acquiredItems, isRemoveModalOpen }) {
       )}
       <ActionsBar item={furniture} acquiredItem={acquiredFurniture} />
       <ItemHeader title={furniture.name} />
-      <TagsContainer furniture={furniture} />
+      <Tags furniture={furniture} />
       <ItemImage item={furniture} />
       <ItemPricesDisplay item={furniture} />
+      <AcquiredDate item={acquiredFurniture ? acquiredFurniture : furniture} />
     </>
   );
 }

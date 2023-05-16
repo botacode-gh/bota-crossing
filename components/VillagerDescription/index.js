@@ -1,14 +1,4 @@
-import styled from "styled-components";
 import DescriptionBox from "../DescriptionBox";
-
-const StyledSection = styled.section`
-  border-radius: 30px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1rem;
-  background-color: #fff;
-  box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
-`;
 
 export default function VillagerDescription({ villager }) {
   const { personality, species, phrase, birthday_month, birthday_day, sign } =

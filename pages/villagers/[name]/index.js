@@ -1,19 +1,19 @@
 import { useRouter } from "next/router";
 
 import villagersData from "@/lib/apiData/villagers.json";
-import PageHeading from "@/components/PageHeading";
 import ItemHeader from "@/components/ItemHeader";
 import VillagerDescription from "@/components/VillagerDescription";
 import RemoveModal from "@/components/RemoveModal";
 import ActionsBar from "@/components/ActionsBar";
 import VillagerColors from "@/components/VillagerColors";
+import LoadingText from "@/components/LoadingText";
 
 export default function ResidentDetails({ acquiredItems, isRemoveModalOpen }) {
   const router = useRouter();
   const { name } = router.query;
 
   if (!name) {
-    return <PageHeading>waking up villagers...</PageHeading>;
+    return <LoadingText type="villager" />;
   }
 
   const villager = villagersData.find(

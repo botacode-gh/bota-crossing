@@ -1,5 +1,5 @@
 import useStore from "@/zustand/store";
-import Button from "../StyledButton";
+import Button from "../Button";
 
 export default function AddItemButton({ item }) {
   const addAcquiredItem = useStore((state) => state.addAcquiredItem);

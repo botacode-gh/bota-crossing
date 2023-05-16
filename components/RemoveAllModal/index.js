@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import Modal from "../Modal";
-import Button from "../StyledButton";
-import useStore from "@/zustand/store";
 import Router from "next/router";
+
+import useStore from "@/zustand/store";
+import Modal from "../Modal";
+import Button from "../Button";
 
 const ButtonContainer = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ const ButtonContainer = styled.div`
 `;
 
 export default function RemoveAllModal({ acquiredItems }) {
-  const setRemoveModalOpen = useStore((state) => state.setRemoveModalOpen);
+  const { setRemoveModalOpen, removeAllItems } = useStore();
 
   function handleRemoveItem(item) {
     const updatedItems = acquiredItems.filter(
@@ -22,13 +23,13 @@ export default function RemoveAllModal({ acquiredItems }) {
   }
 
   function handleRemoveAll() {
-    localStorage.removeItem("acquiredItems");
+    removeAllItems();
     Router.reload();
     Router.push("/#site-title");
   }
 
   return (
-    <Modal handleModalIsVisible={() => setRemoveModalOpen(false)}>
+    <Modal handleIsModalOpen={() => setRemoveModalOpen(false)}>
       <p>Are you sure you want to remove all items from your island?</p>
       <ButtonContainer>
         <Button

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
-import StyledPrice from "../StyledPrice";
+import Price from "../Price";
 
 const StyledPriceDisplay = styled.article`
   text-align: right;
@@ -35,17 +35,17 @@ export default function AnimalPrices({ nook, cj, flick }) {
       <PriceList>
         {cj && (
           <li>
-            CJ: <StyledPrice>{cj}</StyledPrice>
+            CJ: <Price>{cj}</Price>
           </li>
         )}
         {flick && (
           <li>
-            Flick: <StyledPrice>{flick}</StyledPrice>
+            Flick: <Price>{flick}</Price>
           </li>
         )}
         {nook && (
           <li>
-            Nook&apos;s: <StyledPrice>{nook}</StyledPrice>
+            Nook&apos;s: <Price>{nook}</Price>
           </li>
         )}
       </PriceList>
