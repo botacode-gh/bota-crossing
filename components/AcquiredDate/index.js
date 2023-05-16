@@ -5,7 +5,7 @@ const StyledUnlockDate = styled.div`
   font-size: 0.75rem;
   position: absolute;
   bottom: -1rem;
-  right: 0;
+  right: 14px;
   opacity: 60%;
   font-size: 0.7rem;
 `;
