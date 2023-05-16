@@ -6,7 +6,7 @@ import { getRandom } from "@/lib/utils";
 import PageHeading from "../PageHeading";
 import Button from "../StyledButton";
 
-const H3 = styled.h3`
+const Title = styled.h3`
   text-align: center;
 `;
 
@@ -148,7 +148,7 @@ export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
     <StyledFormContainer>
       <StyledForm onSubmit={handleSubmit}>
         <label>
-          <H3>{inputPrompt}</H3>
+          <Title>{inputPrompt}</Title>
         </label>
         <StyledInputConatiner>
           <StyledTextInput

@@ -14,14 +14,12 @@ export default function RemoveItemButton({ item }) {
   }
 
   return (
-    <>
-      <Button
-        variant="remove"
-        onClick={() => setRemoveModalOpen(true)}
-        type="button"
-      >
-        {getRemoveText(item)}
-      </Button>
-    </>
+    <Button
+      variant="remove"
+      onClick={() => setRemoveModalOpen(true)}
+      type="button"
+    >
+      {getRemoveText(item)}
+    </Button>
   );
 }

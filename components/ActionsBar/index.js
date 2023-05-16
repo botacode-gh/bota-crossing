@@ -17,8 +17,11 @@ export default function ActionsBar({ item, acquiredItem }) {
   return (
     <StyledContainer>
       <BackLink />
-      {acquiredItem && <RemoveItemButton item={item} />}
-      {!acquiredItem && <AddItemButton item={item} />}
+      {acquiredItem ? (
+        <RemoveItemButton item={item} />
+      ) : (
+        <AddItemButton item={item} />
+      )}
     </StyledContainer>
   );
 }

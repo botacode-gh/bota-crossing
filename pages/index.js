@@ -13,7 +13,7 @@ import Button from "@/components/StyledButton";
 import ModalButtonContainer from "@/components/ModalButtonContainer";
 import RemoveAllModal from "@/components/RemoveAllModal";
 
-const H3 = styled.h3`
+const ListTitle = styled.h3`
   text-align: center;
 `;
 
@@ -31,7 +31,7 @@ const StyledIslandPic = styled(Image)`
 const List = styled.ul`
   list-style: none;
   display: flex;
-  flex-flow: row-reverse wrap;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   padding: 0;
@@ -165,21 +165,27 @@ export default function HomePage({ acquiredItems }) {
       )}
       {acquiredItems.length > 0 && (
         <StyledItemsContainer>
-          <H3>Check out what you&apos;ve found!</H3>
+          <ListTitle>Check out what you&apos;ve found!</ListTitle>
           <List role="list">
-            {acquiredItems.map((item) => {
-              return (
-                <ListItem key={item.name}>
-                  <Card
-                    name={item.name}
-                    type={item.type}
-                    iconSource={getItemIconSource(item)}
-                  />
-                </ListItem>
-              );
-            })}
+            {acquiredItems
+              .sort((a, b) => new Date(b.acquireDate) - new Date(a.acquireDate))
+              .map((item) => {
+                return (
+                  <ListItem key={item.name}>
+                    <Card
+                      name={item.name}
+                      type={item.type}
+                      iconSource={getItemIconSource(item)}
+                    />
+                  </ListItem>
+                );
+              })}
           </List>
-          <Button variant="remove" onClick={() => setRemoveModalOpen(true)}>
+          <Button
+            type="button"
+            variant="remove"
+            onClick={() => setRemoveModalOpen(true)}
+          >
             remove all
           </Button>
         </StyledItemsContainer>

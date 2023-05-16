@@ -28,7 +28,7 @@ const useStore = create((set, get) => ({
     const acquiredItem = {
       ...item,
       isAcquired: true,
-      acquireDate: new Date().toLocaleDateString(),
+      acquireDate: new Date(),
     };
     const storedItems = JSON.parse(localStorage.getItem("acquiredItems")) || [];
     const newStoredItems = [...storedItems, acquiredItem];

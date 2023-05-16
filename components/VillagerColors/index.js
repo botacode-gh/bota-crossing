@@ -1,10 +1,9 @@
 import styled, { css } from "styled-components";
 
 const GrandContainer = styled.div`
-  position: absolute;
+  position: fixed;
   right: 32px;
   bottom: 90px;
-  position: fixed;
 `;
 
 const StyledText = styled.div`

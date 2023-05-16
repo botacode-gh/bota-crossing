@@ -20,7 +20,7 @@ const PriceListItem = styled.li`
   gap: 3px;
 `;
 
-const H4 = styled.h4`
+const Subtitle = styled.h4`
   margin: 1rem 0;
 `;
 
@@ -28,31 +28,29 @@ export default function ItemPricesDisplay({ item }) {
   return (
     <StyledPriceDisplay>
       {item.buy && (
-        <div>
-          <H4>Buy</H4>
-          <div>
+        <>
+          <Subtitle>Buy</Subtitle>
+          <PriceList>
             {item.buy.map((store) => {
               return (
-                <PriceList key={store.price}>
-                  <PriceListItem>
-                    {store.currency === "Poki" ? "Wardell" : "Nook's"}:
-                    <StyledPrice>{store.price}</StyledPrice>
-                    <CurrencyIcon currency={store.currency} />
-                  </PriceListItem>
-                </PriceList>
+                <PriceListItem key={store.price}>
+                  {store.currency === "Poki" ? "Wardell" : "Nook's"}:
+                  <StyledPrice>{store.price}</StyledPrice>
+                  <CurrencyIcon currency={store.currency} />
+                </PriceListItem>
               );
             })}
-          </div>
-        </div>
+          </PriceList>
+        </>
       )}
       <div>
-        <H4>Sell</H4>
-        <div>
+        <Subtitle>Sell</Subtitle>
+        <PriceList>
           <PriceListItem>
-            <StyledPrice>{item.sell}</StyledPrice>{" "}
+            <StyledPrice>{item.sell}</StyledPrice>
             <CurrencyIcon currency="Bells" />
           </PriceListItem>
-        </div>
+        </PriceList>
       </div>
     </StyledPriceDisplay>
   );
