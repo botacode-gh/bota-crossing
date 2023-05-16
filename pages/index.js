@@ -73,7 +73,6 @@ export default function HomePage({ acquiredItems }) {
   const setInputPrompt = useStore((state) => state.setInputPrompt);
   const isRemoveModalOpen = useStore((state) => state.isRemoveModalOpen);
   const setRemoveModalOpen = useStore((state) => state.setRemoveModalOpen);
-  const loadAcquiredItems = useStore((state) => state.loadAcquiredItems);
 
   const [welcomeMessage, setWelcomeMessage] = useState("");
   const [itemAlreadyAcquired, setItemAlreadyAcquired] = useState(false);

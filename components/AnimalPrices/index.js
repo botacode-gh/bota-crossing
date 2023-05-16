@@ -14,7 +14,6 @@ const StyledPriceDisplay = styled.article`
 `;
 
 const BellsIcon = styled(Image)`
-  /* position: absolute; */
   right: -10px;
   bottom: 30px;
 `;
