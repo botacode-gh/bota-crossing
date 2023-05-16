@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ItemQuote from "../ItemQuote";
+import { getTitle } from "@/lib/utils";
 
 const Container = styled.div`
   display: flex;
@@ -20,9 +21,11 @@ const Title = styled.h2`
 `;
 
 export default function ItemHeader({ title, quotes }) {
+  const itemTitle = getTitle(title);
+
   return (
     <Container>
-      <Title>{title}</Title>
+      <Title>{itemTitle}</Title>
       <ItemQuote quotes={quotes}></ItemQuote>
     </Container>
   );
