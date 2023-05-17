@@ -19,8 +19,8 @@ const ListTitle = styled.h3`
 
 const StyledIslandPic = styled(Image)`
   position: absolute;
-  bottom: -100px;
-  left: -160px;
+  top: 180px;
+  left: -180px;
   transform: scaleX(-1);
   z-index: 1;
   opacity: 100%;

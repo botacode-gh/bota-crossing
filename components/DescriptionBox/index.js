@@ -12,7 +12,7 @@ const StyledSection = styled.section`
   background-color: #fff;
   box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
   position: relative;
-  width: fit-content;
+  width: 100%;
 
   p {
     align-self: center;

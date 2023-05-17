@@ -2,8 +2,9 @@ import styled, { css } from "styled-components";
 
 const GrandContainer = styled.div`
   position: fixed;
-  right: calc(50% - 170px);
-  bottom: 200px;
+  right: calc(50% - 156px);
+  /* top: calc(50% + 240px); */
+  top: 555px;
 `;
 
 const StyledText = styled.div`

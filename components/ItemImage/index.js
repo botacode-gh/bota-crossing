@@ -30,7 +30,7 @@ const Container = styled.div`
     variant === "villager" &&
     css`
       scale: 0.8;
-      bottom: -200px;
+      bottom: -180px;
     `};
 
   ${({ variant }) =>

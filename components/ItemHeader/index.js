@@ -9,10 +9,6 @@ const Container = styled.div`
   justify-content: space-evenly;
   align-items: baseline;
   position: relative;
-
-  @media (max-width: 768px) {
-    justify-content: space-between;
-  }
 `;
 
 const Title = styled.h2`
