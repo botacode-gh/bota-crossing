@@ -19,13 +19,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -48,14 +42,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -78,16 +65,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -110,13 +88,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -139,9 +111,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -163,17 +133,8 @@
     "clothing": "athletic jacket",
     "islander": false,
     "debut": "CF",
-    "prev_phrases": [
-      "hoo hoo ha"
-    ],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "prev_phrases": ["hoo hoo ha"],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -195,9 +156,7 @@
     "clothing": "simple parka",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "it's a me"
-    ],
+    "prev_phrases": ["it's a me"],
     "appearances": [
       "DNM",
       "AC",
@@ -233,16 +192,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -298,20 +248,8 @@
     "clothing": "Aran-knit sweater",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "eaglet"
-    ],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "prev_phrases": ["eaglet"],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -334,15 +272,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -365,9 +295,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -389,9 +317,7 @@
     "clothing": "yodel sweater",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "chuuurp"
-    ],
+    "prev_phrases": ["chuuurp"],
     "appearances": [
       "DNM",
       "AC",
@@ -426,16 +352,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -458,16 +375,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -490,16 +398,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -522,13 +421,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -551,15 +444,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -582,16 +467,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -649,13 +525,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -678,17 +548,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -711,10 +571,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -771,16 +628,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -803,15 +651,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -834,16 +674,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -866,11 +697,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -893,11 +720,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -953,17 +776,8 @@
     "clothing": "athletic jacket",
     "islander": false,
     "debut": "NL",
-    "prev_phrases": [
-      "boosh",
-      "prang"
-    ],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "prev_phrases": ["boosh", "prang"],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -986,15 +800,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -1017,12 +823,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -1045,14 +846,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -1075,13 +869,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -1104,13 +892,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -1133,14 +915,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -1163,15 +938,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -1194,11 +961,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -1221,16 +984,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -1253,12 +1007,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -1281,16 +1030,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -1313,11 +1053,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -1340,13 +1076,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -1369,11 +1099,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -1396,13 +1122,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -1425,15 +1145,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -1456,16 +1168,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -1522,14 +1225,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -1586,14 +1282,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -1650,13 +1339,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -1747,13 +1430,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -1810,16 +1487,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -1842,15 +1510,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -1873,14 +1533,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -1903,14 +1556,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -1933,9 +1579,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -1958,12 +1602,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -1986,16 +1625,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2018,15 +1648,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2049,13 +1671,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2078,13 +1694,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2107,15 +1717,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -2171,21 +1773,8 @@
     "clothing": "pineapple aloha shirt",
     "islander": true,
     "debut": "AC",
-    "prev_phrases": [
-      "dood",
-      "maaan"
-    ],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "prev_phrases": ["dood", "maaan"],
+    "appearances": ["AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2276,14 +1865,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -2306,16 +1888,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2372,12 +1945,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -2400,14 +1968,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -2430,14 +1991,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2460,11 +2014,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -2487,17 +2037,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2520,15 +2060,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2551,9 +2083,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -2576,14 +2106,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -2606,9 +2129,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA"
-    ],
+    "appearances": ["WA"],
     "type": "villager"
   },
   {
@@ -2631,13 +2152,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2660,10 +2175,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -2721,11 +2233,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -2748,13 +2256,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2777,11 +2279,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -2804,11 +2302,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "FILM"
-    ],
+    "appearances": ["WW", "CF", "FILM"],
     "type": "villager"
   },
   {
@@ -2831,14 +2325,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2861,11 +2348,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -2888,15 +2371,7 @@
     "islander": false,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2919,13 +2394,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -2948,14 +2417,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3012,11 +2474,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -3073,12 +2531,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -3101,17 +2554,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -3134,15 +2577,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3165,11 +2600,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -3192,9 +2623,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -3217,15 +2646,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3248,13 +2669,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3277,12 +2692,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -3305,14 +2715,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -3335,14 +2738,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3365,12 +2761,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -3393,16 +2784,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3458,16 +2840,8 @@
     "clothing": "orange dress",
     "islander": false,
     "debut": "NL",
-    "prev_phrases": [
-      "duuude"
-    ],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "prev_phrases": ["duuude"],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3490,13 +2864,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3519,17 +2887,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3552,17 +2910,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3585,13 +2933,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3614,12 +2956,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -3641,9 +2978,7 @@
     "clothing": "simple-dots tee",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "d-d-dude"
-    ],
+    "prev_phrases": ["d-d-dude"],
     "appearances": [
       "DNM",
       "AC",
@@ -3678,11 +3013,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -3705,13 +3036,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["E_PLUS", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -3768,16 +3093,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3800,10 +3116,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -3860,9 +3173,7 @@
     "clothing": "colorful striped sweater",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "bow WOW"
-    ],
+    "prev_phrases": ["bow WOW"],
     "appearances": [
       "DNM",
       "AC",
@@ -3896,9 +3207,7 @@
     "clothing": "overall dress",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "sugarbill"
-    ],
+    "prev_phrases": ["sugarbill"],
     "appearances": [
       "DNM",
       "AC",
@@ -3933,12 +3242,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -3961,15 +3265,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -3992,13 +3288,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4055,13 +3345,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4084,13 +3368,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4113,17 +3391,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -4145,16 +3413,8 @@
     "clothing": "fuzzy vest",
     "islander": true,
     "debut": "AC",
-    "prev_phrases": [
-      "ohmmm..."
-    ],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "prev_phrases": ["ohmmm..."],
+    "appearances": ["AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -4177,15 +3437,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -4208,10 +3460,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -4302,11 +3551,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -4329,13 +3574,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4358,15 +3597,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4388,20 +3619,8 @@
     "clothing": "six-ball tee",
     "islander": true,
     "debut": "AC",
-    "prev_phrases": [
-      "brah"
-    ],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "prev_phrases": ["brah"],
+    "appearances": ["AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4424,17 +3643,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4491,10 +3700,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -4517,15 +3723,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4547,17 +3745,8 @@
     "clothing": "Aran-knit sweater",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "wee one"
-    ],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "prev_phrases": ["wee one"],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -4648,15 +3837,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4679,11 +3860,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -4706,9 +3883,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA"
-    ],
+    "appearances": ["WA"],
     "type": "villager"
   },
   {
@@ -4731,13 +3906,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4760,11 +3929,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -4787,13 +3952,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4816,17 +3975,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4849,12 +3998,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -4877,17 +4021,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4910,13 +4044,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4939,15 +4067,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -4970,10 +4090,7 @@
     "islander": false,
     "debut": "HHD",
     "prev_phrases": [],
-    "appearances": [
-      "WA",
-      "HHD"
-    ],
+    "appearances": ["WA", "HHD"],
     "type": "villager"
   },
   {
@@ -5030,10 +4147,7 @@
     "islander": false,
     "debut": "HHD",
     "prev_phrases": [],
-    "appearances": [
-      "WA",
-      "HHD"
-    ],
+    "appearances": ["WA", "HHD"],
     "type": "villager"
   },
   {
@@ -5056,10 +4170,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -5082,13 +4193,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5111,13 +4216,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5140,13 +4239,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5169,10 +4262,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -5195,13 +4285,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5224,15 +4308,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5255,14 +4331,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5285,17 +4354,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -5318,11 +4377,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -5345,17 +4400,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5412,13 +4457,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5441,16 +4480,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5473,9 +4503,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -5497,16 +4525,8 @@
     "clothing": "zigzag-print dress",
     "islander": false,
     "debut": "NL",
-    "prev_phrases": [
-      "girlfriend"
-    ],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "prev_phrases": ["girlfriend"],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5563,14 +4583,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5593,9 +4606,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA"
-    ],
+    "appearances": ["WA"],
     "type": "villager"
   },
   {
@@ -5652,13 +4663,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5681,9 +4686,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -5705,9 +4708,7 @@
     "clothing": "misty tee",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "otaku"
-    ],
+    "prev_phrases": ["otaku"],
     "appearances": [
       "DNM",
       "AC",
@@ -5742,14 +4743,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5772,16 +4766,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5804,14 +4789,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5868,14 +4846,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -5932,13 +4903,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5961,13 +4926,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -5989,20 +4948,8 @@
     "clothing": "flannel shirt",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "grrr..."
-    ],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "prev_phrases": ["grrr..."],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -6025,17 +4972,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -6058,16 +4995,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -6090,17 +5018,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -6123,11 +5041,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -6150,13 +5064,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -6179,12 +5087,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -6207,11 +5110,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -6234,13 +5133,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -6263,15 +5156,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -6294,12 +5179,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -6322,11 +5202,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -6349,13 +5225,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -6378,13 +5248,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -6407,9 +5271,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA"
-    ],
+    "appearances": ["WA"],
     "type": "villager"
   },
   {
@@ -6432,12 +5294,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -6495,14 +5352,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -6525,14 +5375,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -6555,11 +5398,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -6582,17 +5421,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -6615,13 +5444,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -6644,11 +5467,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -6671,12 +5490,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -6699,9 +5513,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA"
-    ],
+    "appearances": ["WA"],
     "type": "villager"
   },
   {
@@ -6724,10 +5536,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -6750,12 +5559,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -6778,13 +5582,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -6807,16 +5605,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -6839,11 +5628,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -6934,15 +5719,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -6965,9 +5742,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -6990,17 +5765,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -7023,9 +5788,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -7048,10 +5811,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -7074,12 +5834,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -7102,13 +5857,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7131,13 +5880,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -7194,13 +5937,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7223,13 +5960,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7252,12 +5983,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -7280,12 +6006,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -7308,13 +6029,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7337,16 +6052,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7369,14 +6075,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7398,9 +6097,7 @@
     "clothing": "argyle sweater",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "kittycat"
-    ],
+    "prev_phrases": ["kittycat"],
     "appearances": [
       "DNM",
       "AC",
@@ -7435,9 +6132,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -7494,17 +6189,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7527,13 +6212,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7556,14 +6235,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7585,20 +6257,8 @@
     "clothing": "western shirt",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "okey-dokey"
-    ],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "prev_phrases": ["okey-dokey"],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -7621,9 +6281,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -7646,13 +6304,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7675,11 +6327,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -7702,14 +6350,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7732,14 +6373,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -7761,9 +6395,7 @@
     "clothing": "tropical muumuu",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "zzrrbbitt"
-    ],
+    "prev_phrases": ["zzrrbbitt"],
     "appearances": [
       "DNM",
       "AC",
@@ -7832,13 +6464,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7861,11 +6487,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -7922,15 +6544,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -7952,15 +6566,8 @@
     "clothing": "Chimayo vest",
     "islander": false,
     "debut": "NL",
-    "prev_phrases": [
-      "buckaroo"
-    ],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "prev_phrases": ["buckaroo"],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -7982,19 +6589,8 @@
     "clothing": "muscle tank",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "toots",
-      "odelay"
-    ],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "prev_phrases": ["toots", "odelay"],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8017,12 +6613,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -8079,17 +6670,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -8112,11 +6693,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -8139,9 +6716,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -8164,13 +6739,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8193,13 +6762,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -8222,9 +6785,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -8247,15 +6808,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8278,17 +6831,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8311,12 +6854,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -8407,14 +6945,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8437,13 +6968,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8466,11 +6991,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -8526,16 +7047,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8558,10 +7070,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -8584,13 +7093,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8613,11 +7116,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -8640,9 +7139,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -8665,17 +7162,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -8698,9 +7185,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA"
-    ],
+    "appearances": ["WA"],
     "type": "villager"
   },
   {
@@ -8723,10 +7208,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -8749,9 +7231,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -8774,15 +7254,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8805,9 +7277,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -8830,13 +7300,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8859,15 +7323,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8890,17 +7346,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8957,13 +7403,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -8986,15 +7426,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -9051,16 +7483,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -9083,13 +7506,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -9146,14 +7563,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -9176,13 +7586,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -9205,13 +7609,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -9234,13 +7632,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -9262,17 +7654,8 @@
     "clothing": "puffy vest",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "laddie"
-    ],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "prev_phrases": ["laddie"],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -9295,16 +7678,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -9327,15 +7701,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -9358,13 +7724,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -9387,16 +7747,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -9419,17 +7770,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -9452,9 +7793,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -9477,12 +7816,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -9505,11 +7839,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -9532,15 +7862,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -9597,12 +7919,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -9625,14 +7942,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -9723,11 +8033,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -9750,11 +8056,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -9777,15 +8079,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -9808,13 +8102,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -9871,14 +8159,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -9901,12 +8182,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -9929,12 +8205,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -9991,9 +8262,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -10015,9 +8284,7 @@
     "clothing": "orange dress",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "how now"
-    ],
+    "prev_phrases": ["how now"],
     "appearances": [
       "DNM",
       "AC",
@@ -10052,13 +8319,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["E_PLUS", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -10081,17 +8342,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -10182,13 +8433,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -10210,9 +8455,7 @@
     "clothing": "five-ball tee",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "li'l dude"
-    ],
+    "prev_phrases": ["li'l dude"],
     "appearances": [
       "DNM",
       "AC",
@@ -10247,15 +8490,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -10278,14 +8513,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -10308,13 +8536,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -10337,11 +8559,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -10364,10 +8582,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -10390,11 +8605,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -10417,12 +8628,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -10445,13 +8651,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -10473,9 +8673,7 @@
     "clothing": "tennis sweater",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "winger"
-    ],
+    "prev_phrases": ["winger"],
     "appearances": [
       "DNM",
       "AC",
@@ -10510,9 +8708,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -10535,13 +8731,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -10564,10 +8754,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -10589,9 +8776,7 @@
     "clothing": "silk floral-print shirt",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "cubbie"
-    ],
+    "prev_phrases": ["cubbie"],
     "appearances": [
       "DNM",
       "AC",
@@ -10626,14 +8811,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -10689,16 +8867,8 @@
     "clothing": "bold muumuu",
     "islander": true,
     "debut": "AC",
-    "prev_phrases": [
-      "chicky poo"
-    ],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "prev_phrases": ["chicky poo"],
+    "appearances": ["AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -10721,9 +8891,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -10814,14 +8982,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -10878,17 +9039,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -10911,17 +9062,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -10944,17 +9085,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -10976,9 +9107,7 @@
     "clothing": "letter jacket",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "pudgy"
-    ],
+    "prev_phrases": ["pudgy"],
     "appearances": [
       "DNM",
       "AC",
@@ -11013,17 +9142,7 @@
     "islander": false,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -11114,11 +9233,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -11141,12 +9256,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -11169,10 +9279,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -11195,12 +9302,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -11257,10 +9359,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -11283,12 +9382,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -11311,10 +9405,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -11337,14 +9428,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -11367,11 +9451,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -11394,15 +9474,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -11424,9 +9496,7 @@
     "clothing": "simple parka",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "toady"
-    ],
+    "prev_phrases": ["toady"],
     "appearances": [
       "DNM",
       "AC",
@@ -11461,15 +9531,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -11492,11 +9554,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -11519,13 +9577,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -11548,17 +9600,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -11664,7 +9706,7 @@
     "type": "villager"
   },
   {
-    "name": "Rocket",
+    "name": "Rocket (villager)",
     "url": "https://nookipedia.com/wiki/Rocket",
     "alt_name": "",
     "title_color": "f993ce",
@@ -11683,13 +9725,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -11712,16 +9748,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -11744,15 +9771,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -11775,12 +9794,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -11837,11 +9851,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -11864,13 +9874,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -11893,41 +9897,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
-    "type": "villager"
-  },
-  {
-    "name": "Rory",
-    "url": "https://nookipedia.com/wiki/Rory",
-    "alt_name": "",
-    "title_color": "ff791f",
-    "text_color": "fff2bb",
-    "id": "lon07",
-    "image_url": "https://dodo.ac/np/images/d/db/Rory_NH.png",
-    "species": "Lion",
-    "personality": "Jock",
-    "gender": "Male",
-    "birthday_month": "August",
-    "birthday_day": "7",
-    "sign": "Leo",
-    "quote": "Set 'em up and knock 'em down.",
-    "phrase": "capital",
-    "clothing": "sea hanten shirt",
-    "islander": false,
-    "debut": "NL",
-    "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -11950,16 +9920,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12017,11 +9978,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -12044,17 +10001,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12077,15 +10024,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12108,13 +10047,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12137,17 +10070,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -12204,14 +10127,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -12234,10 +10150,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -12294,17 +10207,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12327,13 +10230,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12356,12 +10253,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -12383,16 +10275,8 @@
     "clothing": "denim vest",
     "islander": false,
     "debut": "NL",
-    "prev_phrases": [
-      "baaa man"
-    ],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "prev_phrases": ["baaa man"],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12415,10 +10299,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -12441,9 +10322,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -12466,10 +10345,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -12492,9 +10368,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -12517,15 +10391,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12548,13 +10414,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12577,12 +10437,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -12639,14 +10494,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -12669,13 +10517,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12698,13 +10540,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12727,14 +10563,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -12757,16 +10586,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -12789,13 +10609,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12818,14 +10632,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -12882,14 +10689,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -12912,14 +10712,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -12942,16 +10735,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -12974,15 +10758,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -13004,17 +10780,8 @@
     "clothing": "yodel sweater",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "moo-dude"
-    ],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "prev_phrases": ["moo-dude"],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -13037,11 +10804,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -13064,9 +10827,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -13089,11 +10850,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -13116,16 +10873,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -13148,12 +10896,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -13175,16 +10918,8 @@
     "clothing": "tropical muumuu",
     "islander": false,
     "debut": "E_PLUS",
-    "prev_phrases": [
-      "joey"
-    ],
-    "appearances": [
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "prev_phrases": ["joey"],
+    "appearances": ["E_PLUS", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -13207,16 +10942,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -13273,14 +10999,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -13303,14 +11022,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -13333,13 +11045,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -13430,9 +11136,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -13455,12 +11159,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -13517,13 +11216,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -13546,13 +11239,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -13575,10 +11262,7 @@
     "islander": false,
     "debut": "NH",
     "prev_phrases": [],
-    "appearances": [
-      "NH",
-      "PC"
-    ],
+    "appearances": ["NH", "PC"],
     "type": "villager"
   },
   {
@@ -13601,11 +11285,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -13628,15 +11308,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -13659,13 +11331,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -13688,15 +11354,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -13719,11 +11377,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -13746,17 +11400,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -13813,13 +11457,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -13842,17 +11480,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -13909,11 +11537,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -13936,14 +11560,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -13966,14 +11583,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -13996,11 +11606,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -14023,15 +11629,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -14088,13 +11686,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -14117,9 +11709,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA"
-    ],
+    "appearances": ["WA"],
     "type": "villager"
   },
   {
@@ -14142,15 +11732,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -14172,17 +11754,8 @@
     "clothing": "poncho-style sweater",
     "islander": true,
     "debut": "E_PLUS",
-    "prev_phrases": [
-      "faboom"
-    ],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "prev_phrases": ["faboom"],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -14205,12 +11778,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -14233,16 +11801,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -14265,9 +11824,7 @@
     "islander": false,
     "debut": "WA",
     "prev_phrases": [],
-    "appearances": [
-      "WA"
-    ],
+    "appearances": ["WA"],
     "type": "villager"
   },
   {
@@ -14290,12 +11847,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -14318,16 +11870,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -14350,12 +11893,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -14378,17 +11916,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WW", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -14411,14 +11939,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "WA",
-      "NH",
-      "PC"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "WA", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -14441,9 +11962,7 @@
     "islander": true,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS"
-    ],
+    "appearances": ["E_PLUS"],
     "type": "villager"
   },
   {
@@ -14466,14 +11985,7 @@
     "islander": false,
     "debut": "CF",
     "prev_phrases": [],
-    "appearances": [
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -14496,16 +12008,7 @@
     "islander": false,
     "debut": "WW",
     "prev_phrases": [],
-    "appearances": [
-      "WW",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "FILM",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["WW", "CF", "NL", "WA", "NH", "FILM", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -14528,15 +12031,7 @@
     "islander": false,
     "debut": "E_PLUS",
     "prev_phrases": [],
-    "appearances": [
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["E_PLUS", "CF", "NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -14559,16 +12054,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "CF",
-      "NL",
-      "WA",
-      "NH",
-      "HHD"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS", "CF", "NL", "WA", "NH", "HHD"],
     "type": "villager"
   },
   {
@@ -14625,11 +12111,7 @@
     "islander": false,
     "debut": "DNM",
     "prev_phrases": [],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["DNM", "AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -14652,10 +12134,7 @@
     "islander": true,
     "debut": "AC",
     "prev_phrases": [],
-    "appearances": [
-      "AC",
-      "E_PLUS"
-    ],
+    "appearances": ["AC", "E_PLUS"],
     "type": "villager"
   },
   {
@@ -14712,13 +12191,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   },
   {
@@ -14740,16 +12213,8 @@
     "clothing": "silk floral-print shirt",
     "islander": false,
     "debut": "DNM",
-    "prev_phrases": [
-      "whiiifff"
-    ],
-    "appearances": [
-      "DNM",
-      "AC",
-      "E_PLUS",
-      "NH",
-      "PC"
-    ],
+    "prev_phrases": ["whiiifff"],
+    "appearances": ["DNM", "AC", "E_PLUS", "NH", "PC"],
     "type": "villager"
   },
   {
@@ -14772,13 +12237,7 @@
     "islander": false,
     "debut": "NL",
     "prev_phrases": [],
-    "appearances": [
-      "NL",
-      "WA",
-      "NH",
-      "HHD",
-      "PC"
-    ],
+    "appearances": ["NL", "WA", "NH", "HHD", "PC"],
     "type": "villager"
   }
 ]

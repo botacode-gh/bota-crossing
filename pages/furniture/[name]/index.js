@@ -1,21 +1,21 @@
 import { useRouter } from "next/router";
 
-import BackLink from "@/components/BackLink";
-import PageHeading from "@/components/PageHeading";
-import TagsContainer from "@/components/TagsContainer";
+import furnitureData from "@/lib/apiData/furniture.json";
+import Tags from "@/components/Tags";
 import ItemHeader from "@/components/ItemHeader";
 import ItemImage from "@/components/ItemImage";
 import ItemPricesDisplay from "@/components/ItemPricesDisplay";
-
-import furnitureData from "@/lib/apiData/furniture.json";
+import RemoveModal from "@/components/RemoveModal";
+import ActionsBar from "@/components/ActionsBar";
+import LoadingText from "@/components/LoadingText";
 import AcquiredDate from "@/components/AcquiredDate";
 
-export default function FurnitureDetails({ acquiredItems }) {
+export default function FurnitureDetails({ acquiredItems, isRemoveModalOpen }) {
   const router = useRouter();
   const { name } = router.query;
 
   if (!name) {
-    return <PageHeading>visiting ikea...</PageHeading>;
+    return <LoadingText type="furniture" />;
   }
 
   const furniture = furnitureData.find(
@@ -27,15 +27,15 @@ export default function FurnitureDetails({ acquiredItems }) {
 
   return (
     <>
-      <BackLink />
+      {isRemoveModalOpen && (
+        <RemoveModal item={acquiredFurniture} acquiredItems={acquiredItems} />
+      )}
+      <ActionsBar item={furniture} acquiredItem={acquiredFurniture} />
       <ItemHeader title={furniture.name} />
-      <TagsContainer furniture={furniture} />
+      <Tags furniture={furniture} />
       <ItemImage item={furniture} />
       <ItemPricesDisplay item={furniture} />
-      <AcquiredDate
-        date={acquiredFurniture ? acquiredFurniture.acquireDate : null}
-        type="furniture"
-      />
+      <AcquiredDate item={acquiredFurniture ? acquiredFurniture : furniture} />
     </>
   );
 }

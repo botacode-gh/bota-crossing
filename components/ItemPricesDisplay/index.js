@@ -1,6 +1,5 @@
-import { formatPrice } from "@/lib/utils";
 import styled from "styled-components";
-import StyledPrice from "../StyledPrice";
+import Price from "../Price";
 import CurrencyIcon from "../CurrencyIcon";
 
 const StyledPriceDisplay = styled.article`
@@ -11,7 +10,7 @@ const StyledPriceDisplay = styled.article`
 
 const PriceList = styled.ul`
   list-style: none;
-  margin: 0;
+  margin: -8px 0 0;
 `;
 
 const PriceListItem = styled.li`
@@ -21,35 +20,37 @@ const PriceListItem = styled.li`
   gap: 3px;
 `;
 
+const Subtitle = styled.h4`
+  margin: 1rem 0;
+`;
+
 export default function ItemPricesDisplay({ item }) {
   return (
     <StyledPriceDisplay>
-      {item.buy && (
-        <div>
-          <h4>Buy</h4>
-          <div>
+      {item.buy.length > 0 && (
+        <>
+          <Subtitle>Buy</Subtitle>
+          <PriceList>
             {item.buy.map((store) => {
               return (
-                <PriceList key={store.price}>
-                  <PriceListItem>
-                    {store.currency === "Poki" ? "Wardell" : "Nook's"}:
-                    <StyledPrice>{store.price}</StyledPrice>
-                    <CurrencyIcon currency={store.currency} />
-                  </PriceListItem>
-                </PriceList>
+                <PriceListItem key={store.price}>
+                  {store.currency === "Poki" ? "Wardell" : "Nook's"}:
+                  <Price>{store.price}</Price>
+                  <CurrencyIcon currency={store.currency} />
+                </PriceListItem>
               );
             })}
-          </div>
-        </div>
+          </PriceList>
+        </>
       )}
       <div>
-        <h4>Sell</h4>
-        <div>
+        <Subtitle>Sell</Subtitle>
+        <PriceList>
           <PriceListItem>
-            <StyledPrice>{item.sell}</StyledPrice>{" "}
+            <Price>{item.sell}</Price>
             <CurrencyIcon currency="Bells" />
           </PriceListItem>
-        </div>
+        </PriceList>
       </div>
     </StyledPriceDisplay>
   );

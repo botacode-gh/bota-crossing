@@ -1,11 +1,10 @@
-import { useEffect } from "react";
 import styled from "styled-components";
+import { useEffect } from "react";
 
 const Shroud = styled.div`
-  inset: 0;
-  background-color: black;
-  opacity: 50%;
   position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 `;
 
@@ -13,6 +12,8 @@ const StyledModal = styled.div`
   position: fixed;
   max-height: 200px;
   background-color: white;
+  box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.19);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,27 +21,17 @@ const StyledModal = styled.div`
   border-radius: 20px;
   padding: 1rem;
   z-index: 2;
-  width: 80vw;
-
-  @media (max-width: 768px) {
-    inset: 10vh 10vw;
-  }
+  max-width: 500px;
+  inset: 10vh 10vw;
+  margin: auto;
+  gap: 1rem;
 `;
 
-const CloseButton = styled.div`
-  position: fixed;
-  top: 12vh;
-  right: 15vw;
-  scale: 1.5;
-  cursor: pointer;
-  z-index: 2;
-`;
-
-export default function Modal({ handleModalIsVisible, children }) {
+export default function Modal({ handleIsModalOpen, children }) {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape" || event.key === "Enter") {
-        handleModalIsVisible();
+        handleIsModalOpen();
       }
     };
 
@@ -48,15 +39,13 @@ export default function Modal({ handleModalIsVisible, children }) {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [handleModalIsVisible]);
+  }, [handleIsModalOpen]);
 
   return (
     <>
-      <Shroud onClick={handleModalIsVisible} />
-      <StyledModal>
-        {children}
-        <CloseButton onClick={handleModalIsVisible}>✖️</CloseButton>
-      </StyledModal>
+      <Shroud onClick={handleIsModalOpen}>
+        <StyledModal>{children}</StyledModal>
+      </Shroud>
     </>
   );
 }

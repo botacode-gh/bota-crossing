@@ -17,7 +17,7 @@ function getSizeText(shadow_size) {
 }
 
 export default function FishDescription({ fish }) {
-  const { shadow_size, location, rarity, image_url } = fish;
+  const { shadow_size, location, rarity } = fish;
   const { months, time } = fish.north.availability_array[0];
 
   const sizeText = getSizeText(shadow_size);
@@ -28,7 +28,7 @@ export default function FishDescription({ fish }) {
   const hasFinnedShadow = shadow_size === "Very large (finned)" ? true : false;
 
   return (
-    <DescriptionBox icon={image_url}>
+    <DescriptionBox item={fish}>
       <p>
         {sizeText}
         {rarityText ? `, ${rarityText}` : ""} fish found {locationText}

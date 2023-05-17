@@ -1,21 +1,18 @@
 import { useRouter } from "next/router";
 
-import PageHeading from "@/components/PageHeading";
-import BackLink from "@/components/BackLink";
-import FishDescription from "@/components/FishDescription";
-import AnimalPrices from "@/components/AnimalPrices";
-import ItemImage from "@/components/ItemImage";
-import ItemHeader from "@/components/ItemHeader";
-import AcquiredDate from "@/components/AcquiredDate";
-
 import fishData from "@/lib/apiData/fish.json";
+import FishDescription from "@/components/FishDescription";
+import ItemHeader from "@/components/ItemHeader";
+import RemoveModal from "@/components/RemoveModal";
+import ActionsBar from "@/components/ActionsBar";
+import LoadingText from "@/components/LoadingText";
 
-export default function FishDetails({ acquiredItems }) {
+export default function FishDetails({ acquiredItems, isRemoveModalOpen }) {
   const router = useRouter();
   const { name } = router.query;
 
   if (!name) {
-    return <PageHeading>finding nemo...</PageHeading>;
+    return <LoadingText type="fish" />;
   }
 
   const fish = fishData.find(
@@ -25,15 +22,12 @@ export default function FishDetails({ acquiredItems }) {
 
   return (
     <>
-      <BackLink />
+      {isRemoveModalOpen && (
+        <RemoveModal item={acquiredFish} acquiredItems={acquiredItems} />
+      )}
+      <ActionsBar item={fish} acquiredItem={acquiredFish} />
       <ItemHeader title={fish.name} quotes={fish.catchphrases} />
-      <FishDescription fish={fish} />
-      <AnimalPrices nook={fish.sell_nook} cj={fish.sell_cj} />
-      <ItemImage item={fish} />
-      <AcquiredDate
-        date={acquiredFish ? acquiredFish.acquireDate : null}
-        type={fish.type}
-      />
+      <FishDescription fish={acquiredFish ? acquiredFish : fish} />
     </>
   );
 }

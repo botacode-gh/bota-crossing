@@ -1,21 +1,19 @@
 import { useRouter } from "next/router";
 
-import BackLink from "@/components/BackLink";
-
-import PageHeading from "@/components/PageHeading";
-import ItemHeader from "@/components/ItemHeader";
-import ItemImage from "@/components/ItemImage";
-import VillagerDescription from "@/components/VillagerDescription";
-import AcquiredDate from "@/components/AcquiredDate";
-
 import villagersData from "@/lib/apiData/villagers.json";
+import ItemHeader from "@/components/ItemHeader";
+import VillagerDescription from "@/components/VillagerDescription";
+import RemoveModal from "@/components/RemoveModal";
+import ActionsBar from "@/components/ActionsBar";
+import VillagerColors from "@/components/VillagerColors";
+import LoadingText from "@/components/LoadingText";
 
-export default function ResidentDetails({ acquiredItems }) {
+export default function ResidentDetails({ acquiredItems, isRemoveModalOpen }) {
   const router = useRouter();
   const { name } = router.query;
 
   if (!name) {
-    return <PageHeading>waking up villagers...</PageHeading>;
+    return <LoadingText type="villager" />;
   }
 
   const villager = villagersData.find(
@@ -25,20 +23,19 @@ export default function ResidentDetails({ acquiredItems }) {
     (item) => item.name === villager.name
   );
 
-  if (!villager) {
-    return <h1>Loading resident (or trying to)...</h1>;
-  }
+  const { text_color, title_color } = villager;
 
   return (
     <>
-      <BackLink />
+      {isRemoveModalOpen && (
+        <RemoveModal item={acquiredVillager} acquiredItems={acquiredItems} />
+      )}
+      <ActionsBar item={villager} acquiredItem={acquiredVillager} />
       <ItemHeader title={villager.name} quotes={villager.quote} />
-      <VillagerDescription villager={villager} />
-      <ItemImage item={villager} />
-      <AcquiredDate
-        date={acquiredVillager ? acquiredVillager.acquireDate : null}
-        type={villager.type}
+      <VillagerDescription
+        villager={acquiredVillager ? acquiredVillager : villager}
       />
+      <VillagerColors title_color={title_color} text_color={text_color} />
     </>
   );
 }

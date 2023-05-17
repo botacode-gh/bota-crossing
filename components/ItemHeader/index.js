@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ItemQuote from "../ItemQuote";
+import { getTitle } from "@/lib/utils";
 
 const Container = styled.div`
   display: flex;
@@ -8,7 +9,6 @@ const Container = styled.div`
   justify-content: space-evenly;
   align-items: baseline;
   position: relative;
-  margin-bottom: 0.5rem;
 
   @media (max-width: 768px) {
     justify-content: space-between;
@@ -21,9 +21,11 @@ const Title = styled.h2`
 `;
 
 export default function ItemHeader({ title, quotes }) {
+  const itemTitle = getTitle(title);
+
   return (
     <Container>
-      <Title>{title}</Title>
+      <Title>{itemTitle}</Title>
       <ItemQuote quotes={quotes}></ItemQuote>
     </Container>
   );

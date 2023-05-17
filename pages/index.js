@@ -1,11 +1,32 @@
 import styled from "styled-components";
 import useStore from "@/zustand/store";
+import Link from "next/link";
+import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 
+import islandPic from "@/public/floating_island.png";
 import PageHeading from "@/components/PageHeading";
 import NewItemForm from "@/components/NewItemForm";
 import Card from "@/components/Card";
 import Modal from "@/components/Modal";
+import Button from "@/components/Button";
+import ModalButtonContainer from "@/components/ModalButtonContainer";
+import RemoveAllModal from "@/components/RemoveAllModal";
+
+const ListTitle = styled.h3`
+  text-align: center;
+`;
+
+const StyledIslandPic = styled(Image)`
+  position: absolute;
+  bottom: -100px;
+  left: -160px;
+  transform: scaleX(-1);
+  z-index: 1;
+  opacity: 100%;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+`;
 
 const List = styled.ul`
   list-style: none;
@@ -29,11 +50,15 @@ const StyledItemsContainer = styled.div`
   align-items: center;
   border-radius: 10px;
   padding: 0.5rem;
+  gap: 1.5rem;
 `;
 
 function getItemIconSource(item) {
   if (item.type === "furniture" || item.type === "clothing") {
     return item.variations[0].image_url;
+  }
+  if (item.icon_url) {
+    return item.icon_url;
   }
   return item.image_url;
 }
@@ -41,19 +66,25 @@ function getItemIconSource(item) {
 export default function HomePage({ acquiredItems }) {
   const inputRef = useRef(null);
 
-  const itemName = useStore((state) => state.itemName);
-  const allItems = useStore((state) => state.allItems);
-  const searchItems = useStore.getState().searchItems;
-  const addAcquiredItem = useStore((state) => state.addAcquiredItem);
-  const setInputPrompt = useStore((state) => state.setInputPrompt);
+  const {
+    itemName,
+    allItems,
+    searchItems,
+    addAcquiredItem,
+    setInputPrompt,
+    isRemoveModalOpen,
+    setRemoveModalOpen,
+    setIsDropdownOpen,
+  } = useStore();
 
   const [welcomeMessage, setWelcomeMessage] = useState("");
-  const [itemAlreadyAcquired, setItemAlreadyAcquired] = useState(false);
+  const [isItemAlreadyAcquired, setIsItemAlreadyAcquired] = useState(false);
   const [addedItem, setAddedItem] = useState(null);
-  const [modalIsVisible, setModalIsVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
 
   useEffect(() => {
+    inputRef.current.value = "";
     const isFirstVisit = localStorage.getItem("visitedSite") !== "true";
     if (isFirstVisit) {
       localStorage.setItem("visitedSite", "true");
@@ -81,50 +112,86 @@ export default function HomePage({ acquiredItems }) {
       const acquiredItemNames = acquiredItems.map((item) => item.name);
 
       if (acquiredItemNames.includes(firstResult.name)) {
-        setItemAlreadyAcquired(true);
+        setIsItemAlreadyAcquired(true);
         return;
       }
     }
     if (results.length > 0) {
       addAcquiredItem(firstResult);
       setAddedItem(firstResult);
-      setInputPrompt("Got anything else?");
+      setInputPrompt(`Added ${firstResult.name} to your island!`);
       setModalMessage(`Added ${firstResult.name} to your island!`);
-      setModalIsVisible(!modalIsVisible);
-      inputRef.current.value = "";
+      setIsModalOpen(!isModalOpen);
+      setIsDropdownOpen(false);
     }
-    inputRef.current.value = "";
+    event.target.value = "";
+  };
+
+  const ITEM_PATHS = {
+    fish: "fish",
+    bug: "bugs",
+    furniture: "furniture",
+    clothing: "clothing",
+    recipe: "recipes",
+    villager: "villagers",
   };
 
   return (
     <>
+      {isRemoveModalOpen && <RemoveAllModal />}
       <PageHeading>{welcomeMessage}</PageHeading>
       <NewItemForm
         handleSubmit={handleSubmit}
         inputRef={inputRef}
         allItems={allItems}
+        isModalOpen={isModalOpen}
       />
-      {modalIsVisible && (
-        <Modal handleModalIsVisible={() => setModalIsVisible(!modalIsVisible)}>
+      {isModalOpen && (
+        <Modal handleIsModalOpen={() => setIsModalOpen(!isModalOpen)}>
           <h2>{modalMessage}</h2>
+          <ModalButtonContainer>
+            <Link href={`${ITEM_PATHS[addedItem.type]}/${addedItem.name}`}>
+              <Button variant="suggested">check it out</Button>
+            </Link>
+            <Button variant="remove" onClick={() => setIsModalOpen(false)}>
+              close
+            </Button>
+          </ModalButtonContainer>
         </Modal>
       )}
-      {acquiredItems && (
+      {!acquiredItems.length && (
+        <StyledIslandPic
+          src={islandPic}
+          alt="floating island"
+          item="furniture"
+          width={500}
+        />
+      )}
+      {acquiredItems.length > 0 && (
         <StyledItemsContainer>
-          <h3>Check out what you&apos;ve found!</h3>
+          <ListTitle>Check out what you&apos;ve found!</ListTitle>
           <List role="list">
-            {acquiredItems.map((item) => {
-              return (
-                <ListItem key={item.name}>
-                  <Card
-                    name={item.name}
-                    type={item.type}
-                    iconSource={getItemIconSource(item)}
-                  />
-                </ListItem>
-              );
-            })}
+            {acquiredItems
+              .sort((a, b) => new Date(b.acquireDate) - new Date(a.acquireDate))
+              .map((item) => {
+                return (
+                  <ListItem key={item.name}>
+                    <Card
+                      name={item.name}
+                      type={item.type}
+                      iconSource={getItemIconSource(item)}
+                    />
+                  </ListItem>
+                );
+              })}
           </List>
+          <Button
+            type="button"
+            variant="remove"
+            onClick={() => setRemoveModalOpen(true)}
+          >
+            remove all
+          </Button>
         </StyledItemsContainer>
       )}
     </>

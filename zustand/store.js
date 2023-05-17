@@ -12,6 +12,8 @@ const useStore = create((set, get) => ({
   acquiredItems: [],
   allItems: [],
   fuse: null,
+  isRemoveModalOpen: false,
+  isDropdownOpen: false,
 
   itemName: "",
   inputPrompt: "Add something!",
@@ -20,12 +22,15 @@ const useStore = create((set, get) => ({
   setItemName: (item) => set({ itemName: item }),
   setInputPrompt: (prompt) => set({ inputPrompt: prompt }),
 
+  setRemoveModalOpen: (isOpen) => set({ isRemoveModalOpen: isOpen }),
+  setIsDropdownOpen: (isOpen) => set({ isDropdownOpen: isOpen }),
+
   // add items to acquiredItems array in localStorage
   addAcquiredItem: (item) => {
     const acquiredItem = {
       ...item,
       isAcquired: true,
-      acquireDate: new Date().toLocaleDateString(),
+      acquireDate: new Date(),
     };
     const storedItems = JSON.parse(localStorage.getItem("acquiredItems")) || [];
     const newStoredItems = [...storedItems, acquiredItem];
@@ -43,14 +48,7 @@ const useStore = create((set, get) => ({
 
   // prepare items for search
   loadAllItems: () => {
-    const allItems = [
-      ...bugs,
-      ...fish,
-      ...furniture,
-      ...villagers,
-      ...recipes,
-      ...clothing,
-    ];
+    const allItems = [...bugs, ...fish, ...furniture, ...villagers];
 
     // create fuse object for searching items
     const options = {
@@ -59,6 +57,11 @@ const useStore = create((set, get) => ({
     };
     const fuse = new Fuse(allItems, options);
     set({ allItems, fuse });
+  },
+
+  // remove all items from localStorage
+  removeAllItems: () => {
+    localStorage.removeItem("acquiredItems");
   },
 
   // function to search for items using fuse.js

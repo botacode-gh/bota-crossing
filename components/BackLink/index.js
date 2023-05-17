@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "../StyledButton";
+import Button from "../Button";
 
 export default function BackLink() {
   return (

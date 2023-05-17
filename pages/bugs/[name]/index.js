@@ -1,21 +1,18 @@
 import { useRouter } from "next/router";
 
-import BackLink from "@/components/BackLink";
 import ItemHeader from "@/components/ItemHeader";
-import PageHeading from "@/components/PageHeading";
-
-import bugsData from "@/lib/apiData/bugs.json";
+import ActionsBar from "@/components/ActionsBar";
 import BugDescription from "@/components/BugDescription";
-import AnimalPrices from "@/components/AnimalPrices";
-import ItemImage from "@/components/ItemImage";
-import AcquiredDate from "@/components/AcquiredDate";
+import RemoveModal from "@/components/RemoveModal";
+import bugsData from "@/lib/apiData/bugs.json";
+import LoadingText from "@/components/LoadingText";
 
-export default function BugDetails({ acquiredItems }) {
+export default function BugDetails({ acquiredItems, isRemoveModalOpen }) {
   const router = useRouter();
   const { name } = router.query;
 
   if (!name) {
-    return <PageHeading>bugging bugs...</PageHeading>;
+    return <LoadingText type="bug" />;
   }
 
   const bug = bugsData.find(
@@ -25,15 +22,12 @@ export default function BugDetails({ acquiredItems }) {
 
   return (
     <>
-      <BackLink />
+      {isRemoveModalOpen && (
+        <RemoveModal item={acquiredBug} acquiredItems={acquiredItems} />
+      )}
+      <ActionsBar item={bug} acquiredItem={acquiredBug} />
       <ItemHeader title={bug.name} quotes={bug.catchphrases} />
-      <BugDescription bug={bug} />
-      <AnimalPrices nook={bug.sell_nook} flick={bug.sell_flick} />
-      <ItemImage item={bug} />
-      <AcquiredDate
-        date={acquiredBug ? acquiredBug.acquireDate : null}
-        type="bug"
-      />
+      <BugDescription bug={acquiredBug ? acquiredBug : bug} />
     </>
   );
 }
