@@ -31,7 +31,7 @@ export default function FurnitureDetails({ acquiredItems, isRemoveModalOpen }) {
         <RemoveModal item={acquiredFurniture} acquiredItems={acquiredItems} />
       )}
       <ActionsBar item={furniture} acquiredItem={acquiredFurniture} />
-      <ItemHeader title={furniture.name} />
+      <ItemHeader item={furniture} />
       <Tags furniture={furniture} />
       <ItemImage item={furniture} />
       <ItemPricesDisplay item={furniture} />

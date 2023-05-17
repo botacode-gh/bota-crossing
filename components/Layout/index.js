@@ -53,6 +53,7 @@ const Main = styled.main`
   align-items: center;
   gap: 1.5rem;
   padding: 0 0.8rem;
+  position: relative;
 `;
 
 export default function Layout({ children }) {

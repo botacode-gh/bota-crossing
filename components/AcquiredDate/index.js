@@ -12,8 +12,7 @@ const StyledUnlockDate = styled.div`
   ${({ variant }) =>
     variant === "furniture" &&
     css`
-      right: 32px;
-      bottom: 1rem;
+      bottom: -2rem;
     `}
 `;
 

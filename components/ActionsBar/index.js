@@ -8,9 +8,6 @@ const StyledContainer = styled.div`
   display: flex;
   margin: 0.5rem 0;
   justify-content: space-between;
-  @media (min-width: 768px) {
-    padding: 0 1rem;
-  }
 `;
 
 export default function ActionsBar({ item, acquiredItem }) {

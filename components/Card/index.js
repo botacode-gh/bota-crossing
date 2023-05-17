@@ -20,9 +20,21 @@ const StyledArticle = styled.article`
 
 const IconContainer = styled.div`
   position: absolute;
-  right: 0;
+  right: 5px;
   bottom: 0;
-  padding-right: 5px;
+`;
+
+const Icon = styled.img`
+  object-fit: contain;
+
+  ${({ variant }) =>
+    variant === "villager" &&
+    css`
+      transform: scaleX(-1);
+      right: 5px;
+      bottom: -35px;
+      height: auto;
+    `};
 `;
 
 const TYPE_URLS = {
@@ -43,7 +55,8 @@ export default function Card({ name, type, iconSource, variant }) {
         {name}
         <IconContainer>
           {iconSource ? (
-            <Image
+            <Icon
+              variant={type}
               src={iconSource}
               alt={`${name} icon`}
               width={50}

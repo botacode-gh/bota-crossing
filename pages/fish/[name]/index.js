@@ -26,7 +26,7 @@ export default function FishDetails({ acquiredItems, isRemoveModalOpen }) {
         <RemoveModal item={acquiredFish} acquiredItems={acquiredItems} />
       )}
       <ActionsBar item={fish} acquiredItem={acquiredFish} />
-      <ItemHeader title={fish.name} quotes={fish.catchphrases} />
+      <ItemHeader item={fish} />
       <FishDescription fish={acquiredFish ? acquiredFish : fish} />
     </>
   );
