@@ -22,10 +22,10 @@ const StyledIslandPic = styled(Image)`
   top: 180px;
   left: -180px;
   transform: scaleX(-1);
-  z-index: 1;
-  opacity: 100%;
-  transition: opacity 0.5s ease-in-out;
+  z-index: ${(props) => (props.shouldFade ? -1 : 1)};
+  opacity: ${(props) => (props.shouldFade ? "33%" : "100%")};
   pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
 `;
 
 const List = styled.ul`
@@ -159,15 +159,15 @@ export default function HomePage({ acquiredItems }) {
           </ModalButtonContainer>
         </Modal>
       )}
-      {!acquiredItems.length && (
-        <StyledIslandPic
-          src={islandPic}
-          alt="floating island"
-          item="furniture"
-          width={500}
-        />
-      )}
+      <StyledIslandPic
+        src={islandPic}
+        alt="floating island"
+        item="furniture"
+        width={500}
+        shouldFade={acquiredItems.length > 0}
+      />
       {acquiredItems.length > 0 && (
+        // do it here
         <StyledItemsContainer>
           <ListTitle>Check out what you&apos;ve found!</ListTitle>
           <List role="list">

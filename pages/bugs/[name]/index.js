@@ -26,7 +26,7 @@ export default function BugDetails({ acquiredItems, isRemoveModalOpen }) {
         <RemoveModal item={acquiredBug} acquiredItems={acquiredItems} />
       )}
       <ActionsBar item={bug} acquiredItem={acquiredBug} />
-      <ItemHeader title={bug.name} quotes={bug.catchphrases} />
+      <ItemHeader item={bug} />
       <BugDescription bug={acquiredBug ? acquiredBug : bug} />
     </>
   );

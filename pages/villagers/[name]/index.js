@@ -31,7 +31,7 @@ export default function ResidentDetails({ acquiredItems, isRemoveModalOpen }) {
         <RemoveModal item={acquiredVillager} acquiredItems={acquiredItems} />
       )}
       <ActionsBar item={villager} acquiredItem={acquiredVillager} />
-      <ItemHeader title={villager.name} quotes={villager.quote} />
+      <ItemHeader item={villager} />
       <VillagerDescription
         villager={acquiredVillager ? acquiredVillager : villager}
       />

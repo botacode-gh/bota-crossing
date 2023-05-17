@@ -1,10 +1,10 @@
-import { getImgAlt, getImgSrc } from "@/lib/utils";
+import { getItemName, getImgSrc } from "@/lib/utils";
 import styled, { css } from "styled-components";
 
 const Container = styled.div`
   width: 100%;
   height: 228px;
-  max-width: 500px;
+  max-width: 333px;
   position: absolute;
   left: -80px;
   bottom: -220px;
@@ -22,7 +22,7 @@ const Container = styled.div`
   ${({ variant }) =>
     variant === "bug" &&
     css`
-      bottom: -220px;
+      bottom: -230px;
       scale: 1.2;
     `};
 
@@ -42,7 +42,7 @@ const Container = styled.div`
   ${({ variant }) =>
     variant === "furniture" &&
     css`
-      top: 230px;
+      top: calc(30% + 150px);
       left: -110px;
     `};
 `;
@@ -70,7 +70,7 @@ export default function ItemImage({ item }) {
       <StyledImage
         variant={variant}
         src={getImgSrc(item)}
-        alt={getImgAlt(item)}
+        alt={getItemName(item)}
       />
     </Container>
   );
