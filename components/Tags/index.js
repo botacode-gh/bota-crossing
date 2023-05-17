@@ -5,7 +5,7 @@ import { getTagVariant } from "@/lib/utils";
 
 const StyledTag = styled.div`
   border: 2px dashed black;
-  border-radius: 5px;
+  border-radius: 15px;
   height: 2rem;
   padding: 0.5rem 0.5rem 2rem 0.5rem;
   opacity: 70%;
