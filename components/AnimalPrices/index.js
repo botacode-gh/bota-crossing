@@ -10,7 +10,7 @@ const StyledPriceDisplay = styled.article`
   margin-top: -1rem;
   position: absolute;
   right: 0;
-  bottom: -100px;
+  bottom: -120px;
 `;
 
 const BellsIcon = styled(Image)`

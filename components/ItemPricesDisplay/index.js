@@ -10,7 +10,7 @@ const StyledPriceDisplay = styled.article`
 
 const PriceList = styled.ul`
   list-style: none;
-  margin: -8px 0 0;
+  margin-bottom: px;
 `;
 
 const PriceListItem = styled.li`
@@ -18,6 +18,7 @@ const PriceListItem = styled.li`
   justify-content: flex-end;
   align-items: center;
   gap: 3px;
+  margin: -10px;
 `;
 
 const Subtitle = styled.h4`
