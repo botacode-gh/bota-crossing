@@ -4,6 +4,7 @@ import styled, { css } from "styled-components";
 const Container = styled.div`
   width: 100%;
   height: 228px;
+  max-width: 500px;
   position: absolute;
   left: -80px;
   bottom: -220px;
@@ -41,7 +42,8 @@ const Container = styled.div`
   ${({ variant }) =>
     variant === "furniture" &&
     css`
-      bottom: 100px;
+      top: 230px;
+      left: -110px;
     `};
 `;
 
