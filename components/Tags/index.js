@@ -3,28 +3,6 @@ import StyledList from "../StyledList";
 import StyledListItem from "../StyledListItem";
 import { getTagVariant } from "@/lib/utils";
 
-const StyledTag = styled.div`
-  border: 2px dashed black;
-  border-radius: 15px;
-  height: 2rem;
-  padding: 0.5rem 0.5rem 2rem 0.5rem;
-  opacity: 70%;
-
-  ${({ variant }) =>
-    variant === "isFalse" &&
-    css`
-      border-color: red;
-      color: red;
-    `}
-
-  ${({ variant }) =>
-    variant === "isTrue" &&
-    css`
-      border-color: green;
-      color: green;
-    `};
-`;
-
 export default function Tags({ furniture }) {
   if (!furniture) {
     return <h1>Loading tags (or trying to)...</h1>;
@@ -52,3 +30,25 @@ export default function Tags({ furniture }) {
     </>
   );
 }
+
+const StyledTag = styled.div`
+  border: 2px dashed black;
+  border-radius: 15px;
+  height: 2rem;
+  padding: 0.5rem 0.5rem 2rem 0.5rem;
+  opacity: 70%;
+
+  ${({ variant }) =>
+    variant === "isFalse" &&
+    css`
+      border-color: red;
+      color: red;
+    `}
+
+  ${({ variant }) =>
+    variant === "isTrue" &&
+    css`
+      border-color: green;
+      color: green;
+    `};
+`;

@@ -1,6 +1,18 @@
 import styled, { css } from "styled-components";
-import ItemQuote from "../ItemQuote";
 import { getQuote, getTitle } from "@/lib/utils";
+import ItemQuote from "../ItemQuote";
+
+export default function ItemHeader({ item }) {
+  const itemName = getTitle(item.name);
+  const quotes = getQuote(item);
+
+  return (
+    <Container variant={item.type}>
+      <Title>{itemName}</Title>
+      <ItemQuote quotes={quotes}></ItemQuote>
+    </Container>
+  );
+}
 
 const Container = styled.div`
   display: flex;
@@ -21,15 +33,3 @@ const Title = styled.h2`
   font-size: 2.5rem;
   margin: 0;
 `;
-
-export default function ItemHeader({ item }) {
-  const itemName = getTitle(item.name);
-  const quotes = getQuote(item);
-
-  return (
-    <Container variant={item.type}>
-      <Title>{itemName}</Title>
-      <ItemQuote quotes={quotes}></ItemQuote>
-    </Container>
-  );
-}

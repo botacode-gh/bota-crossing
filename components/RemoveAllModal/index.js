@@ -1,26 +1,11 @@
 import styled from "styled-components";
 import Router from "next/router";
-
 import useStore from "@/zustand/store";
 import Modal from "../Modal";
 import Button from "../Button";
 
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-`;
-
-export default function RemoveAllModal({ acquiredItems }) {
+export default function RemoveAllModal() {
   const { setRemoveModalOpen, removeAllItems } = useStore();
-
-  function handleRemoveItem(item) {
-    const updatedItems = acquiredItems.filter(
-      (acquiredItem) => acquiredItem !== item
-    );
-    localStorage.setItem("acquiredItems", JSON.stringify(updatedItems));
-    setItems(updatedItems);
-  }
 
   function handleRemoveAll() {
     removeAllItems();
@@ -51,3 +36,9 @@ export default function RemoveAllModal({ acquiredItems }) {
     </Modal>
   );
 }
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+`;

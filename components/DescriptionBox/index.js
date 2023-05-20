@@ -5,21 +5,6 @@ import AnimalPrices from "../AnimalPrices";
 import AcquiredDate from "../AcquiredDate";
 import { isAnimal, isVillager } from "@/lib/utils";
 
-const StyledSection = styled.section`
-  border-radius: 30px;
-  display: flex;
-  padding: 1rem;
-  background-color: #fff;
-  box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
-  position: relative;
-  width: 100%;
-
-  p {
-    align-self: center;
-    margin: 0.8rem 0;
-  }
-`;
-
 export default function DescriptionBox({ children, item }) {
   return (
     <StyledSection>
@@ -39,3 +24,18 @@ export default function DescriptionBox({ children, item }) {
     </StyledSection>
   );
 }
+
+const StyledSection = styled.section`
+  border-radius: 30px;
+  display: flex;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
+  position: relative;
+  width: 100%;
+
+  p {
+    align-self: center;
+    margin: 0.8rem 0;
+  }
+`;

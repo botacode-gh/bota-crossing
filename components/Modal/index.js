@@ -1,13 +1,6 @@
 import styled from "styled-components";
 import { useEffect } from "react";
 
-const Shroud = styled.div`
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-`;
-
 const StyledModal = styled.div`
   position: fixed;
   max-height: 200px;
@@ -49,3 +42,10 @@ export default function Modal({ handleIsModalOpen, children }) {
     </>
   );
 }
+
+const Shroud = styled.div`
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+`;

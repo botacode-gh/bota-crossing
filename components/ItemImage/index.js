@@ -1,5 +1,18 @@
-import { getItemName, getImgSrc } from "@/lib/utils";
 import styled, { css } from "styled-components";
+import { getItemName, getImgSrc } from "@/lib/utils";
+
+export default function ItemImage({ item }) {
+  const variant = item.type;
+  return (
+    <Container variant={variant}>
+      <StyledImage
+        variant={variant}
+        src={getImgSrc(item)}
+        alt={getItemName(item)}
+      />
+    </Container>
+  );
+}
 
 const Container = styled.div`
   width: 100%;
@@ -62,16 +75,3 @@ const StyledImage = styled.img`
       rotate: 15deg;
     `};
 `;
-
-export default function ItemImage({ item }) {
-  const variant = item.type;
-  return (
-    <Container variant={variant}>
-      <StyledImage
-        variant={variant}
-        src={getImgSrc(item)}
-        alt={getItemName(item)}
-      />
-    </Container>
-  );
-}

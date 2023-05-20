@@ -2,29 +2,6 @@ import styled from "styled-components";
 import Price from "../Price";
 import CurrencyIcon from "../CurrencyIcon";
 
-const StyledPriceDisplay = styled.article`
-  text-align: right;
-  width: 100%;
-  z-index: 1;
-`;
-
-const PriceList = styled.ul`
-  list-style: none;
-  margin-bottom: px;
-`;
-
-const PriceListItem = styled.li`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 3px;
-  margin: -10px;
-`;
-
-const Subtitle = styled.h4`
-  margin: 1rem 0;
-`;
-
 export default function ItemPricesDisplay({ item }) {
   return (
     <StyledPriceDisplay>
@@ -56,3 +33,26 @@ export default function ItemPricesDisplay({ item }) {
     </StyledPriceDisplay>
   );
 }
+
+const StyledPriceDisplay = styled.article`
+  text-align: right;
+  width: 100%;
+  z-index: 1;
+`;
+
+const PriceList = styled.ul`
+  list-style: none;
+  margin-bottom: px;
+`;
+
+const PriceListItem = styled.li`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3px;
+  margin: -10px;
+`;
+
+const Subtitle = styled.h4`
+  margin: 1rem 0;
+`;

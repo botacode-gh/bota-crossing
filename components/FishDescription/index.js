@@ -6,16 +6,6 @@ import {
 } from "@/lib/utils";
 import DescriptionBox from "../DescriptionBox";
 
-function getSizeText(shadow_size) {
-  if (shadow_size === "Medium") {
-    return "Medium-sized";
-  } else if (shadow_size === "Very large (finned)") {
-    return "Very large";
-  } else {
-    return shadow_size;
-  }
-}
-
 export default function FishDescription({ fish }) {
   const { shadow_size, location, rarity } = fish;
   const { months, time } = fish.north.availability_array[0];
@@ -37,4 +27,14 @@ export default function FishDescription({ fish }) {
       </p>
     </DescriptionBox>
   );
+}
+
+function getSizeText(shadow_size) {
+  if (shadow_size === "Medium") {
+    return "Medium-sized";
+  } else if (shadow_size === "Very large (finned)") {
+    return "Very large";
+  } else {
+    return shadow_size;
+  }
 }

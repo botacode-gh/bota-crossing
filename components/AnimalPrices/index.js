@@ -2,27 +2,6 @@ import styled from "styled-components";
 import Image from "next/image";
 import Price from "../Price";
 
-const StyledPriceDisplay = styled.article`
-  text-align: right;
-  width: fit-content;
-  align-self: flex-end;
-  font-size: 0.8em;
-  margin-top: -1rem;
-  position: absolute;
-  right: 0;
-  bottom: -120px;
-`;
-
-const BellsIcon = styled(Image)`
-  right: -10px;
-  bottom: 30px;
-`;
-
-const PriceList = styled.ul`
-  list-style: none;
-  margin: 0;
-`;
-
 export default function AnimalPrices({ nook, cj, flick }) {
   return (
     <StyledPriceDisplay>
@@ -52,3 +31,24 @@ export default function AnimalPrices({ nook, cj, flick }) {
     </StyledPriceDisplay>
   );
 }
+
+const StyledPriceDisplay = styled.article`
+  text-align: right;
+  width: fit-content;
+  align-self: flex-end;
+  font-size: 0.8em;
+  margin-top: -1rem;
+  position: absolute;
+  right: 0;
+  bottom: -120px;
+`;
+
+const BellsIcon = styled(Image)`
+  right: -10px;
+  bottom: 30px;
+`;
+
+const PriceList = styled.ul`
+  list-style: none;
+  margin: 0;
+`;

@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-
 import furnitureData from "@/lib/apiData/furniture.json";
 import Tags from "@/components/Tags";
 import ItemHeader from "@/components/ItemHeader";

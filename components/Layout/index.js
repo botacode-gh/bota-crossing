@@ -3,6 +3,28 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import TitleBar from "@/components/TitleBar";
 
+export default function Layout({ children }) {
+  const router = useRouter();
+  const isIndexPage = router.pathname === "/";
+  const isFishPage = router.pathname.startsWith("/fish/");
+  const isVillagerPage = router.pathname.startsWith("/villagers/");
+  const isBugPage = router.pathname.startsWith("/bugs/");
+
+  return (
+    <>
+      <Head>
+        <title>bota-crossing</title>
+      </Head>
+      <TitleBar />
+      {isIndexPage && <CustomGlobalStyle variant="index" />}
+      {isFishPage && <CustomGlobalStyle variant="fish" />}
+      {isVillagerPage && <CustomGlobalStyle variant="villager" />}
+      {isBugPage && <CustomGlobalStyle variant="bug" />}
+      <Main>{children}</Main>
+    </>
+  );
+}
+
 const CustomGlobalStyle = createGlobalStyle`
   background-color: rgb(249, 246, 230);
 
@@ -55,25 +77,3 @@ const Main = styled.main`
   padding: 0 0.8rem;
   position: relative;
 `;
-
-export default function Layout({ children }) {
-  const router = useRouter();
-  const isIndexPage = router.pathname === "/";
-  const isFishPage = router.pathname.startsWith("/fish/");
-  const isVillagerPage = router.pathname.startsWith("/villagers/");
-  const isBugPage = router.pathname.startsWith("/bugs/");
-
-  return (
-    <>
-      <Head>
-        <title>bota-crossing</title>
-      </Head>
-      <TitleBar />
-      {isIndexPage && <CustomGlobalStyle variant="index" />}
-      {isFishPage && <CustomGlobalStyle variant="fish" />}
-      {isVillagerPage && <CustomGlobalStyle variant="villager" />}
-      {isBugPage && <CustomGlobalStyle variant="bug" />}
-      <Main>{children}</Main>
-    </>
-  );
-}
