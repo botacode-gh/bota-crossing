@@ -1,11 +1,10 @@
 import { useRouter } from "next/router";
-
+import bugsData from "@/lib/apiData/bugs.json";
+import LoadingText from "@/components/LoadingText";
 import ItemHeader from "@/components/ItemHeader";
 import ActionsBar from "@/components/ActionsBar";
 import BugDescription from "@/components/BugDescription";
 import RemoveModal from "@/components/RemoveModal";
-import bugsData from "@/lib/apiData/bugs.json";
-import LoadingText from "@/components/LoadingText";
 
 export default function BugDetails({ acquiredItems, isRemoveModalOpen }) {
   const router = useRouter();

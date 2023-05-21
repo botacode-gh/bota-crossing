@@ -1,67 +1,9 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
-
 import useStore from "@/zustand/store";
 import { getRandom } from "@/lib/utils";
 import PageHeading from "../PageHeading";
 import Button from "../Button";
-
-const Title = styled.h3`
-  text-align: center;
-`;
-
-const StyledFormContainer = styled.div`
-  border-radius: 10px;
-  padding: 1.5rem 3rem;
-  width: 100%;
-  height: fit-content;
-  background-color: #fff;
-  box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
-
-  &:focus-within {
-    z-index: 100;
-  }
-`;
-const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-`;
-const StyledInputConatiner = styled.div`
-  width: 100%;
-`;
-const StyledTextInput = styled.input`
-  height: 3rem;
-  margin-bottom: 0.5rem;
-  padding-left: 10px;
-  border-radius: 100px;
-  width: 100%;
-  box-shadow: inset 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
-  border: none;
-`;
-
-const StyledDropdown = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: block;
-  max-height: 100px;
-  overflow-y: auto;
-  z-index: 100;
-`;
-const StyledDropdownItem = styled.li`
-  cursor: pointer;
-  padding: 0.5rem;
-  color: darkgray;
-
-  &:hover,
-  .highlighted {
-    border-radius: 100px;
-    background-color: #27a59070;
-    color: black;
-  }
-`;
 
 export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
   const {
@@ -192,3 +134,61 @@ export default function NewItemForm({ handleSubmit, inputRef, allItems }) {
     </StyledFormContainer>
   );
 }
+
+const Title = styled.h3`
+  text-align: center;
+`;
+
+const StyledFormContainer = styled.div`
+  border-radius: 10px;
+  padding: 1.5rem 3rem;
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
+
+  &:focus-within {
+    z-index: 100;
+  }
+`;
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+`;
+const StyledInputConatiner = styled.div`
+  width: 100%;
+`;
+const StyledTextInput = styled.input`
+  height: 3rem;
+  margin-bottom: 0.5rem;
+  padding-left: 10px;
+  border-radius: 100px;
+  width: 100%;
+  box-shadow: inset 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
+  border: none;
+`;
+
+const StyledDropdown = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  max-height: 100px;
+  overflow-y: auto;
+  z-index: 100;
+`;
+const StyledDropdownItem = styled.li`
+  cursor: pointer;
+  padding: 0.5rem;
+  color: darkgray;
+
+  &:hover,
+  &:active,
+  .highlighted {
+    border-radius: 100px;
+    background-color: #27a59070;
+    color: black;
+  }
+`;

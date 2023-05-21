@@ -1,5 +1,13 @@
 import styled, { css } from "styled-components";
 
+export default function Button({ children, onClick, variant, type }) {
+  return (
+    <StyledButton onClick={onClick} variant={variant} type={type}>
+      {children}
+    </StyledButton>
+  );
+}
+
 const StyledButton = styled.button`
   appearance: none;
   border: none;
@@ -10,7 +18,8 @@ const StyledButton = styled.button`
   max-width: 95px;
   min-height: 30px;
 
-  &:hover {
+  &:hover,
+  &:active {
     cursor: pointer;
     background-color: #ffe2a9;
     box-shadow: inset 0px 1px 2px 1px rgba(92, 22, 0, 0.29);
@@ -23,7 +32,7 @@ const StyledButton = styled.button`
         background-color: #ff977a;
         color: white;
   
-        &:hover {
+        &:hover, &:active {
           background-color: #ffc2b1;
       `}
 
@@ -33,15 +42,7 @@ const StyledButton = styled.button`
         background-color: #27a590;
         color: white;
 
-        &:hover {
+        &:hover, &:active {
           background-color: #27a59070;
       `}
 `;
-
-export default function Button({ children, onClick, variant, type }) {
-  return (
-    <StyledButton onClick={onClick} variant={variant} type={type}>
-      {children}
-    </StyledButton>
-  );
-}

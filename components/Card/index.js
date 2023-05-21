@@ -1,6 +1,30 @@
 import styled, { css } from "styled-components";
-import Image from "next/image";
 import Link from "next/link";
+
+export default function Card({ name, type, iconSource, variant }) {
+  const urlScheme = `${TYPE_URLS[type]}/${name}`;
+
+  return (
+    <Link href={urlScheme} passHref legacyBehavior>
+      <StyledArticle variant={variant}>
+        {name}
+        <IconContainer>
+          {iconSource ? (
+            <Icon
+              variant={type}
+              src={iconSource}
+              alt={`${name} icon`}
+              width={50}
+              height={50}
+            />
+          ) : (
+            type
+          )}
+        </IconContainer>
+      </StyledArticle>
+    </Link>
+  );
+}
 
 const StyledArticle = styled.article`
   border-radius: 10px;
@@ -45,28 +69,3 @@ const TYPE_URLS = {
   recipe: "recipes",
   villager: "villagers",
 };
-
-export default function Card({ name, type, iconSource, variant }) {
-  const urlScheme = `${TYPE_URLS[type]}/${name}`;
-
-  return (
-    <Link href={urlScheme} passHref legacyBehavior>
-      <StyledArticle variant={variant}>
-        {name}
-        <IconContainer>
-          {iconSource ? (
-            <Icon
-              variant={type}
-              src={iconSource}
-              alt={`${name} icon`}
-              width={50}
-              height={50}
-            />
-          ) : (
-            type
-          )}
-        </IconContainer>
-      </StyledArticle>
-    </Link>
-  );
-}

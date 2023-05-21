@@ -3,12 +3,6 @@ import useStore from "@/zustand/store";
 import Modal from "../Modal";
 import Button from "../Button";
 
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-`;
-
 export default function RemoveModal({ item, acquiredItems }) {
   const setRemoveModalOpen = useStore((state) => state.setRemoveModalOpen);
 
@@ -42,3 +36,9 @@ export default function RemoveModal({ item, acquiredItems }) {
     </Modal>
   );
 }
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+`;

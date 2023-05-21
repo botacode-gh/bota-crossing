@@ -1,6 +1,14 @@
 import styled, { css } from "styled-components";
 import { getAcquiredText } from "@/lib/utils";
 
+export default function AcquiredDate({ item }) {
+  return (
+    <StyledUnlockDate variant={item.type}>
+      {getAcquiredText(item)}
+    </StyledUnlockDate>
+  );
+}
+
 const StyledUnlockDate = styled.div`
   font-size: 0.75rem;
   position: absolute;
@@ -15,11 +23,3 @@ const StyledUnlockDate = styled.div`
       bottom: -2rem;
     `}
 `;
-
-export default function AcquiredDate({ item }) {
-  return (
-    <StyledUnlockDate variant={item.type}>
-      {getAcquiredText(item)}
-    </StyledUnlockDate>
-  );
-}

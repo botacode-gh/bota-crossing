@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-
 import villagersData from "@/lib/apiData/villagers.json";
 import ItemHeader from "@/components/ItemHeader";
 import VillagerDescription from "@/components/VillagerDescription";

@@ -12,6 +12,9 @@ const useStore = create((set, get) => ({
   acquiredItems: [],
   allItems: [],
   fuse: null,
+
+  addedModalMessage: "Item added!",
+  isAddedModalOpen: false,
   isRemoveModalOpen: false,
   isDropdownOpen: false,
 
@@ -22,16 +25,25 @@ const useStore = create((set, get) => ({
   setItemName: (item) => set({ itemName: item }),
   setInputPrompt: (prompt) => set({ inputPrompt: prompt }),
 
+  setAddedModalMessage: (message) => set({ addedModalMessage: message }),
+  setIsAddedModalOpen: (isOpen) => set({ isAddedModalOpen: isOpen }),
   setRemoveModalOpen: (isOpen) => set({ isRemoveModalOpen: isOpen }),
   setIsDropdownOpen: (isOpen) => set({ isDropdownOpen: isOpen }),
 
   // add items to acquiredItems array in localStorage
   addAcquiredItem: (item) => {
     const acquiredItem = {
+      // name: item.name,
+      // type: item.type,
+      // icon_url: item.icon_url,
+      // image_url: item.image_url,
       ...item,
       isAcquired: true,
       acquireDate: new Date(),
     };
+    // if (item.type === "furniture" || item.type === "clothing") {
+    //   acquiredItem.variations = item.variations;
+    // }
     const storedItems = JSON.parse(localStorage.getItem("acquiredItems")) || [];
     const newStoredItems = [...storedItems, acquiredItem];
     localStorage.setItem("acquiredItems", JSON.stringify(newStoredItems));

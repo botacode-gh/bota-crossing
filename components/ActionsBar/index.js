@@ -3,13 +3,6 @@ import BackLink from "../BackLink";
 import RemoveItemButton from "../RemoveItemButton";
 import AddItemButton from "../AddItemButton";
 
-const StyledContainer = styled.div`
-  width: 100%;
-  display: flex;
-  margin: 0.5rem 0;
-  justify-content: space-between;
-`;
-
 export default function ActionsBar({ item, acquiredItem }) {
   return (
     <StyledContainer>
@@ -22,3 +15,10 @@ export default function ActionsBar({ item, acquiredItem }) {
     </StyledContainer>
   );
 }
+
+const StyledContainer = styled.div`
+  width: 100%;
+  display: flex;
+  margin: 0.5rem 0;
+  justify-content: space-between;
+`;

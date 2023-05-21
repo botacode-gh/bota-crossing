@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-
 import fishData from "@/lib/apiData/fish.json";
 import FishDescription from "@/components/FishDescription";
 import ItemHeader from "@/components/ItemHeader";

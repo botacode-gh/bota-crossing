@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export default function CurrencyIcon({ currency }) {
+  const src = CURRENCY_ICONS[currency];
+  return <Icon src={src} alt={currency} />;
+}
+
 const Icon = styled.img`
   scale: 0.65;
 `;
@@ -14,8 +19,3 @@ const CURRENCY_ICONS = {
   "Nook Miles":
     "https://dodo.ac/np/images/thumb/b/b2/Nook_Miles_NH_Icon_Cropped.png/18px-Nook_Miles_NH_Icon_Cropped.png",
 };
-
-export default function CurrencyIcon({ currency }) {
-  const src = CURRENCY_ICONS[currency];
-  return <Icon src={src} alt={currency} />;
-}
