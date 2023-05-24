@@ -5,6 +5,7 @@ import ItemHeader from "@/components/ItemHeader";
 import RemoveModal from "@/components/RemoveModal";
 import ActionsBar from "@/components/ActionsBar";
 import LoadingText from "@/components/LoadingText";
+import ModelMade from "@/components/ModelMade";
 
 export default function FishDetails({ acquiredItems, isRemoveModalOpen }) {
   const router = useRouter();
@@ -27,6 +28,7 @@ export default function FishDetails({ acquiredItems, isRemoveModalOpen }) {
       <ActionsBar item={fish} acquiredItem={acquiredFish} />
       <ItemHeader item={fish} />
       <FishDescription fish={acquiredFish ? acquiredFish : fish} />
+      <ModelMade item={acquiredFish} onChange={() => {}} />
     </>
   );
 }

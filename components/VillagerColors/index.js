@@ -25,9 +25,8 @@ export default function VillagerColors({ title_color, text_color }) {
 }
 
 const GrandContainer = styled.div`
-  position: fixed;
+  position: absolute;
   right: calc(50% - 156px);
-  /* top: calc(50% + 240px); */
   top: 555px;
 `;
 

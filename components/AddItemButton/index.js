@@ -1,4 +1,5 @@
 import useStore from "@/zustand/store";
+import { getAddText } from "@/lib/utils";
 import Button from "../Button";
 
 export default function AddItemButton({ item }) {
@@ -10,7 +11,7 @@ export default function AddItemButton({ item }) {
       onClick={() => addAcquiredItem(item)}
       type="button"
     >
-      add
+      {getAddText(item)}
     </Button>
   );
 }
