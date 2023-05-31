@@ -1,4 +1,4 @@
-# bota-crossing 🏝️
+# [bota-crossing](https://bota-crossing.vercel.app) 🏝️
 
 Track your personal progress on _[Animal Crossing: New Horizons](https://de.wikipedia.org/wiki/Animal_Crossing:_New_Horizons)_. 
 
